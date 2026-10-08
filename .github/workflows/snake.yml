@@ -1,0 +1,91 @@
+name: Generate contribution snake
+
+on:
+  schedule:
+    - cron: "17 2 * * *" # Daily at 02:17 UTC; GitHub may delay scheduled runs.
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: contribution-snake
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    if: github.repository == 'Ideal-ljl/Ideal-ljl' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - name: Generate light and dark SVGs
+        uses: Platane/snk/svg-only@a69d1dbca7a94c2ef0edf10dcd9e19982d74dd39 # v3.3.0
+        with:
+          github_user_name: Ideal-ljl
+          github_token: ${{ github.token }}
+          outputs: |
+            dist/github-snake.svg?palette=github-light
+            dist/github-snake-dark.svg?palette=github-dark
+
+      - name: Upload SVG artifact
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: contribution-snake
+          path: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg
+          if-no-files-found: error
+          retention-days: 1
+
+  publish:
+    needs: generate
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - name: Download SVG artifact from this run
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: contribution-snake
+          path: dist
+
+      - name: Validate the exact SVG payload
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+
+          root = Path("dist")
+          expected = {"github-snake.svg", "github-snake-dark.svg"}
+          if root.is_symlink() or not root.is_dir():
+              raise SystemExit("Expected a regular dist directory")
+          actual = {path.name for path in root.iterdir()}
+          if actual != expected:
+              raise SystemExit(f"Unexpected artifact files: {sorted(actual)}")
+          for name in sorted(expected):
+              path = root / name
+              if path.is_symlink() or not path.is_file():
+                  raise SystemExit(f"Not a regular file: {name}")
+              if not 0 < path.stat().st_size < 10_000_000:
+                  raise SystemExit(f"Invalid SVG size: {name}")
+              svg = ET.parse(path).getroot()
+              if svg.tag != "{http://www.w3.org/2000/svg}svg":
+                  raise SystemExit(f"Invalid SVG root: {name}")
+          print("Validated two SVG files")
+          PY
+
+      - name: Publish SVGs to the dedicated output branch
+        uses: crazy-max/ghaction-github-pages@df5cc2bfa78282ded844b354faee141f06b41865 # v4.2.0
+        with:
+          target_branch: output
+          build_dir: dist
+          keep_history: true
+          allow_empty_commit: false
+          follow_symlinks: false
+          jekyll: false
+          commit_message: "chore: update contribution snake"
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
