@@ -1,0 +1,37 @@
+name: Sync arXiv digests to Ubuntu
+
+on:
+  push:
+    branches: [arxiv-daily-data]
+    paths:
+      - 'digests/*.json'
+      - 'archive.json'
+      - '.github/workflows/sync-arxiv-ubuntu.yml'
+      - 'scripts/sync_arxiv_ubuntu.py'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: arxiv-ubuntu-source-verified-sync
+  cancel-in-progress: false
+  queue: max
+
+jobs:
+  synchronize:
+    if: github.repository == 'Ideal-ljl/Ideal-ljl' && github.ref == 'refs/heads/arxiv-daily-data'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Read the latest published data branch
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: arxiv-daily-data
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Validate script syntax
+        run: python3 -m py_compile scripts/sync_arxiv_ubuntu.py
+      - name: Synchronize and verify complete digests
+        run: |
+          export SYNC_SOURCE_COMMIT="$(git rev-parse HEAD)"
+          python3 scripts/sync_arxiv_ubuntu.py --evidence-dir "$RUNNER_TEMP/arxiv-sync-evidence"
