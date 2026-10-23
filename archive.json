@@ -1,1 +1,116 @@
-{"archive":[{"date":"2026-10-22","status":"complete","sourceBatch":"cs.AI:2026-10-22|cs.CL:2026-10-22|cs.CV:2026-10-22|cs.LG:2026-10-22|cs.RO:2026-10-22|eess.IV:2026-10-22|stat.ML:2026-10-22","updatedAt":"2026-10-22T06:06:49.431Z","count":94},{"date":"2026-10-21","status":"complete","sourceBatch":"cs.AI:2026-10-21|cs.CL:2026-10-21|cs.CV:2026-10-21|cs.LG:2026-10-21|cs.RO:2026-10-21|eess.IV:2026-10-21|stat.ML:2026-10-21","updatedAt":"2026-10-21T06:10:35.061Z","count":114},{"date":"2026-10-20","status":"complete","sourceBatch":"cs.AI:2026-10-20|cs.CL:2026-10-20|cs.CV:2026-10-20|cs.LG:2026-10-20|cs.RO:2026-10-20|eess.IV:2026-10-20|stat.ML:2026-10-20","updatedAt":"2026-10-20T06:12:36.503Z","count":205},{"date":"2026-10-19","status":"complete","sourceBatch":"cs.AI:2026-10-19|cs.CL:2026-10-19|cs.CV:2026-10-19|cs.LG:2026-10-19|cs.RO:2026-10-19|eess.IV:2026-10-19|stat.ML:2026-10-19","updatedAt":"2026-10-19T06:11:55.308Z","count":74},{"date":"2026-10-16","status":"complete","sourceBatch":"cs.AI:2026-10-16|cs.CL:2026-10-16|cs.CV:2026-10-16|cs.LG:2026-10-16|cs.RO:2026-10-16|eess.IV:2026-10-16|stat.ML:2026-10-16","updatedAt":"2026-10-16T06:15:49.224Z","count":118},{"date":"2026-10-15","status":"complete","sourceBatch":"cs.AI:2026-10-15|cs.CL:2026-10-15|cs.CV:2026-10-15|cs.LG:2026-10-15|cs.RO:2026-10-15|eess.IV:2026-10-15|stat.ML:2026-10-15","updatedAt":"2026-10-15T06:28:20.986Z","count":156},{"date":"2026-10-14","status":"complete","sourceBatch":"cs.AI:2026-10-14|cs.CL:2026-10-14|cs.CV:2026-10-14|cs.LG:2026-10-14|cs.RO:2026-10-14|eess.IV:2026-10-14|stat.ML:2026-10-14","updatedAt":"2026-10-15T06:28:19.410Z","count":419},{"date":"2026-10-13","status":"no_new_listing","sourceBatch":"cs.AI:2026-10-12|cs.CL:2026-10-12|cs.CV:2026-10-12|cs.LG:2026-10-12|cs.RO:2026-10-12|eess.IV:2026-10-12|stat.ML:2026-10-12","updatedAt":"2026-10-13T06:08:54.011Z","count":0},{"date":"2026-10-12","status":"complete","sourceBatch":"cs.AI:2026-10-12|cs.CL:2026-10-12|cs.CV:2026-10-12|cs.LG:2026-10-12|cs.RO:2026-10-12|eess.IV:2026-10-12|stat.ML:2026-10-12","updatedAt":"2026-10-12T06:07:03.112Z","count":83},{"date":"2026-10-11","status":"no_new_listing","sourceBatch":"cs.AI:2026-10-09|cs.CL:2026-10-09|cs.CV:2026-10-09|cs.LG:2026-10-09|cs.RO:2026-10-09|eess.IV:2026-10-09|stat.ML:2026-10-09","updatedAt":"2026-10-11T06:05:27.870Z","count":0},{"date":"2026-10-10","status":"no_new_listing","sourceBatch":"cs.AI:2026-10-09|cs.CL:2026-10-09|cs.CV:2026-10-09|cs.LG:2026-10-09|cs.RO:2026-10-09|eess.IV:2026-10-09|stat.ML:2026-10-09","updatedAt":"2026-10-10T07:37:12.214Z","count":0},{"date":"2026-10-09","status":"complete","sourceBatch":"cs.AI:2026-10-09|cs.CL:2026-10-09|cs.CV:2026-10-09|cs.LG:2026-10-09|cs.RO:2026-10-09|eess.IV:2026-10-09|stat.ML:2026-10-09","updatedAt":"2026-10-09T06:07:40.274Z","count":114},{"date":"2026-10-08","status":"complete","sourceBatch":"cs.AI:2026-10-08|cs.CL:2026-10-08|cs.CV:2026-10-08|cs.LG:2026-10-08|cs.RO:2026-10-08|eess.IV:2026-10-08|stat.ML:2026-10-08","updatedAt":"2026-10-08T06:12:14.598Z","count":127},{"date":"2026-10-07","status":"complete","sourceBatch":"cs.AI:2026-10-07|cs.CL:2026-10-07|cs.CV:2026-10-07|cs.LG:2026-10-07|cs.RO:2026-10-07|eess.IV:2026-10-07|stat.ML:2026-10-07","updatedAt":"2026-10-07T06:11:11.952Z","count":109},{"date":"2026-10-06","status":"complete","sourceBatch":"cs.AI:2026-10-06|cs.CL:2026-10-06|cs.CV:2026-10-06|cs.LG:2026-10-06|cs.RO:2026-10-06|eess.IV:2026-10-06|stat.ML:2026-10-06","updatedAt":"2026-10-06T09:02:17.391Z","count":107}]}
+{
+  "archive": [
+    {
+      "date": "2026-10-23",
+      "status": "complete",
+      "sourceBatch": "cs.AI:2026-10-23|cs.CL:2026-10-23|cs.CV:2026-10-23|cs.LG:2026-10-23|cs.RO:2026-10-23|eess.IV:2026-10-23|stat.ML:2026-10-23",
+      "updatedAt": "2026-10-23T06:11:45.452Z",
+      "count": 76
+    },
+    {
+      "date": "2026-10-22",
+      "status": "complete",
+      "sourceBatch": "cs.AI:2026-10-22|cs.CL:2026-10-22|cs.CV:2026-10-22|cs.LG:2026-10-22|cs.RO:2026-10-22|eess.IV:2026-10-22|stat.ML:2026-10-22",
+      "updatedAt": "2026-10-22T06:06:49.431Z",
+      "count": 94
+    },
+    {
+      "date": "2026-10-21",
+      "status": "complete",
+      "sourceBatch": "cs.AI:2026-10-21|cs.CL:2026-10-21|cs.CV:2026-10-21|cs.LG:2026-10-21|cs.RO:2026-10-21|eess.IV:2026-10-21|stat.ML:2026-10-21",
+      "updatedAt": "2026-10-21T06:10:35.061Z",
+      "count": 114
+    },
+    {
+      "date": "2026-10-20",
+      "status": "complete",
+      "sourceBatch": "cs.AI:2026-10-20|cs.CL:2026-10-20|cs.CV:2026-10-20|cs.LG:2026-10-20|cs.RO:2026-10-20|eess.IV:2026-10-20|stat.ML:2026-10-20",
+      "updatedAt": "2026-10-20T06:12:36.503Z",
+      "count": 205
+    },
+    {
+      "date": "2026-10-19",
+      "status": "complete",
+      "sourceBatch": "cs.AI:2026-10-19|cs.CL:2026-10-19|cs.CV:2026-10-19|cs.LG:2026-10-19|cs.RO:2026-10-19|eess.IV:2026-10-19|stat.ML:2026-10-19",
+      "updatedAt": "2026-10-19T06:11:55.308Z",
+      "count": 74
+    },
+    {
+      "date": "2026-10-16",
+      "status": "complete",
+      "sourceBatch": "cs.AI:2026-10-16|cs.CL:2026-10-16|cs.CV:2026-10-16|cs.LG:2026-10-16|cs.RO:2026-10-16|eess.IV:2026-10-16|stat.ML:2026-10-16",
+      "updatedAt": "2026-10-16T06:15:49.224Z",
+      "count": 118
+    },
+    {
+      "date": "2026-10-15",
+      "status": "complete",
+      "sourceBatch": "cs.AI:2026-10-15|cs.CL:2026-10-15|cs.CV:2026-10-15|cs.LG:2026-10-15|cs.RO:2026-10-15|eess.IV:2026-10-15|stat.ML:2026-10-15",
+      "updatedAt": "2026-10-15T06:28:20.986Z",
+      "count": 156
+    },
+    {
+      "date": "2026-10-14",
+      "status": "complete",
+      "sourceBatch": "cs.AI:2026-10-14|cs.CL:2026-10-14|cs.CV:2026-10-14|cs.LG:2026-10-14|cs.RO:2026-10-14|eess.IV:2026-10-14|stat.ML:2026-10-14",
+      "updatedAt": "2026-10-15T06:28:19.410Z",
+      "count": 419
+    },
+    {
+      "date": "2026-10-13",
+      "status": "no_new_listing",
+      "sourceBatch": "cs.AI:2026-10-12|cs.CL:2026-10-12|cs.CV:2026-10-12|cs.LG:2026-10-12|cs.RO:2026-10-12|eess.IV:2026-10-12|stat.ML:2026-10-12",
+      "updatedAt": "2026-10-13T06:08:54.011Z",
+      "count": 0
+    },
+    {
+      "date": "2026-10-12",
+      "status": "complete",
+      "sourceBatch": "cs.AI:2026-10-12|cs.CL:2026-10-12|cs.CV:2026-10-12|cs.LG:2026-10-12|cs.RO:2026-10-12|eess.IV:2026-10-12|stat.ML:2026-10-12",
+      "updatedAt": "2026-10-12T06:07:03.112Z",
+      "count": 83
+    },
+    {
+      "date": "2026-10-11",
+      "status": "no_new_listing",
+      "sourceBatch": "cs.AI:2026-10-09|cs.CL:2026-10-09|cs.CV:2026-10-09|cs.LG:2026-10-09|cs.RO:2026-10-09|eess.IV:2026-10-09|stat.ML:2026-10-09",
+      "updatedAt": "2026-10-11T06:05:27.870Z",
+      "count": 0
+    },
+    {
+      "date": "2026-10-10",
+      "status": "no_new_listing",
+      "sourceBatch": "cs.AI:2026-10-09|cs.CL:2026-10-09|cs.CV:2026-10-09|cs.LG:2026-10-09|cs.RO:2026-10-09|eess.IV:2026-10-09|stat.ML:2026-10-09",
+      "updatedAt": "2026-10-10T07:37:12.214Z",
+      "count": 0
+    },
+    {
+      "date": "2026-10-09",
+      "status": "complete",
+      "sourceBatch": "cs.AI:2026-10-09|cs.CL:2026-10-09|cs.CV:2026-10-09|cs.LG:2026-10-09|cs.RO:2026-10-09|eess.IV:2026-10-09|stat.ML:2026-10-09",
+      "updatedAt": "2026-10-09T06:07:40.274Z",
+      "count": 114
+    },
+    {
+      "date": "2026-10-08",
+      "status": "complete",
+      "sourceBatch": "cs.AI:2026-10-08|cs.CL:2026-10-08|cs.CV:2026-10-08|cs.LG:2026-10-08|cs.RO:2026-10-08|eess.IV:2026-10-08|stat.ML:2026-10-08",
+      "updatedAt": "2026-10-08T06:12:14.598Z",
+      "count": 127
+    },
+    {
+      "date": "2026-10-07",
+      "status": "complete",
+      "sourceBatch": "cs.AI:2026-10-07|cs.CL:2026-10-07|cs.CV:2026-10-07|cs.LG:2026-10-07|cs.RO:2026-10-07|eess.IV:2026-10-07|stat.ML:2026-10-07",
+      "updatedAt": "2026-10-07T06:11:11.952Z",
+      "count": 109
+    },
+    {
+      "date": "2026-10-06",
+      "status": "complete",
+      "sourceBatch": "cs.AI:2026-10-06|cs.CL:2026-10-06|cs.CV:2026-10-06|cs.LG:2026-10-06|cs.RO:2026-10-06|eess.IV:2026-10-06|stat.ML:2026-10-06",
+      "updatedAt": "2026-10-06T09:02:17.391Z",
+      "count": 107
+    }
+  ]
+}
