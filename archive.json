@@ -1,6 +1,13 @@
 {
   "archive": [
     {
+      "date": "2026-10-28",
+      "status": "complete",
+      "sourceBatch": "cs.AI:2026-10-28|cs.CL:2026-10-28|cs.CV:2026-10-28|cs.LG:2026-10-28|cs.RO:2026-10-28|eess.IV:2026-10-28|stat.ML:2026-10-28",
+      "updatedAt": "2026-10-28T06:08:12.527Z",
+      "count": 85
+    },
+    {
       "date": "2026-10-27",
       "status": "complete",
       "sourceBatch": "cs.AI:2026-10-27|cs.CL:2026-10-27|cs.CV:2026-10-27|cs.LG:2026-10-27|cs.RO:2026-10-27|eess.IV:2026-10-27|stat.ML:2026-10-27",
