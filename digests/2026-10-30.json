@@ -1,0 +1,70 @@
+{
+  "digest": {
+    "date": "2026-10-30",
+    "timezone": "Asia/Shanghai",
+    "status": "no_new_listing",
+    "statusNote": "北京时间 2026-10-30 14:04 已核查七个分类的官方 new 与 recent，全部 14 个页面均以带实时检查参数及 no-cache 请求读取成功（HTTP 200，响应日期为今日、Age 为 0）。最新官方 listing 及 recent 首日均仍为 2026-10-28；该完整批次已于 10 月 28 日处理，本次未发现未处理的新批次。当前 New submissions 按 cs.CV、cs.AI、cs.LG、cs.RO、cs.CL、stat.ML、eess.IV 顺序分别为 127、95、149、76、55、15、5 条，合计 522 条，按 arXiv ID 去重后 522 篇，各类 New ID 均包含于对应 recent；这些属于已处理的历史批次，不计作今日新增。categories.newCount 记录当前官方列表数量；counts 仅记录本次未处理新批次：去重前 0、去重后 0、相关 0、收录 0。今日不重复生成 Top3 或趋势，不将旧论文冒充新增。来源访问成功，并非抓取失败；无新批次无需重复摘要筛选。继续排除主要研究自动驾驶的论文，包括驾驶世界模型，保留所有历史归档。",
+    "sourceBatch": "cs.AI:2026-10-28|cs.CL:2026-10-28|cs.CV:2026-10-28|cs.LG:2026-10-28|cs.RO:2026-10-28|eess.IV:2026-10-28|stat.ML:2026-10-28",
+    "checkedAt": "2026-10-30T06:04:58.825Z",
+    "selectionPolicy": "new_submissions_only",
+    "categories": [
+      {
+        "category": "cs.CV",
+        "officialDate": "2026-10-28",
+        "newCount": 127,
+        "sourceUrl": "https://arxiv.org/list/cs.CV/new",
+        "state": "verified"
+      },
+      {
+        "category": "cs.AI",
+        "officialDate": "2026-10-28",
+        "newCount": 95,
+        "sourceUrl": "https://arxiv.org/list/cs.AI/new",
+        "state": "verified"
+      },
+      {
+        "category": "cs.LG",
+        "officialDate": "2026-10-28",
+        "newCount": 149,
+        "sourceUrl": "https://arxiv.org/list/cs.LG/new",
+        "state": "verified"
+      },
+      {
+        "category": "cs.RO",
+        "officialDate": "2026-10-28",
+        "newCount": 76,
+        "sourceUrl": "https://arxiv.org/list/cs.RO/new",
+        "state": "verified"
+      },
+      {
+        "category": "cs.CL",
+        "officialDate": "2026-10-28",
+        "newCount": 55,
+        "sourceUrl": "https://arxiv.org/list/cs.CL/new",
+        "state": "verified"
+      },
+      {
+        "category": "stat.ML",
+        "officialDate": "2026-10-28",
+        "newCount": 15,
+        "sourceUrl": "https://arxiv.org/list/stat.ML/new",
+        "state": "verified"
+      },
+      {
+        "category": "eess.IV",
+        "officialDate": "2026-10-28",
+        "newCount": 5,
+        "sourceUrl": "https://arxiv.org/list/eess.IV/new",
+        "state": "verified"
+      }
+    ],
+    "counts": {
+      "beforeDedup": 0,
+      "afterDedup": 0,
+      "relevant": 0,
+      "selected": 0
+    },
+    "papers": [],
+    "trends": []
+  }
+}
