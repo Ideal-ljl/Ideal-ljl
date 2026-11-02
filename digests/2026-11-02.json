@@ -1,0 +1,4601 @@
+{
+  "digest": {
+    "date": "2026-11-02",
+    "timezone": "Asia/Shanghai",
+    "status": "complete",
+    "statusNote": "本次按 Asia/Shanghai 2026-11-02 归档，完整覆盖官方 2026-11-02 当日批次，并补读 2026-10-30 晚于此前核查时点发布、尚未处理的批次。最终七类 new/recent 全部于北京时间 14:00–14:02 成功读取；11月2日 new 的 IDs/标题/摘要与准备阶段逐对象一致，recent 同日非 cross-list IDs 与 new 精确匹配。10月30日从 recent 对应日期段恢复，逐条排除明确 cross-list 标记并核对 primary category，全部817篇摘要均由官方 arXiv API读取；不是把 recent 含cross-list总数当new。官方日期没有10月29日批次。按 cs.CV、cs.AI、cs.LG、cs.RO、cs.CL、stat.ML、eess.IV 顺序：11月2日 new 为76、98、111、60、46、12、18条，去重前421、去重后421、相关及收录82篇；10月30日补批为197、158、213、109、108、24、8条，去重前817、去重后817、相关及收录157篇。两批跨分类、跨批次按无版本 arXiv ID 合并去重前1238、去重后1238，无批间重复，也无历史已收录ID重复；本次相关及收录共239篇。categories.officialDate/newCount仅表示最新11月2日官方new；counts表示上述两批合并结果，sourceBatch显式列出两日全部14个分类日期对。每篇推荐理由前标明当日或补读批次；published是可取得的首次提交日期，不等于listing日期，未取得则null。摘要筛选排除主要自动驾驶（含驾驶世界模型），一般纯文本推理RL不因带RL标签纳入；行动agent的工具/GUI强化学习与机器人实机研究在摘要中作区分。所有论文依据官方摘要，不下载PDF；2–5条趋势和Top3仅针对本次真实收录。保留10月30日当时无新批次的真实检查记录及全部既有历史，不追溯改写。",
+    "sourceBatch": "cs.AI:2026-10-30|cs.AI:2026-11-02|cs.CL:2026-10-30|cs.CL:2026-11-02|cs.CV:2026-10-30|cs.CV:2026-11-02|cs.LG:2026-10-30|cs.LG:2026-11-02|cs.RO:2026-10-30|cs.RO:2026-11-02|eess.IV:2026-10-30|eess.IV:2026-11-02|stat.ML:2026-10-30|stat.ML:2026-11-02",
+    "checkedAt": "2026-11-02T06:10:42.704+00:00",
+    "selectionPolicy": "new_submissions_only",
+    "categories": [
+      {
+        "category": "cs.CV",
+        "officialDate": "2026-11-02",
+        "newCount": 76,
+        "sourceUrl": "https://arxiv.org/list/cs.CV/new",
+        "state": "verified"
+      },
+      {
+        "category": "cs.AI",
+        "officialDate": "2026-11-02",
+        "newCount": 98,
+        "sourceUrl": "https://arxiv.org/list/cs.AI/new",
+        "state": "verified"
+      },
+      {
+        "category": "cs.LG",
+        "officialDate": "2026-11-02",
+        "newCount": 111,
+        "sourceUrl": "https://arxiv.org/list/cs.LG/new",
+        "state": "verified"
+      },
+      {
+        "category": "cs.RO",
+        "officialDate": "2026-11-02",
+        "newCount": 60,
+        "sourceUrl": "https://arxiv.org/list/cs.RO/new",
+        "state": "verified"
+      },
+      {
+        "category": "cs.CL",
+        "officialDate": "2026-11-02",
+        "newCount": 46,
+        "sourceUrl": "https://arxiv.org/list/cs.CL/new",
+        "state": "verified"
+      },
+      {
+        "category": "stat.ML",
+        "officialDate": "2026-11-02",
+        "newCount": 12,
+        "sourceUrl": "https://arxiv.org/list/stat.ML/new",
+        "state": "verified"
+      },
+      {
+        "category": "eess.IV",
+        "officialDate": "2026-11-02",
+        "newCount": 18,
+        "sourceUrl": "https://arxiv.org/list/eess.IV/new",
+        "state": "verified"
+      }
+    ],
+    "counts": {
+      "beforeDedup": 1238,
+      "afterDedup": 1238,
+      "relevant": 239,
+      "selected": 239
+    },
+    "papers": [
+      {
+        "id": "2610.40748",
+        "title": "WorldBridge: Bridging Video and Action for Task Generalization in World Action Models",
+        "published": null,
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "世界模型",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40748",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40748",
+        "summaryZh": "将世界动作模型的跨任务泛化拆分为视频预测泛化与视频到动作的落地能力，并以独立视频/动作专家、结构化注意力和联合流匹配构建 WorldBridge。在 RoboTwin 2.0 的分布外任务上，仅分布内视频动作监督的成功率为25.07%；加入目标任务无动作视频后为55.90%，再加入每任务一条带动作示范后为70.70%。",
+        "relevanceZh": "直接研究视频世界模型如何转化为可执行机器人动作，以及异构机器人和人类第一视角数据的利用。",
+        "recommendationZh": "【2026-11-02 当日批次】视频覆盖与稀疏动作监督的对照实验有助于区分世界模型能力和动作落地瓶颈，适合设计WAM数据策略。",
+        "topRank": 1,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41446",
+        "title": "Beyond Trial-and-Error: A Geospatial-Guided Active Reasoning Framework for Robust Aerial Vision-and-Language Navigation",
+        "published": null,
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "VLN / UAV 导航",
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41446",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41446",
+        "summaryZh": "GeoReasoner针对城市空中VLN中小目标与相似干扰物问题，先通过地理空间推理建立区域先验、缩小目标假设空间，再主动探索以采集能够区分候选的证据，最后以一致性感知验证对互补证据进行对抗式评估，减少错误提前停止。在真实世界CityNav基准上，其达到摘要所述零样本方法最佳水平，并能与监督方法竞争。",
+        "relevanceZh": "与UAV语言导航直接对应，重点从被动累积观察转向有目的的假设检验与停止判断。",
+        "recommendationZh": "【2026-11-02 当日批次】优先推荐：区域先验、主动消歧、反证式确认构成完整的导航决策链，可对照现有空中VLN系统逐模块评估。",
+        "topRank": 2,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40799",
+        "title": "CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents",
+        "published": null,
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "具身智能",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40799",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40799",
+        "summaryZh": "提出小型开放VLM的代码即策略后训练流程：先用合成轨迹进行SFT，再以多轮RL学习机器人API调用。训练期物理critic使用仿真特权状态，将终局成功信号分配到各次请求；执行策略不读取特权状态。Qwen3.5-4B在LIBERO上的成功率由SFT后的55.4%升至RL后的73.8%，并展示仿真适配后的实机运行。",
+        "relevanceZh": "属于具身agent多轮强化学习与物理动作信用分配，执行时不依赖VLA。",
+        "recommendationZh": "【2026-11-02 当日批次】值得关注延迟物理后果下的请求级信用分配，以及小模型由接口对齐到闭环能力的训练路径。",
+        "topRank": 3,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.37799",
+        "title": "DexSuite: An All-in-One Framework for Dexterous Manipulation Across Arms, Hands, and Tasks",
+        "published": "2026-10-27",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.37799",
+        "pdfUrl": "https://arxiv.org/pdf/2610.37799",
+        "summaryZh": "DexSuite基于Genesis整合灵巧仿真、遥操作、模拟触觉及评测，提供30任务、10机械臂和12末端执行器的大量组合。建立16种任务-形态基准，并发布4700段来自人类、脚本和学习策略的成功示范。",
+        "relevanceZh": "跨手臂/手形态的灵巧学习基础设施。",
+        "recommendationZh": "【2026-10-30 补读批次】统一环境接口与采集评测流程有助于跨形态公平比较。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.37801",
+        "title": "An Empirical Study of Wrist-Target Construction and Joint-Angle Limits in Humanoid Arm Retargeting",
+        "published": "2026-10-27",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.37801",
+        "pdfUrl": "https://arxiv.org/pdf/2610.37801",
+        "summaryZh": "比较人形手臂重定向中按演示臂方向构造腕目标和伸展归一化目标，发现目标构造本身显著影响关节触限、跟踪与力矩。多次记录及H1-2硬件重放支持将目标几何和姿态偏好分开评估。",
+        "relevanceZh": "人类示范转机器人数据的动作可行性。",
+        "recommendationZh": "【2026-10-30 补读批次】适合排查重定向数据触限问题，而不应全部归因姿态匹配损失。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.37806",
+        "title": "TACOS: Terrain-Aware COntact Supervision for Visual Footstep Planning",
+        "published": "2026-10-27",
+        "categories": [
+          "cs.RO",
+          "cs.CV"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.37806",
+        "pdfUrl": "https://arxiv.org/pdf/2610.37806",
+        "summaryZh": "TACOS从腿式状态估计因子图残差定义足接触不稳定评分，投影到先前图像训练密集视觉预测器。独立接触标注和户外运行均优于所比监督信号，森林实测可处理泥地、植被等非几何地形。",
+        "relevanceZh": "以真实身体反馈自监督学习可行落足感知。",
+        "recommendationZh": "【2026-10-30 补读批次】监督信号与后续执行风险一致，比任意视觉标签更贴近动作。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.37818",
+        "title": "GOFish: Full Field-of-View Gaussian Splatting and Mesh Extraction",
+        "published": "2026-10-27",
+        "categories": [
+          "cs.CV",
+          "cs.GR",
+          "cs.RO"
+        ],
+        "topics": [
+          "具身智能",
+          "世界模型"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.37818",
+        "pdfUrl": "https://arxiv.org/pdf/2610.37818",
+        "summaryZh": "GOFish直接从鱼眼图像训练三维高斯表面重建，可渲染超过180度视场并提取对齐碰撞网格。校准增密、Mip滤波和广角外观建模减弱像素模糊及镜头衰减影响；在200/205度基准上较最佳既有方法PSNR提高2.28/1.97 dB，并改善网格质量。",
+        "relevanceZh": "面向机器人宽视场传感器的仿真就绪数字孪生，同时提供实时观察与碰撞几何，并非主要驾驶研究。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐在机器人sim-to-real环境重建中评估完整视场与碰撞网格，避免只有渲染没有物理表面的资产。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.37865",
+        "title": "Echo: Scaling Visual Reinforcement Learning with Off-policy Experience",
+        "published": "2026-10-27",
+        "categories": [
+          "cs.RO",
+          "cs.AI"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.37865",
+        "pdfUrl": "https://arxiv.org/pdf/2610.37865",
+        "summaryZh": "Echo用状态辅助策略模仿不断更新的视觉策略，廉价收集无需渲染的经验，再通过共享特权critic离线值学习提升视觉策略。初步Genesis移动与灵巧任务中，相比所测基线减少到达参考回报时间并提高峰值。",
+        "relevanceZh": "直接视觉RL的计算效率与离策略经验扩展。",
+        "recommendationZh": "【2026-10-30 补读批次】反向蒸馏避免先训练教师再模仿的差距，同时节约视觉推理和渲染。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.37891",
+        "title": "When More Planning Hurts: Learned Planners for World Models",
+        "published": "2026-10-27",
+        "categories": [
+          "cs.RO",
+          "cs.AI",
+          "cs.LG"
+        ],
+        "topics": [
+          "世界模型",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.37891",
+        "pdfUrl": "https://arxiv.org/pdf/2610.37891",
+        "summaryZh": "在PushT小规模留出场景比较学习动作更新器与Adam、iCEM、LePlanner，作者方法未达到预定成本标准，且增加局部规划更新虽降低潜模型成本，却在部分场景使成功变失败。开放轨迹与成本核算。",
+        "relevanceZh": "检验世界模型规划优化与真实任务目标的失配。",
+        "recommendationZh": "【2026-10-30 补读批次】有价值的受限负结果，但16场景证据不能推广为“更多规划必然更差”。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.37917",
+        "title": "What Actually Matters? A Paired Evaluation of Inference Settings for $π_{0.5}$ on BEHAVIOR-1K",
+        "published": "2026-10-27",
+        "categories": [
+          "cs.RO",
+          "cs.AI",
+          "cs.CV",
+          "cs.LG"
+        ],
+        "topics": [
+          "VLA"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.37917",
+        "pdfUrl": "https://arxiv.org/pdf/2610.37917",
+        "summaryZh": "对微调π0.5在BEHAVIOR-1K全部100任务开展配对评测，检验已有推理和数据采集策略是否跨多样环境泛化。基础模型公开测试Q-score为0.39，结果显示策略收益并不普遍迁移。",
+        "relevanceZh": "大型家庭任务上的VLA部署评估。",
+        "recommendationZh": "【2026-10-30 补读批次】强调跨任务配对而不是从小基准直接外推推理设置。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.37926",
+        "title": "GARDEN: Generalist Autonomous Reward Design Through Evidence Navigation for Cooperative Multi-Agent Reinforcement Learning",
+        "published": "2026-10-27",
+        "categories": [
+          "cs.AI",
+          "cs.MA",
+          "eess.SY"
+        ],
+        "topics": [
+          "具身智能",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.37926",
+        "pdfUrl": "https://arxiv.org/pdf/2610.37926",
+        "summaryZh": "GARDEN让LLM奖励工程师检查环境代码、训练记录和agent行为，为一组协作场景开发可原样迁移的奖励程序，固定学习算法与最终选择规则。未见Overcooked布局任务回报提升，SMAX场景平均胜率从51.0%升至89.9%，并在匹配候选/试验预算下优于固定诊断与奖励反思基线。",
+        "relevanceZh": "关联多agent协作策略学习及跨场景奖励设计，不是主要自动驾驶研究。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐关注“一套奖励跨多个场景复用”而非单场景过拟合，以及固定训练与选择预算的对照。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.37929",
+        "title": "3D Occupancy-Language Fields from mmWave Radar",
+        "published": "2026-10-27",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.37929",
+        "pdfUrl": "https://arxiv.org/pdf/2610.37929",
+        "summaryZh": "TextRadar从全景雷达构建带尺度相关语言特征的3D占据场，通过单帧蒸馏与雷达位姿注册实现新场景纯雷达重建和开放语言查询。七栋建筑约2万同步观测验证，对结构/材质的语言迁移好于颜色和文字。",
+        "relevanceZh": "开放词汇机器人空间记忆与非视觉环境感知。",
+        "recommendationZh": "【2026-10-30 补读批次】可为低可视条件的语义导航提供表示基础，摘要未报告闭环导航。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.37974",
+        "title": "FORGE: Feasible Online Reduced-Order Reference Generation and Whole-Body Execution for Agile Humanoid Locomotion",
+        "published": "2026-10-27",
+        "categories": [
+          "cs.RO",
+          "cs.LG"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.37974",
+        "pdfUrl": "https://arxiv.org/pdf/2610.37974",
+        "summaryZh": "FORGE先在单刚体动力学结合全身运动学的简化空间学习指令条件参考生成器，再冻结它在线生成参考训练全阶跟踪策略。单套策略在G1实现多方向速度、跳跃和连续指令切换。",
+        "relevanceZh": "人形参考生成与分层策略学习。",
+        "recommendationZh": "【2026-10-30 补读批次】动力学可行的在线参考提供比固定动作库更广的控制覆盖。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.37983",
+        "title": "Hierarchical Diffusion for Camera-controlled Autoregressive Video Generation",
+        "published": "2026-10-27",
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "世界模型"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.37983",
+        "pdfUrl": "https://arxiv.org/pdf/2610.37983",
+        "summaryZh": "WanAR+FixAR把相机控制生成改写为视图变换与补全，并用分层长上下文去噪抑制自回归漂移：先根据近期历史生成，再借助时间稀疏的长历史细化。在RealEstate10k和DL3DV上改善长视频的时序与相机几何一致性。",
+        "relevanceZh": "为可探索三维世界模型提供相机控制与长历史一致性机制。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐局部生成/全局修正的分解，作为动作条件世界模型降低长期漂移的参考。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38000",
+        "title": "Self-Labeled Preference Transfer for Steerable Robot Manipulation",
+        "published": "2026-10-27",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "VLA",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38000",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38000",
+        "summaryZh": "SPT联合训练偏好条件动作与偏好识别，再冻结识别器给未标注目标示范自标注用于微调。相比直接微调，可保留抓取位置等执行偏好同时提高任务成功，实机两种迁移中偏好遵循由52.5%提高到92.5%。",
+        "relevanceZh": "机器人执行偏好迁移与可控VLA。",
+        "recommendationZh": "【2026-10-30 补读批次】适合避免新任务适配抹掉旧偏好控制能力。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38027",
+        "title": "METATRON: A Promptable Whole-Body Execution Layer for Humanoids",
+        "published": "2026-10-27",
+        "categories": [
+          "cs.RO",
+          "cs.AI"
+        ],
+        "topics": [
+          "机器人策略 / RL",
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38027",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38027",
+        "summaryZh": "Metatron以冻结生成式全身策略接受身体目标、速度与风格混合提示，外层有状态代码技能把任务意图变成逐步提示，编码agent可改技能而不重训策略。G1展示行走、恢复、拾取和坐家具等。",
+        "relevanceZh": "可编程技能层连接通用人形动作能力与agent。",
+        "recommendationZh": "【2026-10-30 补读批次】把学得运动能力转为可复用执行接口，减少逐任务策略训练。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38034",
+        "title": "Learning from Relative Action Credit for Escaping Local Minima",
+        "published": "2026-10-27",
+        "categories": [
+          "cs.LG",
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL",
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38034",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38034",
+        "summaryZh": "论文研究PPO在长时接触操作中停留于局部解的问题，认为仅依赖状态价值和回合结果的信用分配难以区分同一状态下动作优劣。作者加入动作条件价值critic，将实际动作与同状态采样替代动作比较，再结合GAE与探索噪声界。摘要展示该扩展能在相同探索与训练预算下逃离平台期、完成精确插销，而原始PPO未能完成。",
+        "relevanceZh": "直接针对无需演示或预训练先验、仅靠交互学习的机器人操作策略。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐关注局部动作相对信用这一机制；证据聚焦精确插销，不宜泛化为全部长时操作问题的解决方案。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38095",
+        "title": "Nemotron 3.5 Super and Lightning: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Models for Agentic AI",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.CL",
+          "cs.AI",
+          "cs.LG"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38095",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38095",
+        "summaryZh": "报告介绍Nemotron 3.5 Super与Lightning混合Mamba-Transformer MoE模型，前者120B总参数/12B激活并支持多模态，后者30B/3B。训练结合蒸馏、长上下文、监督微调及RLVR/RLHF；Super另含软件工程agent中间训练、多教师on-policy蒸馏和交互工具环境。摘要报告Super在SWE-bench Pro达51.78%，并讨论并行agent、自验证与推测解码效率。",
+        "relevanceZh": "明确覆盖交互式工具智能体的RLVR/RLHF和后训练，为action agent训练管线与部署成本提供参考；不是具身或VLA性能报告。",
+        "recommendationZh": "【2026-10-30 补读批次】建议区分agent中间训练、RL和蒸馏各阶段贡献，尤其关注不同工具harness下的鲁棒性，而非仅看模型规模或吞吐量。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38101",
+        "title": "AI-Driven Digital Twin Framework for Warehouse Logistics Automation Optimization",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.AI"
+        ],
+        "topics": [
+          "具身智能",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38101",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38101",
+        "summaryZh": "将RL产品动态摆放agent集成到FlexSim仓库数字孪生，通过资产管理壳连接学习代理、物理资产与仿真，建模四区域仓库及叉车搬运。实验报告平均拣货时间降低29.66%、吞吐量提升35.42%、行程降低18.54%。",
+        "relevanceZh": "关联具身物流系统中基于环境反馈的决策学习和数字孪生训练。",
+        "recommendationZh": "【2026-10-30 补读批次】适合关注策略与仓库仿真资产接口；摘要主要验证摆放决策而非低层机器人导航或抓取。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38104",
+        "title": "Same Label, Different Interface: Beyond Action-Space Labels in Robot Learning",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.RO",
+          "cs.LG",
+          "eess.SY"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38104",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38104",
+        "summaryZh": "在相同学习器和预算下比较五种关节动作接口，发现仅改变物理缩放或平滑即可大幅改变接触任务结果；即使匹配局部力矩增益，位置/速度接口仍有反馈动力学差异。",
+        "relevanceZh": "机器人动作空间实验归因和接口设计。",
+        "recommendationZh": "【2026-10-30 补读批次】报告实际执行路径比只说“位置动作/速度动作”更能保证公平比较。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38120",
+        "title": "Post-Training Large Language Models with LLMON",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.AI",
+          "cs.LG"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38120",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38120",
+        "summaryZh": "LLMON后训练用显式对象标记分离指令与被动数据，并要求按标识符执行。构造4.6B token含通用、RAG和工具调用数据及干扰变体，两个Granite模型经SFT与RL后，所测间接注入攻击成功率从53–100%降至0.02–5.6%，并保持一般能力；注意力分析诊断其结构化输入处理变化。",
+        "relevanceZh": "面向工具执行agent的RL后训练与指令/数据边界，而非单纯输出风格对齐。",
+        "recommendationZh": "【2026-10-30 补读批次】可作为行动安全训练接口参考；结果绑定模型和基准，不能宣称普遍消除注入风险。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38153",
+        "title": "StepControl: Long-Horizon Human Motion Generation from Foot-Contact Schedules",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38153",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38153",
+        "summaryZh": "StepControl以未来左右脚二值接触时间表控制自回归扩散生成全身动作，无需根姿态、身体目标或语义提示。专门交叉注意力与classifier-free guidance注入接触事件，混合噪声日程和预热稳定长程生成，支持步频、停走、跛行和双脚跳等编辑。",
+        "relevanceZh": "接触时序是具身运动生成的重要控制接口，具有动作先验研究价值；摘要未验证机器人执行。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐极简接触条件与长程稳定性设计，可进一步检验生成动作的动力学可执行性。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38199",
+        "title": "Embodied at Sea: Imitation Learning for Multi-Task Underwater Manipulation",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.RO",
+          "cs.LG"
+        ],
+        "topics": [
+          "VLA",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38199",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38199",
+        "summaryZh": "水下操作研究采集平静/湍流数据并比较多种VLA本体观测配置；池中1260次有效实机回合与海上考古/保护案例均显示强领域差异。海试中ACT整体47.9%成功，SmolVLA为7.9%，并开放数据采集训练部署工具。",
+        "relevanceZh": "VLA与模仿策略在水下真实环境迁移。",
+        "recommendationZh": "【2026-10-30 补读批次】结果提示通用模型并非天然优于专用策略，需独立场景验证。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38204",
+        "title": "Two Birds with One Stone: Skill-Augmented Generation via Unified Retrieval and Utilization",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.CL"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38204",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38204",
+        "summaryZh": "Skill-Uni 以统一强化学习框架联合优化技能检索和技能使用，让同一模型生成式检索相关外部技能并利用其完成任务。训练先进行指令微调预热，再用GRPO优化；摘要在五项技能相关基准上报告相对基础Qwen3-4B和LLaMA3.1-8B平均提升66.59%与34.82%，并兼容不同技能检索引擎。",
+        "relevanceZh": "将技能选择纳入GRPO策略，与层次化行动智能体的高层技能调度有关；摘要没有声称学得机器人运动技能。",
+        "recommendationZh": "【2026-10-30 补读批次】适合分析检索与执行的联合奖励如何避免选对技能但用错技能，需在具身技能库上另做迁移验证。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38221",
+        "title": "CuraEval: Evaluating Demonstration Curation on Mixed-Skill Robot Data",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.RO",
+          "cs.AI"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38221",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38221",
+        "summaryZh": "CuraEval在混合技能示范上以定量分析和等大小随机/全数据基线比较数据筛选，发现部分复杂分数近似轨迹长度，筛选收益受报告与评测协议影响。Holm校正后未发现所测筛选条件显著优于全数据，但区间仍允许有用收益。",
+        "relevanceZh": "机器人模仿学习数据筛选的可复现评估。",
+        "recommendationZh": "【2026-10-30 补读批次】强调强简单基线和评测协议，避免仅凭单次筛选增益下结论。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38233",
+        "title": "HERON: Real-Time Obstacle-Aware Reachability Maps for Mobile Manipulators",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38233",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38233",
+        "summaryZh": "HERON以cuRobo计算的可达图训练3D U-Net，从实时深度预测2cm分辨率障碍感知机械臂可达性，再在Jetson以INT8部署。2.56m立方区域平均115ms预测，主要精度下降在工作空间边界。",
+        "relevanceZh": "学习几何可达性以支持移动操作决策。",
+        "recommendationZh": "【2026-10-30 补读批次】将昂贵运动学计算离线蒸馏成机载实时查询。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38234",
+        "title": "SimRetract: Zero-Shot Sim-to-Real Robotic Assistance for Retractor Take-Over in Open Surgery",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38234",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38234",
+        "summaryZh": "SimRetract仅用模拟示范训练机器人接过外科牵开器并维持牵拉，采用器械掩码、几何输入、偏离恢复和执行余量设计。零样本体模50次中90%抓取、78%保持，消融显示视觉掩码对sim-to-real很关键。",
+        "relevanceZh": "医疗辅助接触任务的模仿学习和零样本迁移。",
+        "recommendationZh": "【2026-10-30 补读批次】证据为体模而非临床，适合研究迁移导向表示和恢复数据。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38238",
+        "title": "Variational Consequence-Driven Offline Reinforcement Learning",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.LG"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38238",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38238",
+        "summaryZh": "StBR 认为离线RL只约束动作分布不够：微小动作偏移也可能导致完全不同的状态转移。方法改为约束策略诱导的后果分布，并用反映转移动力学的潜在空间闭式散度，近似原本不可直接计算的后果分布散度。理论分析给出代理关系的界，策略在动力学敏感区域受到更强约束；摘要报告在多类离线RL基准上改善表现。",
+        "relevanceZh": "直接研究离线策略的分布外行动风险与动力学一致性。",
+        "recommendationZh": "【2026-10-30 补读批次】适合把行为正则从“动作像不像数据”推进到“行动后果是否仍在数据支持内”。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38248",
+        "title": "MATCH: Execution-Aware Hierarchical Reinforcement Learning for Vision-and-Language Navigation in Continuous Environment",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "VLN / UAV 导航",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38248",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38248",
+        "summaryZh": "MATCH联合学习语言规划器与目标条件原始动作执行器，执行感知拓扑图结合值估计和真实结果记忆，宏奖励平衡路径进展与执行残差。阶段课程最终同步on-policy更新，0.5B模型在R2R-CE/RxR-CE取得强结果并初步实机验证。",
+        "relevanceZh": "执行感知的层次RL用于连续VLN。",
+        "recommendationZh": "【2026-10-30 补读批次】同时优化规划请求和执行器，而非把低层能力当固定常数。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38253",
+        "title": "Transportable Offline Reinforcement Learning in Presence of Unmeasured Confounding",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.LG"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38253",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38253",
+        "summaryZh": "论文研究离线策略部署同时面临域偏移与未观测混杂的情况，用多源数据的互补信息识别目标域因果奖励与转移。框架结合可迁移性理论、工具变量、负对照和代理变量，以桥函数方程及有限样本置信集合实施悲观策略优化；给出混杂上下文bandit算法CAT-CCB，以及高斯动力学和线性近似下的CAT-CMDP。理论界显式刻画近似、估计、覆盖和域偏移代价。",
+        "relevanceZh": "属于离线行动策略学习的因果与迁移理论，摘要未提供机器人部署证据。",
+        "recommendationZh": "【2026-10-30 补读批次】适合审计异质示范数据中动作选择混杂带来的策略偏差；使用前需核实结构与完备性识别假设。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38266",
+        "title": "Recursive Self-Improvement in Physical AI: Mechanisms, Evidence, and Evaluation",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "具身智能",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38266",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38266",
+        "summaryZh": "综述物理AI递归自改进，区分学习器能力更新与数据获取、反馈或学习过程本身的修订，提出L0至L3评估量表，并强调接触有效性、恢复、保留和资源成本。",
+        "relevanceZh": "具身agent持续学习及改进机制评估。",
+        "recommendationZh": "【2026-10-30 补读批次】可避免把单回合适应或普通记忆复用夸称为递归自改进。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38291",
+        "title": "Compositional Diffusion Planning with Chunk Selection and Reachability Measure",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "世界模型",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38291",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38291",
+        "summaryZh": "SCD在离线及生成动作块上自监督学习可达性，以可达成本图选择兼容短轨迹，生成桥接并平滑长计划，减少重叠均值造成的多模态不兼容。在OGBench stitching尤其人形迷宫任务上改善成功。",
+        "relevanceZh": "长程生成式机器人规划与片段组合。",
+        "recommendationZh": "【2026-10-30 补读批次】局部动作块可达性比简单重叠平均更符合执行约束。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38318",
+        "title": "What Should a Navigator Remember? Spatiotemporal Memory for Zero-Shot Vision-Language Navigation",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.RO",
+          "cs.AI"
+        ],
+        "topics": [
+          "具身智能",
+          "VLN / UAV 导航"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38318",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38318",
+        "summaryZh": "提出8B级零样本VLN系统，分别保留任务进度、位姿锚定压缩历史和累计几何；观察器总结、推理器选航点或额外视角，几何控制器执行。去除时序记忆大幅增加路径，Go2实机展示走廊/办公室迁移。",
+        "relevanceZh": "小模型零样本VLN的空间-时间记忆设计。",
+        "recommendationZh": "【2026-10-30 补读批次】明确区分保留证据、让推理可访问证据和主动采新观察。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38320",
+        "title": "SSQA: Sibling-Selective Quadtree Attention for Hierarchical Modeling in Perception Tasks",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "具身智能",
+          "VLN / UAV 导航"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38320",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38320",
+        "summaryZh": "SSQA利用导航视觉中的轴向结构先验，将图像token组织为完整四叉树，选择性建模兄弟节点，给出线性复杂度分析并与Mamba2、Quadtree Attention等比较推理速度。摘要报告多项任务中以较低计算成本取得相当或更好结果。",
+        "relevanceZh": "同时面向无人机与其他机器人导航感知，并非仅自动驾驶；可探索机载视觉的高效结构建模。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐核对具体任务与延迟预算，摘要未提供量化数值，不应直接推断实际飞行性能。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38351",
+        "title": "Proprioceptive Finger Force Estimation for Reliable Box Manipulation",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38351",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38351",
+        "summaryZh": "FEEL结合虚拟弹簧标定与混合密度残差网络，从本体历史估计逐指外力及不确定性，不需部署接触传感器。十指0至20N范围RMSE0.251N，箱体抓放实验中力适应提高无损可靠性。",
+        "relevanceZh": "学习力估计用于接触操作反馈。",
+        "recommendationZh": "【2026-10-30 补读批次】可作为降低触觉硬件依赖的闭环方法，实机任务样本为小规模验证。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38357",
+        "title": "CSO: Refining Robotic Policies via Skill Distribution Alignment and Skill-Grained Optimization",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.RO",
+          "cs.LG"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38357",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38357",
+        "summaryZh": "CSO两阶段后训练离散技能策略，先以成功轨迹拒绝采样SFT对齐观测-技能分布，再冻结编码器、按完整技能计算裁剪重要性比率稳定优化。轻量策略LIBERO成功率从80.1%升至97.5%，另有RoboTwin及实机验证。",
+        "relevanceZh": "机器人离散技能强化学习后训练。",
+        "recommendationZh": "【2026-10-30 补读批次】技能级而非token或整轨迹级优化粒度值得比较。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38388",
+        "title": "ELEVATE: Agentic Controller Acquisition from Task Failure for Quadrupedal Manipulation",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "具身智能",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38388",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38388",
+        "summaryZh": "ELEVATE从任务程序反复失败识别缺少的全身控制能力，由编码agent设计并修订RL奖励、课程和终止条件，验证后加入技能库。由一个初始控制器扩展到支撑抬升等技能，仿真训练所得程序和控制器可零样本实机执行。",
+        "relevanceZh": "agent驱动机器人技能获取与持续能力增长。",
+        "recommendationZh": "【2026-10-30 补读批次】把失败从重规划信号升级为学习新控制器的触发器。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38391",
+        "title": "SCOPE: Selective Critical-Step On-Policy Self-Distillation for Agentic Reinforcement Learning",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.AI"
+        ],
+        "topics": [
+          "具身智能",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38391",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38391",
+        "summaryZh": "SCOPE在监督预热后分析自身轨迹，生成逐步事后技能，只在选定错误步骤进行on-policy自蒸馏。有限有符号教师—学生系数稳定辅助更新，并以相对成功的成对长度奖励鼓励高效完成。Qwen2.5-3B在ALFWorld/WebShop达97.7%/85.2%；未见ALFWorld相对GRPO提升23.2个百分点，同时少46.7%交互。",
+        "relevanceZh": "直接针对长时具身/网页行动agent的稀疏结果反馈与选择性信用分配。",
+        "recommendationZh": "【2026-10-30 补读批次】强推荐：把轨迹级经验细化到关键错误步骤，既减少对正确步骤的误导，也兼顾效率。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38400",
+        "title": "When \"No Worries\" Went Wrong: HRI Lessons for Foundation-Model Robots",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38400",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38400",
+        "summaryZh": "基于三年HRI工程经验总结注意、知识、承诺、具身时序和动作权限五类教训，并提出改变单一交互前提、追踪到决策或执行边界的TRACE审查方法。重点是基础模型能力并不自动保证情境变化传到最终动作。",
+        "relevanceZh": "具身agent人机交互与系统责任边界。",
+        "recommendationZh": "【2026-10-30 补读批次】适合审计看似合理但时序/权限不当的实体行为。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38405",
+        "title": "SpaceAct: Benchmarking 3D Spatial and Temporal Reasoning via Closed-Loop Action and Active Perception",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.RO",
+          "cs.AI"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38405",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38405",
+        "summaryZh": "SpaceAct以积木和机械谜题构造108实例、36任务族的闭环3D时空推理基准，不提供特权坐标，要求主动多视角观察和6DoF动作。诊断发现精确3D状态比参考计划更能弥补失败，碰撞/观察循环占重要比例。",
+        "relevanceZh": "从静态VQA转向物理动作验证的具身推理评测。",
+        "recommendationZh": "【2026-10-30 补读批次】有助于隔离任务规划与空间落地的真实瓶颈。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38439",
+        "title": "Predict the Reward, Not the World: World Reward Models for ML Agents",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.AI",
+          "cs.CL"
+        ],
+        "topics": [
+          "世界模型"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38439",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38439",
+        "summaryZh": "World Reward Models主张对搜索式ML agent直接预测候选程序谁更好，而非预测执行的中间结果。ForeCritic用5000个已执行程序对适配9B决策模型，在12438个保留程序对上选择准确率79.4%；接入三类搜索agent后平均任务时间缩短4.4–7.5倍，同时平均分接近或提高。理论分析说明同输入下经预测结果间接选择不可能优于最佳直接选择器。",
+        "relevanceZh": "面向动作候选筛选与昂贵环境执行的决策模型，提供世界模型目标选择的对照。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐用于思考“需要建模整个世界还是只预测决策收益”；实验为程序执行搜索，不能直接外推为机器人WAM替代方案。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38443",
+        "title": "Skeleton-Guided Geometry-Aware Auto-Labeling for Robotic Grasping: From 4-DoF Learning to 6-DoF Execution",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38443",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38443",
+        "summaryZh": "提出基于骨架几何的自动抓取关键点标注，并训练轻量SkelGG-CNN，进一步用点云准3D骨架扩展到6DoF。多个数据集、仿真和Delta实机验证抓取表现，不依赖人工逐个标注。",
+        "relevanceZh": "几何监督生成与机器人抓取学习。",
+        "recommendationZh": "【2026-10-30 补读批次】适合低标注成本抓取策略，需区分4DoF学习和6DoF几何执行证据。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38508",
+        "title": "SaiVLA-JEPA: Evaluating Future Latent Prediction in JEPA-Conditioned VLA Control",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.RO",
+          "cs.AI"
+        ],
+        "topics": [
+          "VLA",
+          "世界模型"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38508",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38508",
+        "summaryZh": "SaiVLA-JEPA比较无JEPA、当前JEPA条件和附加未来潜预测监督，在10030个配对LIBERO-Plus回合中，当前特征提高成功率，而所测预算下未来监督无显著总体增益。上下文重试收益受更大尝试预算影响，参数适应也无一致优势。",
+        "relevanceZh": "检验潜空间预测目标是否改善闭环VLA。",
+        "recommendationZh": "【2026-10-30 补读批次】负结果提醒不能用潜预测损失或额外重试掩盖真正策略收益。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38513",
+        "title": "Force-Driven Hook Disassembly via Constraint-Aware Object-Centric Reinforcement Learning",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38513",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38513",
+        "summaryZh": "对象中心RL从接触力在线推断挂钩无损拆卸方向，在简化仿真训练后零样本迁移到未知多阶段约束。粒子滤波整合时序方向信念减少冗余探索，四个实机拆卸任务成功率为100%、100%、90%、75%。",
+        "relevanceZh": "力觉驱动的接触策略及跨几何迁移。",
+        "recommendationZh": "【2026-10-30 补读批次】物体中心表示与信念融合可降低对产品模型或示范的依赖。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38636",
+        "title": "Curriculum-Based Deep Reinforcement Learning for Robust Autonomous Rocket Landing under Atmospheric Uncertainty",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.AI"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38636",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38636",
+        "summaryZh": "以课程式PPO学习三维火箭远程接近、柔和下降与综合着陆，在随机环境中纳入风切变、湍流、阵风、参数误差、观测噪声和执行延迟。使用策略迁移、奖励变化后的critic预热、旧任务复习和渐增天气强度。十万次模拟中成功率96.656%，但最强天气组降至88.07%，明确显示复合扰动下的退化。",
+        "relevanceZh": "关联自主飞行系统的课程学习、鲁棒策略与感知执行不确定性；不是自动驾驶研究。",
+        "recommendationZh": "【2026-10-30 补读批次】可参考课程衔接与压力测试设计；证据仅为所设扰动分布的模拟，不能等同真实火箭安全验证。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38657",
+        "title": "Explore Where It Matters: Targeted Exploration for Efficient Rover Adaptation",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.RO",
+          "cs.AI",
+          "cs.LG"
+        ],
+        "topics": [
+          "世界模型",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38657",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38657",
+        "summaryZh": "TERRA以奖励加权预测损失适应仿真预训练世界模型，再学习未来任务相关模型误差预测器指导MPC探索。在严重分布外坡面仿真约五次试验达90%成功，ERNEST火星模拟土坡三至五次实机尝试恢复协调悬挂运动。",
+        "relevanceZh": "物理世界模型部署期适应及目标导向探索。",
+        "recommendationZh": "【2026-10-30 补读批次】优先采集影响任务的误差而非平均模型误差，适合少试错场景。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38661",
+        "title": "Quantize by Doing: Task-Guided Mixed-Precision Quantization of Vision-Language-Action Models",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "VLA"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38661",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38661",
+        "summaryZh": "QbD-VLA用短闭环任务成功率指导混合精度权重/激活分配，并考虑部件量化交互。四种VLA在LIBERO平均约4bit权重和低于6bit激活表现较好，但SIMPLER收益小，实机π0.5失败而X-VLA未检测到损失。",
+        "relevanceZh": "VLA低成本部署与任务驱动量化。",
+        "recommendationZh": "【2026-10-30 补读批次】特别值得借鉴其不回避实机失败，不能仅按仿真成功选量化方案。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38678",
+        "title": "AskStream: When and What to Ask Proactively under Uncertainty in Streaming Video Understanding",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.CV",
+          "cs.CL"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38678",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38678",
+        "summaryZh": "AskStream为流式视频理解加入“询问”动作，避免信息不全时只能无限等待或猜测。基准含438段视频、2714个人工标注时间窗口，覆盖等待、询问和回答三种决策与视频/用户不确定性；最强模型Ask-F1仅52.18%。",
+        "relevanceZh": "与具身助手主动信息获取和人机澄清策略相关，但这里评估视频交互而非物理控制。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐把何时询问与问什么分开评价，为不确定条件下的主动协作设计策略。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38744",
+        "title": "AtomTree: A Hierarchical Framework for State-Aware Embodied Instruction Following with LLMs",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.RO",
+          "cs.AI",
+          "cs.CL"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38744",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38744",
+        "summaryZh": "AtomTree按当前符号状态递增构建子目标-动作树，由LLM决定继续分解或输出落地动作，轻量记忆复用结果。低层动作停滞时回溯父节点并重建子树，ALFRED零样本评估优于此前LLM规划器。",
+        "relevanceZh": "长程具身指令执行的层次闭环规划。",
+        "recommendationZh": "【2026-10-30 补读批次】避免初始一次性完整计划在环境变化后持续漂移。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38882",
+        "title": "Aligning Autoresearch: Co-Improvement between Agents and Humans",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.AI"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38882",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38882",
+        "summaryZh": "围绕人类与自主研究agent共同改进，研究人类在基准构造尤其选题阶段的作用，并用HackBench揭示奖励作弊定位不足。提出通过人类模拟器进行强化学习以改善交互，以及用对齐专家的量规奖励改善文字沟通，形成更符合人类期望的合作研究训练与评估方案。",
+        "relevanceZh": "属于行动型研究agent的人类反馈与交互RL，非单纯静态推理优化。",
+        "recommendationZh": "【2026-10-30 补读批次】可借鉴其把任务能力与人类协作/作弊诊断共同评估的训练思路；摘要没有给出统一量化收益。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38901",
+        "title": "Geometric Time Score Estimators: Bridging Self-Predictive Representations and Generative Occupancy Models For Reinforcement Learning",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.LG"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38901",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38901",
+        "summaryZh": "GTSE 连接自预测表示与生成式占用模型：前者对策略未来状态占用密度估计不佳，后者虽能生成准确样本却难恢复密度。方法沿概率路径学习占用密度估计器，并从中直接提取自预测表示。作者分析表示改善机制，在多种运动和操作任务的目标条件RL中报告相较强基线2–6倍的性能提升，学得表示还可迁移到下游RL任务。",
+        "relevanceZh": "直接针对机器人运动/操作中的目标条件策略学习及未来结果分布表示。",
+        "recommendationZh": "【2026-10-30 补读批次】强推荐：把占用分布的生成能力转成可用于控制的密度与表示，连接目标到达和表征学习。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38903",
+        "title": "Structural-Test Geometry as an Inductive Bias for Partially Observable World Models",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.LG"
+        ],
+        "topics": [
+          "世界模型",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38903",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38903",
+        "summaryZh": "QP 世界模型在训练时利用特权模拟器信息，构造后验边缘化结构测试，以其响应分布定义历史之间的伪度量，再直接对齐潜在空间欧氏距离。六任务诊断中，留出结构变化下，规划成功率较度量解码高26.1个百分点、较结构化belief蒸馏高6.4个百分点。GridWorld显示即使可从表示准确解码结构距离，原生潜在几何仍可能失真。",
+        "relevanceZh": "直接研究部分可观测环境中用于后续控制的世界模型表示。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐其区分“信息可解码”与“几何适合规划”的诊断，并注意训练需要特权模拟器访问。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38926",
+        "title": "OneScene-Bench: Do Vision-Language Models Integrate Evidence Across Views?",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38926",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38926",
+        "summaryZh": "OneScene-Bench控制跨视图物体重叠、局部编辑及空间关系，区分逐图独立处理与真正需要跨视图对应的计数、一致性和空间推理。12个VLM在互补视图计数明显下降，跨视图一致性约50%，即便空间推理表现相对更强。",
+        "relevanceZh": "对应具身智能体将多视角观测整合为统一场景状态的能力。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐用受控重叠与矛盾设置测试地图记忆，避免多图输入成功被误解为完成场景融合。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38967",
+        "title": "Learning Event-based Obstacle Avoidance via Differentiable Simulation",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "VLN / UAV 导航",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38967",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38967",
+        "summaryZh": "提出GPU并行事件仿真器并接入可微物理，使事件帧到控制命令的端到端策略可直接反传训练，不经中间深度估计。四旋翼零样本实飞验证有/无里程计及低光条件下避障。",
+        "relevanceZh": "事件视觉、可微仿真和UAV闭环导航。",
+        "recommendationZh": "【2026-10-30 补读批次】适合研究低延迟感知如何直接服务飞行动作而不是先重建场景。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38980",
+        "title": "Context Compaction for World Models",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.AI"
+        ],
+        "topics": [
+          "世界模型"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38980",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38980",
+        "summaryZh": "将交互世界模型重访区域不一致的问题定义为上下文检索，构建每个episode生成新世界且排除邻帧猜测的基准。提出在agent外围做上下文压缩，并比较四种世界模型设计：无需重训即可检索到上下文窗口距离四倍外的房间，而滑动窗口注意力在自主想象过程中损失大部分检索能力。",
+        "relevanceZh": "关联世界模型长时空间一致性、记忆和基于想象的规划。",
+        "recommendationZh": "【2026-10-30 补读批次】优先推荐对比模型内部缓存与外围上下文管理两条路线，避免把增加窗口当作长期世界记忆的唯一办法。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.38993",
+        "title": "Open-World Object Motion Anticipation via Meta-Learned Semantic Adaptation",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "具身智能",
+          "世界模型"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.38993",
+        "pdfUrl": "https://arxiv.org/pdf/2610.38993",
+        "summaryZh": "元学习图网络利用对象语义、几何和关系历史，少量在线观察后预测未见对象何时开始移动，包括对象间驱动关系。仅仿真训练、无需硬件微调，闭环导航仿真中保持无碰撞并接近高风险最快规划器速度。",
+        "relevanceZh": "开放世界对象动态预测用于行动规划。",
+        "recommendationZh": "【2026-10-30 补读批次】把适应对象运动规律作为导航的主动认知组件。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39044",
+        "title": "Catch It All!: Generalizable Dynamic Catching with a Dexterous Hand",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39044",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39044",
+        "summaryZh": "Catch It All以仿真训练人形灵巧手接取策略，用抓取奖励和安全课程适应形状、变形及弹性不同的投掷物。仅用第一视角单相机，在G1零样本展示九种未见物体的正反手接取。",
+        "relevanceZh": "高动态灵巧操作与sim-to-real泛化。",
+        "recommendationZh": "【2026-10-30 补读批次】强接触不确定性和扭矩限制下的策略训练具有参考价值。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39049",
+        "title": "Reinforcement Learning for the Game of Balatro: A Fast Simulator and Two-Policy Training Approach",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.LG",
+          "cs.AI"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39049",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39049",
+        "summaryZh": "论文为随机、长时域卡牌游戏Balatro构建高速Rust模拟器，并自动与实际游戏客户端比对状态；使用动态合法动作掩码，将策略分为战术关卡策略和战略商店策略，以多agent PPO及跨agent奖励归因联合训练。主实验中首关通过率超过99%，平均最远ante约为3/8；相同奖励下的单策略基线不稳定。作者将剩余差距定位为长期战略规划而非局部战术。",
+        "relevanceZh": "是数字环境中稀疏奖励、长时域行动策略学习，不属于物理机器人。",
+        "recommendationZh": "【2026-10-30 补读批次】可参考策略分解与跨阶段信用分配；摘要并未宣称解决完整游戏，应保留平均3/8阶段的能力边界。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39054",
+        "title": "Robotic Data Inoculation",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39054",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39054",
+        "summaryZh": "Data Inoculation在人类持续遥操作中加入在线训练的残差扰动，将采集引向后续学习策略容易偏离的状态，人类随即提供恢复示范。三个实机任务中，所采数据训练的行为克隆和离线RL改善或保持成功率。",
+        "relevanceZh": "主动提高机器人示范覆盖与恢复数据质量。",
+        "recommendationZh": "【2026-10-30 补读批次】不是等待随机失败再干预，而是在人类控制下有目的地采集易错状态。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39055",
+        "title": "Controlling Continuum Robot Shape in Enclosed Space with Embedded Sensing using IMU and Actuator Feedback",
+        "published": "2026-10-28",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39055",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39055",
+        "summaryZh": "以IMU和执行器反馈训练神经网络重建连续机器人形状，比较5000多个模型的表示、结构、目标和输入选择，实现400Hz形状反馈并在封闭空间控制。单/三段机器人均验证重建和闭环误差。",
+        "relevanceZh": "学习型身体状态估计用于机器人闭环控制。",
+        "recommendationZh": "【2026-10-30 补读批次】可参考无外部视觉时如何选择身体状态学习接口。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39076",
+        "title": "Tactus: Tactile & Pose Sensing Glove for Natural Dexterity Data Collection",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO",
+          "cs.AI",
+          "cs.AR",
+          "cs.LG"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39076",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39076",
+        "summaryZh": "Tactus手套联合轻薄触觉传感和IMU融合手姿追踪，旨在自然操作时同时记录力与遮挡鲁棒姿态。建立跨设备标定/评测协议，最小可检测力0.59N，操作中指尖相对误差11mm，并展示物性估计和滑移检测。",
+        "relevanceZh": "为接触感知策略和世界模型提供人类示范数据基础。",
+        "recommendationZh": "【2026-10-30 补读批次】重点在力和姿态共同保真，而不只是穿戴硬件性能。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39100",
+        "title": "Generating Critic-Guided Synthetic Experience in Latent World Models",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.LG",
+          "cs.AI"
+        ],
+        "topics": [
+          "世界模型",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39100",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39100",
+        "summaryZh": "CGSE 将世界模型用作局部转移生成器，而非长时想象rollout。它从离线策略采样候选动作，在信赖域内依据Q函数一阶近似细化动作，再用冻结潜在世界模型预测后继状态，以critic选出最佳候选，将合成转移加入回放缓冲。方法不增加真实环境交互，也不需要测试时规划器；三个OGBench操作任务上的平均成功率相对提升7.1%。",
+        "relevanceZh": "直接利用世界模型为离线机器人操作策略生成改进训练经验。",
+        "recommendationZh": "【2026-10-30 补读批次】适合真实交互昂贵时的数据增强：以局部转移降低误差累积，同时必须检查critic偏差会否被合成数据放大。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39119",
+        "title": "CAPTURER: A Dexterous Aerial Manipulator for Dynamic and Precise Grasping across Diverse Environments",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "VLN / UAV 导航",
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39119",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39119",
+        "summaryZh": "CAPTURER融合机载状态估计与目标检测、漂移修正、空中平台和机械臂协同规划，以及扰动补偿控制。在室内外静态/动态目标上验证，飞行速度超过1.5m/s时可抓取直径1.5cm标记笔。",
+        "relevanceZh": "无人机主动实体交互和动态空中操作。",
+        "recommendationZh": "【2026-10-30 补读批次】虽非学习策略，任务直接关联航空感知与动作协调。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39125",
+        "title": "Tracking Task Progress Through Errors and Recovery:A Benchmark and Recurrent Distributional Model",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "具身智能",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39125",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39125",
+        "summaryZh": "ReSTEP提供两种操作任务3156回合的阶段与逐帧错误标签，REMORA结合递归视觉记忆、分布式进度预测和因果峰选择跟踪多种进度假设，改善错误、停滞及恢复中的准确性和时间一致性。",
+        "relevanceZh": "机器人长程执行监视与错误恢复判断。",
+        "recommendationZh": "【2026-10-30 补读批次】针对外观相似阶段需要历史消歧的问题提供专门数据。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39147",
+        "title": "Kinematic Causal Attribution: Black-Box Explanations of Motion versus Geometry for 4D Point-Cloud Video Models",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39147",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39147",
+        "summaryZh": "KCA通过黑盒干预区分四维点云动作分类器依赖运动还是形状：冻结局部运动但保留形状，以及用无形状代理保留运动，并用Shapley分解测量交互。对三个骨干及受控任务的审计中，归因份额随真实判别线索变化，不要求跨帧点对应。",
+        "relevanceZh": "为机器人四维感知模型提供运动/几何线索依赖的可解释审计。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐在部署前检查感知模型是否学到应有的动态线索，而不是把单张注意力图当作因果解释。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39167",
+        "title": "EgoContact: Evaluating Physical Intelligence with Egocentric Video",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO",
+          "cs.CV"
+        ],
+        "topics": [
+          "具身智能",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39167",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39167",
+        "summaryZh": "EgoContact收集22500个人工核验第一视角交互事件，含接触前观测、意图和像素精确未来接触点。模型常无法精确定位接触；将其作为既有可供性策略记忆库，实机抓取成功率从16%升至58%。",
+        "relevanceZh": "物理交互先验评测与机器人可供性迁移。",
+        "recommendationZh": "【2026-10-30 补读批次】把人类视频既用作训练也用于检验接触精度。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39180",
+        "title": "EmbodiExp: Compositional Experience Transfer for Embodied Agents",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO",
+          "cs.AI",
+          "cs.CV",
+          "cs.LG"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39180",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39180",
+        "summaryZh": "EmbodiExp以子目标、适用条件、可调策略及可验证结果构建经验，执行时在线组合，已验证结果形成后续经验的前置条件。失败轨迹仍可提供局部成功及应避动作，以冻结经验库折叠协议评估迁移。",
+        "relevanceZh": "具身agent跨任务经验组合和失败复用。",
+        "recommendationZh": "【2026-10-30 补读批次】经验以可验证局部结果为单位，比整段成功轨迹更灵活。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39212",
+        "title": "Event2Reward: Learning Robotic Rewards from Progress Relations",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO",
+          "cs.LG"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39212",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39212",
+        "summaryZh": "Event2Reward把示范归一化时间用于锚定全局进度，并以停滞、倒退和恢复的局部关系监督进度变化，作为势函数奖励。约10万真实执行记录含成功和失败，LIBERO40任务平均比稀疏奖励提高18.16个百分点，实机等预算训练也改善成功。",
+        "relevanceZh": "直接面向机器人RL奖励学习和失败数据利用。",
+        "recommendationZh": "【2026-10-30 补读批次】避免把时间前进误当任务进展，适合长程与精细操作。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39232",
+        "title": "Seeing and Imagining as One: Unified Video Generation and 4D Perception for Embodied World Modeling",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.CV",
+          "cs.RO"
+        ],
+        "topics": [
+          "世界模型",
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39232",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39232",
+        "summaryZh": "GenSight在同一预训练视频DiT中统一视频、深度、执行体分割和首帧相对二维光流，以轻量任务调制在统一速度预测空间联合训练。支持多步未来视频及配套密集预测，也支持从观测视频单步感知；训练跨多机器人与人手交互数据。",
+        "relevanceZh": "直接统一具身世界的感知与想象，强调外观、几何、语义和运动一致性。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐比较共享时空表示是否减少多模块误差，与只评估生成质量的世界模型形成互补。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39251",
+        "title": "Where to Learn and How Far to Roll Out: Efficient Adaptive Training for GUI Agents",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.AI"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39251",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39251",
+        "summaryZh": "提出GUI agent两阶段自适应RL：从专家轨迹建立可恢复的中间检查点，用采样动作分歧挑选学习支点，先做单步RL，再随任务进展在局部、后缀和整轨训练间分配责任。无需重复执行已掌握前缀即可从困难状态训练，在MobileGym和CUA-Gym-Hub相对Vanilla GRPO减少56–61%的环境交互并改善任务表现。",
+        "relevanceZh": "直接解决多步行动agent强化学习的交互效率及训练状态选择。",
+        "recommendationZh": "【2026-10-30 补读批次】值得与机器人reset/状态恢复训练比较：收益依赖可恢复检查点，不能默认在任意真实环境同样可用。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39264",
+        "title": "Online Dense Reinforcement Learning with Planning-Grounding Agent for UI Navigation on Live IOS Apps",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.AI"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39264",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39264",
+        "summaryZh": "在真实运行的iOS应用上进行在线强化学习，将规划agent与UI定位模型解耦。LLM裁判结合逐步进展与终止成功奖励，PPO使用步级优势；GiGPPO利用并发轨迹中视觉相近状态的奖励辅助价值估计稳定。系统支持数百并发虚拟iOS设备，在多个UI基准优于SFT和仅终止奖励训练，并报告跨Android泛化改善。",
+        "relevanceZh": "直接面向数字行动agent的在线PPO、稠密奖励与跨环境策略泛化。",
+        "recommendationZh": "【2026-10-30 补读批次】重点看规划/定位分工和邻域critic如何支持错误恢复；跨平台收益与真实设备控制能力需分别评估。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39267",
+        "title": "RAIBO-Wagon: Real-Time Navigation System for a Legged Robot Towing a Wagon",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL",
+          "世界模型"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39267",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39267",
+        "summaryZh": "RAIBO-Wagon以条件流匹配初始化MPPI，并在学习前向动力学上迭代改进轨迹，兼顾实时性与训练外可行解。四足拖车完整机载系统在狭窄户外40次测试成功85%，总拖载最高40kg。",
+        "relevanceZh": "学习动力学与生成规划联合解决耦合移动操作。",
+        "recommendationZh": "【2026-10-30 补读批次】体现生成模型先验与在线优化互补，且有较完整实机负载验证。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39278",
+        "title": "WorldFlow: Joint Video and 3D Motion Prediction via Large-Scale Pretraining",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.CV",
+          "cs.AI",
+          "cs.RO"
+        ],
+        "topics": [
+          "世界模型",
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39278",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39278",
+        "summaryZh": "WorldFlow以统一混合Transformer和rectified-flow目标联合预测未来视频及查询点三维轨迹，将连续位移token与视频网格对齐。训练使用144万对象级仿真/真实样本，并构建来自11源的1678样本评测；SpatialCog上ADE为0.060米，相对最强外部基线降低54.2%。",
+        "relevanceZh": "显式三维动态与视觉未来联合建模，有助于摆脱仅隐式视频动态或特定机器人动作空间的限制。",
+        "recommendationZh": "【2026-10-30 补读批次】优先推荐：可对照视频世界模型是否真正增强可量化的三维运动预测，且包含flow-only消融。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39279",
+        "title": "CuBot-STT: Simultaneously Transport and Tighten for Lattice-type Modular Reconfiguration Robot",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39279",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39279",
+        "summaryZh": "CuBot-STT将模块搬运与锁紧整合到外部机器人，规划以解析成本下界加专家引导目标条件Q学习残差，再用接触面A*展开可行原语。实机展示11模块自主重构，规划可泛化到训练外规模。",
+        "relevanceZh": "学习辅助的模块机器人动作规划。",
+        "recommendationZh": "【2026-10-30 补读批次】值得关注学习残差与显式连通/站姿约束的组合，而非仅硬件方案。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39280",
+        "title": "Cross-Controller Transfer via In-Context Behavior Adaptation",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39280",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39280",
+        "summaryZh": "通过动作指令及实际运动样例编码控制器行为，让同一策略在上下文中适应六种控制模式和不同增益/柔顺性。实机平均成功率较直接混合数据提高33个百分点，在未见模式及增益下达到50%和52%。",
+        "relevanceZh": "机器人数据跨控制接口迁移。",
+        "recommendationZh": "【2026-10-30 补读批次】相同动作数值可能物理含义不同，行为上下文能避免简单数据汇合的冲突。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39287",
+        "title": "OpenFlyV2: An onboard vision-language-action model for aerial perception and navigation",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "VLA",
+          "VLN / UAV 导航"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39287",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39287",
+        "summaryZh": "OpenFlyV2用共享视觉语言表示统一语义理解、语言落地、空间推理与连续飞行，紧凑动作专家生成短程航点，运动感知记忆和动作先验降低计算量。约7万仿真导航轨迹和6万视觉语言问答用于训练；Orin NX上以10Hz机载生成12航点动作块，无真实飞行训练数据时在四个实机环境取得48%导航成功率。",
+        "relevanceZh": "直接结合机载VLA、航空感知与闭环UAV导航。",
+        "recommendationZh": "【2026-10-30 补读批次】同时报告资源约束、频率和零样本实飞结果，适合关注轻量无人机VLA部署。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39306",
+        "title": "CAD-WAM: Anticipating Geometry for Text-to-CAD Generation",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.CV",
+          "cs.GR"
+        ],
+        "topics": [
+          "世界模型"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39306",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39306",
+        "summaryZh": "CAD-WAM将CAD建模操作视为动作，以中间实体表面点云编码为状态，LLM根据文字目标和当前几何生成下一操作，辅助头预测下一几何状态。每步由CAD内核执行并重新编码反馈；DeepCAD上改善几何准确性和有效性，下一状态监督相对纯动作预测降低平均Chamfer距离13.2%。",
+        "relevanceZh": "将世界—动作耦合具体化为可执行几何操作与状态反馈，虽非机器人控制但具有直接的方法关联。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐用于研究显式下一状态监督如何约束长程动作生成，注意结论限定CAD领域。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39314",
+        "title": "Language-Grounded Force/Torque Pretraining for Extrinsic Contact Perception",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39314",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39314",
+        "summaryZh": "以模拟抓放产生的语言监督对齐双边六轴力矩历史，学习可迁移物理状态表示。冻结编码器在无标签校准后支持实机接触/支撑识别；对预训练未见连接器插装，低秩适配比从头训练更高效。",
+        "relevanceZh": "触觉/力觉物理表征与操作技能迁移。",
+        "recommendationZh": "【2026-10-30 补读批次】可研究语言空间如何组织视觉不易观测的接触状态。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39319",
+        "title": "ProLoop: Progress-Aware Closed-Loop Framework via Structured State Relations for Long-Horizon Robotic Task Planning",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39319",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39319",
+        "summaryZh": "ProLoop用学习的状态关系监视器显式判断子目标持续、偏离或完成，并据此闭环调整长程执行。ALFWorld及实机实验报告成功率整体提高12.94%、交互减少32.3%。",
+        "relevanceZh": "任务进度评估驱动具身agent执行。",
+        "recommendationZh": "【2026-10-30 补读批次】将隐含历史推断转成结构化可检查状态关系。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39324",
+        "title": "MRC-MMAgent: Reinforcement Learning for Multi-Role Collaboration in Multimodal Tool-Using Agents",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39324",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39324",
+        "summaryZh": "MRC-MMAgent将求解、轨迹检查和证据不足后的继续执行构成多角色工具智能体闭环，以成功率、交互有效性和纠错成功共同优化全轨迹策略。无需新增数据，摘要报告在多项基准上超过相应基座。",
+        "relevanceZh": "强化学习优化真实工具使用与自纠正行动链，属于action agent而非仅最终答案RL。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐研究跨角色决策的共同信用分配，检验检查器是否改善证据不足时的后续行动。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39327",
+        "title": "SONIC-K1: Porting a Universal Humanoid Motion Tracker to a Small Humanoid on a Single GPU",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39327",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39327",
+        "summaryZh": "SONIC-K1将通用人形跟踪框架迁移到小型K1，以单共享GPU从头训练并公开权重。仿真跟踪广泛，但实机主要可靠于上肢和慢动作，步行转向仍受限，实验指出动作延迟敏感性。",
+        "relevanceZh": "低计算预算的人形策略迁移。",
+        "recommendationZh": "【2026-10-30 补读批次】诚实报告仿真与实机差距，有助于部署成本和验证优先级判断。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39358",
+        "title": "Before the Next Rollout: Diagnosing Skill Utility Shifts from Policy Updates",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.AI"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39358",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39358",
+        "summaryZh": "研究策略更新如何改变固定技能的边际效用。方法在更新前rollout的固定上下文处，对比技能与对照条件的token偏好变化，并结合优势估计生成奖励导向诊断，只需单步动作前向评分，无需额外更新后rollout。实验显示这些读出能识别效用下降技能，辅助技能进化后提高表现并减少策略与编辑器token消耗。",
+        "relevanceZh": "关联行动agent RL训练中的技能复用、策略—技能非平稳性及训练资源配置。",
+        "recommendationZh": "【2026-10-30 补读批次】可用于诊断“旧技能为什么在新策略上失效”，避免完全依赖过时执行轨迹做技能归因。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39367",
+        "title": "Utility-WAM: Correcting Future-Induced Action Changes",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "世界模型",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39367",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39367",
+        "summaryZh": "Utility-WAM用同一模型未来条件/无未来条件动作差分析预测视频的控制价值：平均收益很小且增加1.7至1.9倍延迟，精细任务可严重退化。残差适配器修正不利速度差，生成前门控跳过75.5%的RoboTwin视频查询，降低38%延迟并保持长程优势；实机60次成功53次。",
+        "relevanceZh": "直接评估世界动作模型的未来预测是否真正帮助动作。",
+        "recommendationZh": "【2026-10-30 补读批次】反事实路径与任务级负迁移揭示比视频质量更关键的控制效用。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39379",
+        "title": "Information-Driven Collaborative Autonomy for Heterogeneous UAV/UGV Teams",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO",
+          "eess.SY",
+          "math.OC"
+        ],
+        "topics": [
+          "VLN / UAV 导航"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39379",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39379",
+        "summaryZh": "通过信息密度驱动UAV主动观测，并以贝叶斯目标后验指导UGV避险路线，结合动态视场、概率检测和机会约束。分散优化同时满足连续时间分离约束，数值案例验证两类机器人闭环协作。",
+        "relevanceZh": "直接面向无人机信息驱动路径与空地协同。",
+        "recommendationZh": "【2026-10-30 补读批次】可为主动导航中的未知目标风险提供可解释规划基线。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39385",
+        "title": "UMI-Live for In-The-Wild Bimanual Robotics Data Collection",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO",
+          "cs.AI"
+        ],
+        "topics": [
+          "VLA",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39385",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39385",
+        "summaryZh": "UMI-Live集成相机、LiDAR惯性、机载计算及电源进行野外双手示范采集，无需环境外部追踪或标定；异步SLAM生成训练数据。发布40小时三任务数据，并以π0.5/MolmoAct2双手抓放微调验证。",
+        "relevanceZh": "可扩展无机器人示范采集和VLA训练数据管线。",
+        "recommendationZh": "【2026-10-30 补读批次】完整硬件-处理-训练流程有利于实际复现，成功率验证样本仍很少。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39409",
+        "title": "Safe Multi-Objective Reinforcement Learning: Zero Constraint Violation and Primal-Averaging Convergence",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.LG",
+          "cs.AI",
+          "math.OC",
+          "stat.ML"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39409",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39409",
+        "summaryZh": "论文研究多目标RL在整个学习过程中保持零约束违反。已知严格安全策略及其代价时，方法联合乐观奖励与悲观代价估计，学习给定偏好下的安全Pareto策略，并从平均占用度构造安全Markov策略。另一个无预设偏好版本先安全探索，再无需环境交互地为任意偏好规划。文章给出有限样本次优界；放宽安全先验要求后，保证变为至多常数级累计违反。",
+        "relevanceZh": "属于安全多目标行动策略学习的理论基础，没有具体机器人实验结论。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐关注零违反保证的先验条件，避免将已知安全基线下的理论结论误用为未知系统中的无条件安全。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39416",
+        "title": "Decoding Geometry, Not Tokens: Efficient VLMs for Robot Affordance and Trajectory Prediction",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO",
+          "cs.CV"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39416",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39416",
+        "summaryZh": "从冻结0.5至2B VLM中间层提取空间特征，接轻量几何兼容预测头直接回归可供性框与轨迹航点，避免坐标文本自回归误差。ShareRobot-Bench等实验显示准确率和吞吐改善，结果为指令条件2D几何预测。",
+        "relevanceZh": "把语言视觉表示转成机器人几何输出。",
+        "recommendationZh": "【2026-10-30 补读批次】不应将2D预测提升等同闭环操作成功，但可作为轻量规划接口。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39429",
+        "title": "ScheduleGen: Demonstration Generation via Skill Scheduling for Multi-Arm Imitation Learning",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39429",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39429",
+        "summaryZh": "ScheduleGen把技能调度与运动规划结合，从少量示范生成满足多臂约束的数据。28种仿真变体平均生成成功率79.6%、所训策略65.5%；八类实机变体通过sim-to-real等路径取得50至80%成功率。",
+        "relevanceZh": "多臂模仿学习的数据生成。",
+        "recommendationZh": "【2026-10-30 补读批次】相较忽略多臂安全约束的轨迹扩充，更重视动作间调度。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39446",
+        "title": "Ask to Evolve: A Unified Harness for Lifelong Embodied Navigation with Hybrid Action Space and Persistent Memory",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "具身智能",
+          "VLN / UAV 导航"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39446",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39446",
+        "summaryZh": "EvoLife统一航点、离散调整、像素和对象导航动作，并主动澄清、请求帮助，把观察及对话绑定到地点形成长期空间记忆。八个基准和多日实机导航评估显示首访、长序列及重访表现，R2R重访SPL从82.23%增至93.31%。",
+        "relevanceZh": "终身VLN的交互、动作接口与持续记忆协同。",
+        "recommendationZh": "【2026-10-30 补读批次】区分首访与经验重用可用于更真实评估长期导航能力。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39451",
+        "title": "Smooth Action Chunking Via Movement-Primitive Representations for Imitation Learning",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.LG",
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL",
+          "VLA"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39451",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39451",
+        "summaryZh": "论文用平滑运动基函数的线性组合表示动作块，使块内轨迹天然平滑，不改变策略架构、训练目标或推理流程。推理时再对系数作闭式修正，使新动作块经过上一块最后一个指令动作，降低块间突变且无需重训。方法在ACT与DiT、仿真及真实双臂ALOHA上验证：块内jerk分别降低一个数量级和2.4倍，任务成功率统计上不劣；边界修正去除73–84%的不连续性。",
+        "relevanceZh": "直接适用于模仿学习动作分块接口，可联系扩散策略及VLA的动作输出稳定性；实际验证骨干为ACT/DiT。",
+        "recommendationZh": "【2026-10-30 补读批次】强推荐：以表示层和闭式拼接处理硬件抖动，修改轻量并具实机证据，容易与现有动作策略组合。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39454",
+        "title": "Kairos: Semantics-Aware Orchestration of Planning Engines across Classical, Numeric, Temporal and Hybrid PDDL",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.AI",
+          "cs.RO"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39454",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39454",
+        "summaryZh": "Kairos根据任务语义在五类规划引擎间分配统一时间和内存预算，覆盖经典、数值、时间和混合PDDL。每个候选计划由独立于规划变换的验证器检查，只有穷举本身构成证明时才报告不可解。1756个任务上总体覆盖改善，100ms及1s预算也有优势，但对经典规划LAMA的收益处于噪声范围。",
+        "relevanceZh": "为机器人运行时重规划提供异构规划器编排和可验证计划接口。",
+        "recommendationZh": "【2026-10-30 补读批次】适合关注快速重规划与复杂约束统一：方法强调覆盖、延迟与不同失败结论的语义，不是学习式控制策略。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39524",
+        "title": "Last-Iterate Convergence for Constrained MDPs: From Dual Descent to Primal-Dual",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.LG"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39524",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39524",
+        "summaryZh": "论文研究无限时域折扣约束MDP的策略优化，先在不要求状态覆盖假设下重新分析双重下降方法，再结合熵正则自然策略梯度与对偶正则，移除反复求解内部MDP的昂贵循环。新的跟踪分析得到单个末次迭代策略的改进收敛保证，并扩展到连接双重下降和原始—对偶方法的截断双层算法及线性函数近似。",
+        "relevanceZh": "是约束行动策略学习理论，关注可直接部署的单个策略，而非难以实现的策略混合。",
+        "recommendationZh": "【2026-10-30 补读批次】适合安全/约束RL算法设计，特别是需要末次迭代保证且难满足强覆盖假设的情形；摘要未给机器人实证。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39528",
+        "title": "PRIME W0: Physical Priors from World Models for Embodied Manipulation",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "VLA",
+          "世界模型"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39528",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39528",
+        "summaryZh": "PRIME W0在分层条件流匹配中注入VLM逐层KV、异步世界模型子目标图像及历史帧语义，并以符合运动学耦合的协方差噪声构造动作流形。四阶段训练后在LIBERO和实机评估各组件。",
+        "relevanceZh": "将时间上下文、未来预测和动作耦合纳入VLA。",
+        "recommendationZh": "【2026-10-30 补读批次】可对照异步WM提供的增益与额外延迟；摘要未提供具体分数。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39543",
+        "title": "From Reasoning to Action: Consequence-Grounded Alignment for Vision-Language-Action Models",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "VLA",
+          "世界模型",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39543",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39543",
+        "summaryZh": "CoRAct联合建模具身推理、动作和动作条件未来预测，以运动一致性及未来结果与航点的一致性为奖励，对初始动作噪声分布做组相对优化。RoboCasa、VLABench和实机验证推理执行对齐，并能落地外部提供的具身思维链。",
+        "relevanceZh": "以动作后果把VLA推理和执行显式对齐。",
+        "recommendationZh": "【2026-10-30 补读批次】奖励不是推理文本表面正确性，而是运动和空间后果的可验证一致性。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39547",
+        "title": "Assuring Learning-Enabled Cyber-Physical Systems with Foundation Models: A Neuro-Symbolic Agenda for Testing, Verification, and Runtime Assurance",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO",
+          "eess.SY"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39547",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39547",
+        "summaryZh": "提出基础模型保障栈，将神经符号约束、语义一致性测试及组合验证/运行期保障连接起来，强调模块契约和独立检查基础模型输出。研究覆盖UAV等学习型物理系统，属于系统级可信部署议程而非特定驾驶算法。",
+        "relevanceZh": "面向具身基础模型系统的验证边界。",
+        "recommendationZh": "【2026-10-30 补读批次】适合梳理从模型分数到可部署系统保证之间缺失的证据链。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39582",
+        "title": "Kinematic-Tactile Aligned Dexterous Retargeting with Contact Wrench Space Alignment",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39582",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39582",
+        "summaryZh": "以对象中心接触wrench空间对齐人手与机器人触觉，先对齐运动及接触几何，再从人类触觉构造支撑分布并优化机器人指尖力，转成可重放关节轨迹。三种倾倒条件的仿真实机评估中，实机重放成功率96.7%。",
+        "relevanceZh": "保留接触力学的人类示范重定向。",
+        "recommendationZh": "【2026-10-30 补读批次】补充仅运动学迁移容易丢失的力交互信息。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39585",
+        "title": "TactoHand: Learning Geometry-Based Dense Hand-Surface Interaction Fields from Video",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39585",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39585",
+        "summaryZh": "TactoHand从单目视频预测手表面接触、接近度和三维力场。它从约5000万源帧的数据集合提取几何标签和运动推导的力标签，用时间Transformer与三个学习查询解码，并以可微物理层约束力和物体运动一致；在域内外基准改善接触估计及下游手物重建。",
+        "relevanceZh": "为从人类视频学习接触丰富操作提供低成本交互表征。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐注意力标签来自运动与几何推导而非真实触觉测量，适合研究物理监督的价值和误差。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39596",
+        "title": "Improving the Intrinsic Interpretability of Differentiable Decision Trees through Euclidean Feature-Concentration Regularisation",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.LG"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39596",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39596",
+        "summaryZh": "EU-DDT 以内部节点相对特征权重偏离均匀分布的程度作正则，使可微决策树的软分裂集中到少量特征。在分类任务中呈现解释性与准确率的不同权衡；作为PPO actor、搭配MLP critic时，在CartPole和MiniPacman的初步实验中保持有效任务表现并提高节点集中度。作者明确RL证据仅包含每环境两个随机种子。",
+        "relevanceZh": "直接研究可解释行动策略参数化，但RL验证规模较小。",
+        "recommendationZh": "【2026-10-30 补读批次】适合尝试更可检查的actor结构；不能把两个种子的初步结果当作稳健的广泛性能提升。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39609",
+        "title": "DiFuse: Fusing Native Diffusion Representations for Spatial Reasoning in Unified Multimodal Models",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39609",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39609",
+        "summaryZh": "DiFuse从统一多模态模型的原生扩散分支抽取中间特征，对齐视觉token后在特定解码层残差融合，以提高空间推理。层级分析表明收益依赖特征、注入位置和空间对应关系；在UniWorld-V1及OmniGen2上改善空间推理，同时大体保留通用理解性能。",
+        "relevanceZh": "生成分支中的空间线索可为具身推理表征提供互补信息，但实验非机器人闭环。",
+        "recommendationZh": "【2026-10-30 补读批次】可关注结构保持的选择性融合，而非把全部生成特征直接拼接到理解模型。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39619",
+        "title": "FutureWorld: A Plug-and-Play Causal Next-State Predictor for Interactive Video World Exploration",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "世界模型"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39619",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39619",
+        "summaryZh": "FutureWorld在下一视频块生成前，用当前生成潜变量和下一动作预测未来状态，以减少将含模糊、几何变形或语义漂移的历史反复回灌。即插即用因果下一块预测器结合跨模型适配和预测引导调制，在四个生成器、三个交互长视频及动作条件基准上降低误差积累。",
+        "relevanceZh": "关注动作条件世界滚动预测的长期误差传播。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐与纯历史检索比较，明确额外未来状态先验是否真正打断错误循环。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39639",
+        "title": "Where Do Vision Language Models Fail at 3D Reasoning?",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39639",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39639",
+        "summaryZh": "BedBench用13类程序化三维任务评估精确属性恢复与跨答案一致性；按颜色计数中人类93.3%而最佳模型7.2%。针对微调能改善计数，但最常见颜色判断仍与自身计数矛盾；探针可恢复的信息也未被生成答案可靠利用，部分成功无需图像证据。",
+        "relevanceZh": "对具身场景中精确物体属性和可执行空间判断的可靠性有诊断价值。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐同时报告正确性、一致性和图像依赖，而非将解码出的属性当作模型真正会使用。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39671",
+        "title": "Incentivizing Self-Learning in Large Language Models via Reinforcement Learning",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.CL"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39671",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39671",
+        "summaryZh": "论文将自主检索、学习并应用长篇材料定义为自学习能力，以教科书数学任务和BookNavigator界面让模型导航教材、获取原理并构造证明，再以细粒度奖励进行强化学习。摘要报告Intern-S2-Preview-35B总体证明准确率从51.5%升至79.5%，优于无教材RL及固定检索基线，并向BrowseComp-Plus和CL-bench迁移。",
+        "relevanceZh": "相关点是工具交互中的主动知识获取策略及其RL训练，而非单纯数学答案奖励；可借鉴导航智能体按需查询外部知识的决策。",
+        "recommendationZh": "【2026-10-30 补读批次】建议分离检索动作、学习过程和最终证明奖励的贡献，并检验跨任务收益是否来自可复用的搜索策略。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39682",
+        "title": "Heterogeneous Co-Evolution Learning for Tool-Efficient Search Agents with Zero Labels",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.LG",
+          "cs.AI",
+          "cs.IR"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39682",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39682",
+        "summaryZh": "ZEST-Search 在无标注条件下共同优化搜索agent训练任务与工具效率。系统从无答案参考问题出发，以答案先行、证据路径约束生成可验证任务；异质proposer围绕solver能力边界调整任务，以中等难度奖励训练proposer，以任务局部工具感知奖励训练solver。七个一般与多跳问答基准显示搜索性能和工具效率同时改善，无需标注搜索数据或专家轨迹。",
+        "relevanceZh": "是外部检索行动与推理交替的agent强化学习，属于数字环境而非机器人。",
+        "recommendationZh": "【2026-10-30 补读批次】适合研究自动任务课程与工具调用成本联合优化，尤其避免最终答案奖励对冗余搜索一视同仁。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39689",
+        "title": "AI for Science in Space: Orbital Laboratories, Planetary Fieldwork, and Embodied Autonomy",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39689",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39689",
+        "summaryZh": "综述空间AI科学，区分从数据学习、选择实验、实体执行和保持实验有效性，并提出连接样本历史、科学决策、动作与证据有效性的评估框架。讨论轨道实验室与行星现场研究中机器人相对专用机构和人类支持的价值。",
+        "relevanceZh": "具身自主科学的系统性研究议程。",
+        "recommendationZh": "【2026-10-30 补读批次】以有效科学产出和干预成本而非单个任务成功衡量自主性。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39721",
+        "title": "WorldProbe: When Video World Models Fall Apart under Long-Horizon Spatial Exploration",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "世界模型"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39721",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39721",
+        "summaryZh": "WorldProbe用目标条件多模态智能体在线改变相机动作，而不是预先固定轨迹，诊断世界模型长程探索一致性。基准含四类164个案例，对10个模型生成1600余次、约800分钟轨迹，最长180秒；发现局部视觉质量改善并不代表长期记忆和世界演化可靠。",
+        "relevanceZh": "直接评估生成世界在行动反馈下的持久性，贴合智能体使用世界模型作为环境的需求。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐作为长期世界模型评测基线，尤其关注主动探查能暴露的回访矛盾。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39775",
+        "title": "Teaching a Tree to Recover: Online Distillation of an LLM Supervisor with Counterfactual Replay",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "具身智能",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39775",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39775",
+        "summaryZh": "针对MPC冻结，在线把LLM监督器蒸馏成决策树，用回合后反事实重放区分必要、无用或有害恢复并淘汰规则。20个未见仿真布局中多数成功处理，测试无需LLM查询，不能通行时能请求帮助。",
+        "relevanceZh": "具身agent恢复监督的低成本策略蒸馏。",
+        "recommendationZh": "【2026-10-30 补读批次】将大模型转为监督器设计者而非每次运行必经依赖。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39798",
+        "title": "Surrogate Uncertainty for Black-box Visual Grounding",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39798",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39798",
+        "summaryZh": "将黑盒VLM目标定位输出视作观测，以外部贝叶斯代理在校准集局部邻域估计偶然/认知不确定性，并结合保形预测或主动规划选择语言询问和物理观察。在Fetch实机开放指令下改善可靠行动与信息获取的权衡。",
+        "relevanceZh": "具身语言落地、主动感知和不确定性决策。",
+        "recommendationZh": "【2026-10-30 补读批次】避免直接相信产生预测的同一VLM自报置信度。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39812",
+        "title": "GROME: GROunding Factorized MEmory into Video World Models",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.CV",
+          "cs.LG"
+        ],
+        "topics": [
+          "世界模型"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39812",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39812",
+        "summaryZh": "GROME将视频世界模型历史记忆分为静态几何和动态实体状态，检索空间对齐的静态观测与最新动态状态，并通过冻结模型原生条件路径注入，无需额外训练。长程回访评估中改善场景持久性与动态实体保真，也可将外部观测作为即插即用记忆。",
+        "relevanceZh": "针对交互世界长期探索的几何漂移和动态信息过时问题。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐其静/动态分解，适合对照纯历史窗口或全局显式三维记忆的局限。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39816",
+        "title": "PASA-KV: Attacking Action-Facing Visual Routes in World Action Models",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "世界模型",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39816",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39816",
+        "summaryZh": "PASA-KV研究WAM内部视觉K/V扰动何时真正导致闭环失败，发现表征位移大小并不能可靠预测行为脆弱性。Tail-AV短探测识别动作读出敏感路径，随后训练任务共享攻击，在多WAM与实机上验证。",
+        "relevanceZh": "评估世界模型表征到动作读出接口的鲁棒性。",
+        "recommendationZh": "【2026-10-30 补读批次】适合将安全评测从潜空间变化转向实际闭环控制后果。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39825",
+        "title": "AegisFlow: Training-Free Non-Myopic Path-Safe Guided Flow Matching",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.AI"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39825",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39825",
+        "summaryZh": "AegisFlow将训练外的生成引导改写为全局安全关键最优控制问题，把时变障碍函数纳入全路径代价，而不是只做即时最小范数修正。通过可计算的HJB近似求非短视控制，在图像编辑和机器人规划实验中改善目标对齐与约束满足之间的权衡。",
+        "relevanceZh": "关联生成式机器人轨迹规划及障碍约束下的flow策略引导。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐其全局安全代价设计，用于比较局部安全投影是否把轨迹长期压在边界附近。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39924",
+        "title": "PhysAg3D: Bridging 3D Generative and Agentic Models for High-Fidelity and Physically-Interactive Assets",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39924",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39924",
+        "summaryZh": "PhysAg3D从单图生成具有真实外观和合理交互的三维资产。VLM先推断部件、交互和物理先验，三维生成器构建网格；分层交互表示把关节、可变形区域与表面绑定连接起来，再根据渲染交互和执行测量在固定预算内修订。实验支持刚性关节和柔性形变的兼容。",
+        "relevanceZh": "为具身仿真补足静态外观资产缺少交互机制的问题。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐看可修订物理先验与保留源网格表面的平衡，避免单靠几何细节推断动作可行性。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.39927",
+        "title": "Learning Calibrated Confidence for Multi-Agent Collaboration",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.LG",
+          "cs.AI",
+          "cs.MA"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.39927",
+        "pdfUrl": "https://arxiv.org/pdf/2610.39927",
+        "summaryZh": "MASCAL 在多智能体Web检索与推理协作中，让每个agent用RL联合优化答案质量和正确率概率校准。上游在交接时传递置信概率，下游以此决定信任或核查；训练时加大对上游置信信号敏感位置的权重。三种协作架构实验显示准确率和校准改进，并可泛化到更深协作链及不同规模；干预分析验证置信信号确实影响后续决策。",
+        "relevanceZh": "面向使用检索工具的数字行动agent协作RL，不是物理机器人实验。",
+        "recommendationZh": "【2026-10-30 补读批次】可借鉴概率校准作为多agent交接接口，避免仅传递未经量化的自然语言结论。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40003",
+        "title": "Humanoid Dodgeball: Learning Fast Dynamic Obstacle Avoidance Motions for Humanoids",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40003",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40003",
+        "summaryZh": "Humanoid Dodgeball以威胁感知奖励训练人形快速躲避投射物，并用多个方向的对抗运动先验约束动作自然性与稳定性。仿真和实机验证不同速度、距离下的动态全身避障。",
+        "relevanceZh": "人形反应式强化学习与高动态安全控制。",
+        "recommendationZh": "【2026-10-30 补读批次】多方向动作先验能在敏捷性与物理可行性间提供结构。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40016",
+        "title": "LOGIV: Graph-Verified Execution with Causal Local Repair for Long-Horizon Robot Tasks",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "具身智能",
+          "VLA",
+          "世界模型"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40016",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40016",
+        "summaryZh": "LOGIV将任务计划编译为条件支撑和资源顺序图，持续验证物理条件并追踪失败依赖，局部修复后先符号验证再续行。无需新增训练组件，可搭在VLA/WAM上；双臂仿真和实机显示成功率改善。",
+        "relevanceZh": "长程具身执行的状态验证与因果局部恢复。",
+        "recommendationZh": "【2026-10-30 补读批次】关注动作完成不等于其效果持续有效这一关键失效模式。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40026",
+        "title": "RoboSeed: Multidimensional Evaluation of Vision-Language-Action and World-Action Models: Capability, Resource Affordability, and Research Evidence",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "VLA",
+          "世界模型"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40026",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40026",
+        "summaryZh": "RoboSeed从能力、下游训练成本、部署成本、本地验证研究价值和复现证据五维评估VLA/WAM，以固定归一化锚和预算偏好生成画像。缺失测量明确保留，协议异质或证据不足时不公布总排名。",
+        "relevanceZh": "为机器人动作基础模型选择提供证据化评估框架。",
+        "recommendationZh": "【2026-10-30 补读批次】强调成本与证据覆盖，避免把不完整跨协议分数伪装成公平排名。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40030",
+        "title": "Cheap Retrieval and Observation Credit Assignment from One Quantity: The Value of Information",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.AI",
+          "cs.LG"
+        ],
+        "topics": [
+          "世界模型",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40030",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40030",
+        "summaryZh": "提出用从归档rollout和学习式世界模型估计的信息价值，同时解决RL记忆获取的长时信用分配与检索成本。信息价值在观测时为获取动作的最优价值提供下界，用于抬高TD目标；在决策时则定义最优检索集合。初步检索系统能以缩减上下文解决记忆任务，但完整训练改进仍属拟议方向。",
+        "relevanceZh": "直接面向机器人低延迟/低能耗记忆访问与主动观测策略。",
+        "recommendationZh": "【2026-10-30 补读批次】值得关注统一信息价值目标的理论联系；应严格区分证明、初步实验与尚待验证的训练方案。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40050",
+        "title": "Don't Risk It!: Trajectory-Conditioned Distributional Risk for LiDAR-Only Crowd Navigation",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL",
+          "世界模型"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40050",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40050",
+        "summaryZh": "DRIP直接从LiDAR占据历史预测候选控制序列的最小障碍距离分布，以经验碰撞结果训练风险成本，而不依赖对象跟踪。最多45名行人的闭环测试中改善成功率、碰撞和冻结行为。",
+        "relevanceZh": "学习动态占据及轨迹条件风险用于机器人导航。",
+        "recommendationZh": "【2026-10-30 补读批次】不确定性直接校准到控制风险而非仅几何误差值得借鉴。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40075",
+        "title": "Learning Safe Flow Matching Robot Policies from Binary Feasibility Oracles",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO",
+          "cs.AI"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40075",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40075",
+        "summaryZh": "研究仅能查询二元可行性的黑盒物理约束，为流匹配机器人策略构造可微安全层：前向纠正不可行动作，反向提取局部边界信息提供约束学习信号，训练推理共用该层。障碍感知操作实验报告100%约束满足。",
+        "relevanceZh": "安全生成式机器人策略及训练执行一致性。",
+        "recommendationZh": "【2026-10-30 补读批次】无需显式可微约束模型，适合复杂碰撞/关节约束接口。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40109",
+        "title": "Coupled Guidance for Flow Matching",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.LG",
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL",
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40109",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40109",
+        "summaryZh": "论文分析把扩散模型guidance直接移植到flow matching时的失稳原因，指出该做法会破坏训练时的耦合分布。Coupled Guidance 从几何角度利用flow matching固有的耦合结构推导专用引导机制。在ManiSkill3机器人避碰、Adroit四种灵巧操作及图像逆问题上，摘要报告采样质量与引导稳定性改善，且无额外开销。",
+        "relevanceZh": "直接应用于随机机器人控制器和灵巧操作策略的条件采样。",
+        "recommendationZh": "【2026-10-30 补读批次】适合对流匹配动作策略施加约束或目标引导；核心启发是保留训练耦合几何，而非照搬扩散引导公式。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40115",
+        "title": "SelfThinker: Self-Evolving Reasoning via Reliability-Verified Intrinsic Visual Thoughts",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40115",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40115",
+        "summaryZh": "SelfThinker用统一多模态模型自行生成辅助视觉思考图，以冻结理解分支的条件互信息评分筛选；高效用图像既训练生成分支，也作为在线自蒸馏的教师特权上下文。推理时不生成中间图，仅根据原图输出文本；从小型合成视觉搜索和导航数据训练后，七基准平均分由52.7升至64.0。",
+        "relevanceZh": "以合成导航与视觉搜索为训练任务，探索视觉想象对空间理解的迁移。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐区分训练中的生成监督与推理时直接理解，避免把其称为已验证的导航控制策略。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40130",
+        "title": "Escaping Path Mirages in Offline Goal-Conditioned Reinforcement Learning",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.LG",
+          "cs.AI"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40130",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40130",
+        "summaryZh": "BGP 针对随机长时域离线目标条件RL中的路径幻觉：策略会过度信任数据中由偶然性产生的成功路径。方法把高变异位置设为图节点，以分段学习构建目标条件边，显式表示随机分支，规避不可靠分支和路径中的不必要随机性。摘要报告在多种OGBench任务上显著优于已有离线目标条件RL方法。",
+        "relevanceZh": "直接研究离线策略的长时目标到达与随机环境规划，关联机器人目标条件控制。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐关注把随机分支结构加入图规划，避免仅依赖过度乐观的价值或数据中单次成功。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40153",
+        "title": "Hierarchical Step Decomposition for Training-free Online Video Step Grounding",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40153",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40153",
+        "summaryZh": "HSD在流式操作视频中用持续验证的锚点描述把片段合为语义一致事件，再对程序步骤零样本分类；只对不确定步骤拆成细粒度子步骤以补充视觉证据。无需训练，在HT-Step、Ego4D Goal-Step和CrossTask上改善步骤识别、时间定位及推理速度。",
+        "relevanceZh": "关联从第一视角示范中解析长程任务步骤，服务具身过程监测而非动作生成。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐事件级处理和按不确定性细化，减少固定短片段反复调用大模型的冗余。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40165",
+        "title": "Closing the Log Gap: Minimax-Optimal Regret for Episodic RL",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.LG",
+          "stat.ML"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40165",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40165",
+        "summaryZh": "论文研究有限回合表格MDP中的遗憾最小化，提出带MOSS式探索奖励的UCBVI变体，其估计不要求始终严格乐观。作者通过访问占用加权控制低估误差传播，避免逐行统一集中界引入的对数开销，在足够多回合时实现与minimax下界匹配、无额外多对数因子的期望遗憾界，并给出部分参数区间中常数阶匹配的PAC最优策略识别推论。",
+        "relevanceZh": "是行动策略探索与学习的基础理论，没有机器人实机或视觉基准证据。",
+        "recommendationZh": "【2026-10-30 补读批次】适合需要理解探索奖励设计与理论样本复杂度的读者；应用价值属于理论方法参考，而非即用控制算法。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40191",
+        "title": "Video Generation Meets Agent Harness: Agentic Video Generation, Agentic World Modeling and Recursive Self-Improvement",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "世界模型",
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40191",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40191",
+        "summaryZh": "这份报告从智能体运行时框架出发梳理视频生成、交互世界建模与递归自改进，讨论上下文、工具、状态、反馈和预算管理。重点包含引擎/程序维护状态、视频模型渲染观察的混合结构，并区分输出修订、框架状态更新、生成器和评估器更新等不同改进层次。",
+        "relevanceZh": "为动作条件世界模型与智能体闭环交互提供系统层面的概念框架。",
+        "recommendationZh": "【2026-10-30 补读批次】适合做研究路线梳理；这是分析报告，不应将讨论的自改进机制视为均已实验验证。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40207",
+        "title": "RoboAtom: Large-scale Atomic-Action Supervision for Robot Learning",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40207",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40207",
+        "summaryZh": "RoboAtom为多来源机器人数据增加统一时间对齐的原子动作标注，覆盖145万轨迹、688万技能片段和约16882小时。建立技能识别/边界定位基准，原子动作监督结合分层执行在多个长程操作基准上优于任务级监督。",
+        "relevanceZh": "技能级机器人数据与组合策略学习。",
+        "recommendationZh": "【2026-10-30 补读批次】统一跨数据集标注约定可减少层次策略训练的数据碎片化。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40210",
+        "title": "AcrossDEX 1.0: From Human Motion Pretraining to Bimanual Dexterous Manipulation across Hand Embodiments",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40210",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40210",
+        "summaryZh": "AcrossDEX从人类双手运动预训练连接到仿真专家、机器人示范和视觉闭环执行。保留视觉/时序及手腕表示，以独立手指场和有效性掩码支持Inspire与Allegro手；比较回归、扩散、流匹配，并发现前一计划约束重规划有利于连续执行。",
+        "relevanceZh": "双手跨形态模仿学习与动作块连续性。",
+        "recommendationZh": "【2026-10-30 补读批次】不同动作生成方式结果并非一致，适合检查手指接触协调与chunk衔接。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40227",
+        "title": "EpiAgent: Epistemic Self-Play for LLM Agents",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.AI",
+          "cs.CL",
+          "cs.MA"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40227",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40227",
+        "summaryZh": "EpiAgent显式维护其他参与者私有信息的信念，将策略拆成信念更新与基于认知状态的行动规划。Epistemic Self-Play以双层优化交替训练两个阶段，并用预测后续观测的内在奖励评估信念。混合与竞争交互场景中优于提示式和RL基线，分析显示专门信念训练改善推断及规划。",
+        "relevanceZh": "关联部分可观测多agent决策、信念状态学习与自博弈策略训练。",
+        "recommendationZh": "【2026-10-30 补读批次】适合探索可解释信念层，而不是让角色理解隐含在语言历史中；摘要未说明机器人实机验证。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40246",
+        "title": "EnvOS: Auditing Computer-Use Agents When the World Moves On : Phenomenon-Based Task Construction, Certification, and Evidence-Based Evaluation",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.AI",
+          "cs.HC"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40246",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40246",
+        "summaryZh": "EnvOS构造会在任务中途变化的计算机使用环境，运行前验证变化触发、可解性和评分器区分能力，运行后独立按归档证据复核。过期预约/保单信息实验表明，提醒重查和直接呈现更新值的效果差异很大且依赖模型；盲测污染轨迹也暴露简单日志检查不足。作者将可复现环境定位为可验证奖励强化学习的候选训练资源。",
+        "relevanceZh": "面向动态环境中行动agent的训练与评估基础设施，避免环境或评分错误被误判为策略问题。",
+        "recommendationZh": "【2026-10-30 补读批次】可借鉴到具身评测的状态变化注入和独立回放审计；论文不是新RL策略，也未证明训练收益。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40248",
+        "title": "LLM-guided Planar Loco-Manipulation for Quadruped Robots",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO",
+          "cs.LG"
+        ],
+        "topics": [
+          "具身智能",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40248",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40248",
+        "summaryZh": "语言规划器以LoRA合成数据训练，将任务和结构场景映射为技能、对象与几何目标序列，低层RL执行四足推障及移动操作。仿真推障成功率93.3%，实机45次中技能组合正确44次、端到端成功34次。",
+        "relevanceZh": "语言引导的交互式导航与全身移动操作。",
+        "recommendationZh": "【2026-10-30 补读批次】明确评估高层组合与低层执行的不同失败来源。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40271",
+        "title": "Gaussian Distillation of Flow Policies",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40271",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40271",
+        "summaryZh": "分析所研究流策略的连续动作分布可被高斯近似，提出GAR以高斯读出替换末层，其余网络冻结，只用0.02%的可用状态训练。实现一次动作网络前向采样、闭式似然和接近教师的成功率，最高约两倍推理速度。",
+        "relevanceZh": "流式机器人动作策略的压缩与概率读出。",
+        "recommendationZh": "【2026-10-30 补读批次】低成本蒸馏兼顾推理速度与可计算似然。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40276",
+        "title": "TaskFrame: Connecting Task-Level Planning with Frame-Level Control for Game Agents",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "topics": [
+          "机器人策略 / RL",
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40276",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40276",
+        "summaryZh": "TaskFrame把VLM任务规划与逐帧键鼠控制分层：规划器用监督学习和依赖感知GRPO生成原子指令，其特殊目标token隐藏状态作为可缓存连续目标嵌入；因果Transformer控制器结合近期观测预测离散按键和连续视角运动。Minecraft闭环评估中战斗成功率高于对照方法。",
+        "relevanceZh": "RL直接用于行动智能体的规划与低延迟控制衔接，不是纯问答推理。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐连续目标接口与依赖感知规划优化，可参考其如何降低高层推理频率同时保持逐帧执行。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40333",
+        "title": "RFW-A: Agentic Procedural Generation of 400K Articulated Assets over 500 Categories",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "具身智能",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40333",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40333",
+        "summaryZh": "RFW-A让智能体构建并验证可复用的类别级程序，再用程序生成多种关节资产，避免每个资产重复推理。生成40万以上、500余类别的仿真就绪资产；类别生成器平均API成本10.62美元，按200资产摊销约0.05美元。数据提升关节估计，使用检索并程序编辑资产训练的策略可零样本迁移到真实关节物体。",
+        "relevanceZh": "同时覆盖仿真资产扩展、关节感知和sim-to-real操作策略学习。",
+        "recommendationZh": "【2026-10-30 补读批次】优先推荐：不仅展示资产数量，还报告真实策略迁移，可研究可程序化结构变化对泛化的作用。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40339",
+        "title": "Wizard: Manipulate Any World in Real Time via Agentic Control",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "世界模型"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40339",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40339",
+        "summaryZh": "Wizard将骨架和几何作为结构代理条件输入视频生成器，配合自适应掩码改善控制信号与生成轨迹对齐。数据涵盖750个场景和178种角色，智能体框架显式维护游戏状态，支持新场景、角色及动作的零样本迁移和实时运动控制。",
+        "relevanceZh": "属于显式游戏状态与生成观察分离的可控世界模型。",
+        "recommendationZh": "【2026-10-30 补读批次】可关注代理表征如何同时支持自由配置和细粒度动作控制；摘要未给出机器人迁移证据。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40349",
+        "title": "TouchBridge: Tactile-Conditioned Human-to-Robot Transfer for Dexterous Manipulation",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "VLA",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40349",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40349",
+        "summaryZh": "TouchBridge联合设计人手与机器人视觉/指尖触觉接口，以接触斑块及其关系做触觉条件重定向，无需物体网格、位姿或物理仿真。转化人类示范微调VLA，四个实机接触任务平均成功率72.5%，相同数量遥操作数据为77.5%，采集速度快7倍。",
+        "relevanceZh": "人类接触演示到灵巧VLA的跨形态数据迁移。",
+        "recommendationZh": "【2026-10-30 补读批次】为数据效率与接触信息保真度提供直接对照。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40350",
+        "title": "Don't Lose the Thread: Empowering Long-Horizon LLM Agents with Cognitive Resource Self-Allocation",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.CL"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40350",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40350",
+        "summaryZh": "CORAL 将检查点与上下文重置设计为智能体可调用的工作记忆工具：保存任务进度和已验证事实后，清空冗余上下文并开始新推理回合，再用多回合 Agentic Reinforced Policy Optimization 强化检查点能力。摘要报告8B模型在GAIA达到42.8%平均准确率，相比ReAct消耗少6–7倍输入token，并在BrowseComp上提升强专有模型8.0点。",
+        "relevanceZh": "面向长时程工具智能体的强化学习与记忆动作，适合比较导航或具身任务中的阶段性状态压缩；摘要实验并非机器人。",
+        "recommendationZh": "【2026-10-30 补读批次】优先关注跨回合信用分配和哪些状态被写入检查点，验证节省上下文时是否丢失不可恢复的观测证据。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40356",
+        "title": "JEDI: Joint-Embedding Demonstration Compression for In-Context Imitation Learning",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40356",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40356",
+        "summaryZh": "JEDI将长示范压缩为潜槽，训练其预测查询回合在冻结video-JEPA空间中的下一阶段关键帧，并用任务/过程反事实保留执行细节。示范库选择与关键点后训练支持many-shot上下文及人手条件，LIBERO和实机显示优于仅动作压缩。",
+        "relevanceZh": "机器人上下文模仿学习及示范压缩。",
+        "recommendationZh": "【2026-10-30 补读批次】压缩目标对准查询未来而非重建全部历史，有助于保留真正影响执行的信息。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40364",
+        "title": "Is It the Curriculum or Just the Easy Start? Benchmarking Unsupervised Environment Design on Quadrupeds",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.LG",
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL",
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40364",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40364",
+        "summaryZh": "论文在统一PPO学生、相同环境步数预算下，比较14种无监督环境设计、领域随机化及机器人课程方法，覆盖MuJoCo MJX中的五种3D四足机器人和八维可解释地形参数。结果没有任何方法在全部机器人与测试地形上领先；低难度起点在部分分布内任务上表现突出，而成功率驱动的实用地形课程最常进入最佳组。三种机器人上，分布内领先方法并非留出地形领先方法。",
+        "relevanceZh": "直接研究四足运动策略训练课程与跨地形泛化。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐其公平统一协议和负面结果：需区分课程自适应的收益与仅从容易地形开始的收益，不能以单机器人排名定结论。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40373",
+        "title": "HiFOR: Hierarchical Foresight with Action-Guided World Grounding for Vision-Language-Action Model",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.CV",
+          "cs.RO"
+        ],
+        "topics": [
+          "VLA",
+          "世界模型"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40373",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40373",
+        "summaryZh": "HiFOR联合预测短期状态、语义里程碑和最终目标，以分层依赖掩码建立跨时域联系；未来潜在世界按时域、视角与空间组织，再根据动作去噪过程中的表示动态检索有关未来信息。两项仿真基准和六项真实机器人操作任务验证其有效性。",
+        "relevanceZh": "直接将多时间尺度世界预测与当前VLA动作需求耦合，避免不加区分地注入所有预测未来。",
+        "recommendationZh": "【2026-10-30 补读批次】优先推荐：层次未来与动作引导检索兼顾长期任务和局部控制，适合对照现有世界—动作模型。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40401",
+        "title": "Continuous-Action World Models: Learning Cross-Embodiment Spatiotemporal Dynamics Priors",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO",
+          "cs.CV",
+          "cs.LG"
+        ],
+        "topics": [
+          "世界模型",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40401",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40401",
+        "summaryZh": "CoAWM先把不同机器人形态和采样频率轨迹编码进共享潜函数空间，以重建与跨时间采样一致性学习动态先验；随后接入世界模型主干，由观测、语言和当前状态预测动作潜函数，解码器可查询任意时刻末端动作。",
+        "relevanceZh": "跨形态与跨控制频率的世界模型动作表示。",
+        "recommendationZh": "【2026-10-30 补读批次】将动态先验、任务动作选择与时间采样解耦值得研究；摘要未给定量实验结果。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40429",
+        "title": "Optimal Path Planning with Localization constraints",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "VLN / UAV 导航"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40429",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40429",
+        "summaryZh": "针对GPS缺失的无人机，提出定位约束A*，用EKF传播状态与协方差，只保留满足不确定性上界的路径，并途经基站地标修正定位。给出启发式可采纳/一致性分析，在Monte Carlo和PyBullet四旋翼测试中比较路径与可靠性。",
+        "relevanceZh": "直接面向UAV定位不确定性约束导航。",
+        "recommendationZh": "【2026-10-30 补读批次】可作为学习式导航之外的定位风险规划基线。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40430",
+        "title": "Improving Fine-Grained Manipulation through Demonstration Expansion and Execution Design",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "VLA"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40430",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40430",
+        "summaryZh": "DEED针对五项MetaFine精细操作，通过同一初始场景生成多指令示范、相机和光照重渲染及分层采样适配预训练VLA。执行阶段将动作块转换为IK、任务相关夹爪映射及闭环重规划，官方Overall为85.55%，固定策略也对执行参数敏感。",
+        "relevanceZh": "VLA示范扩充与部署动作接口设计。",
+        "recommendationZh": "【2026-10-30 补读批次】提醒适配性能不仅由训练数据决定，还依赖动作块执行与夹爪映射。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40431",
+        "title": "Adaptive search with path-constrained mobile sensors using multi-arm bandits",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO",
+          "cs.LG",
+          "math.OC"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40431",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40431",
+        "summaryZh": "将有能量、充电返回和障碍约束的移动传感器路径选择建模为多臂赌博机，通过在线观测的置信界自适应分配预计算路径。给出检测/标记完成时间的概率保证及上下界，并以仿真分析路径冗余和团队规模。",
+        "relevanceZh": "属于物理移动agent的主动感知与在线决策学习。",
+        "recommendationZh": "【2026-10-30 补读批次】可参考其将可行运动约束与统计探索分离的设计。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40449",
+        "title": "Reinforcement learning for control of partial differential equations",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.LG"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40449",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40449",
+        "summaryZh": "这篇综述统一讨论强化学习与PDE约束优化，覆盖无模型、基于模型和多智能体RL控制，重点分析样本效率、参数变化下泛化及高维可扩展性。文章通过混沌系统稳定化和流动控制两个例子展示RL反馈控制器的表现与失败风险，并讨论评测、局限及可靠数据高效控制的研究方向。",
+        "relevanceZh": "属于以动作为输出的物理反馈控制策略学习；应用是科学计算与流场，并非机器人导航或操作实证。",
+        "recommendationZh": "【2026-10-30 补读批次】可为复杂物理系统控制提供方法谱系，尤其用于比较RL反馈控制和传统约束优化。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40495",
+        "title": "LucidLyra: Feed-Forward Generative 3D Scene Reconstruction and Joint Understanding via Multi-Task Distillation",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "世界模型",
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40495",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40495",
+        "summaryZh": "LucidLyra将相机控制视频扩散模型与冻结二维视觉模型的知识联合蒸馏，前馈预测含几何、外观、开放词汇语义和实例线索的三维高斯。无需逐场景优化、人工三维标注或真实多视图训练，可进行新视角渲染、语义分割和对象分组，并扩展到单目视频中的动态场景。",
+        "relevanceZh": "让生成场景不仅可渲染，还可语义查询和用于机器人仿真。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐关注生成几何、语义和实例身份的联合接口，适合场景编辑及仿真资产采集。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40503",
+        "title": "Algebraic World Model: From Exploration to Proofs",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.AI",
+          "cs.LO"
+        ],
+        "topics": [
+          "世界模型"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40503",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40503",
+        "summaryZh": "Algebraic World Model通过探索陌生环境生成并反复检验可执行Python假设，再组织为类型对象与共享规则，最终在Lean 4形式化以证明可达或不可达。作者报告在两个无解游戏关卡的六次运行中生成内核检查证明，并能依据新证据修正规则和界限；在ARC-AGI-3游戏上可重放获胜轨迹、预测未见转移和发现规则变化。",
+        "relevanceZh": "从交互数据建立可检查的动作转移模型，将世界模型与形式化规划连接。",
+        "recommendationZh": "【2026-10-30 补读批次】优先关注其“经验假设—可执行模型—形式证明”链路；证明保障针对所建模型，环境建模本身仍需持续检验。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40525",
+        "title": "CrossWeave: Cross-Modal Scene and Instance Retrieval from Sparse 2D-3D Alignment",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "具身智能",
+          "VLN / UAV 导航"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40525",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40525",
+        "summaryZh": "CrossWeave只用稀疏二维patch—三维point对应监督训练统一的场景与实例检索模型，不依赖场景级或实例级对比目标。最优传输聚合器合并结构冗余区域，为语义不同的局部特征保留描述容量，在ScanNet和3RScan两类检索上取得摘要所述最佳结果。",
+        "relevanceZh": "以视觉查询找回三维环境或物体，为机器人空间记忆和定位提供跨模态检索基础。",
+        "recommendationZh": "【2026-10-30 补读批次】可借鉴局部对应监督替代整场景编码的方案，特别适合建立可重用的空间检索表示。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40530",
+        "title": "PhysCount: Do MLLMs Count Visual Appearances or Physical Entities?",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40530",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40530",
+        "summaryZh": "PhysCount区分图像中的可见出现次数与真实物理实体数，以546幅真实图像、4595个人写问题及651组目标关系，测试反射和玻璃下的实体对应。40个MLLM中最强模型也仅在13.36%的组中全部答对；高分辨率有限改善整组正确率，联合回答关联问题更有效。",
+        "relevanceZh": "反射下实体去重关联具身场景建模与目标定位，防止把镜像当成可交互对象。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐作为物体持久性和跨观测身份一致性的诊断，不能由单题计数准确率推断完整场景理解。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40532",
+        "title": "BURGER: Benchmarking and Understanding Robotic Generalization via Embodied Drawing",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO",
+          "cs.AI"
+        ],
+        "topics": [
+          "VLA"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40532",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40532",
+        "summaryZh": "BURGER用可扩展语言驱动轨迹生成构造机器人绘画基准，282种任务共28200条仿真示范，对五种VLA评估数据规模、语言落地和多模态动作。任务允许多个有效图形与笔画顺序，并在Franka上展示人类干预下反应式绘画。",
+        "relevanceZh": "用于VLA组合泛化及行为多样性评测。",
+        "recommendationZh": "【2026-10-30 补读批次】同一空白初始场景有利于隔离语言条件与动作生成能力。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40537",
+        "title": "DAWN: Diffusion-based Alignment and unfastening Workflow Network",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40537",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40537",
+        "summaryZh": "DAWN将机器人拆螺丝分为对齐插入与卸下两阶段，以扩散AlignNet负责精确接合、多模态LatchNet判断切换、力控制UnfastNet执行卸下。在Franka实机和未见场景中验证接触操作及阶段衔接。",
+        "relevanceZh": "长程接触操作的分层策略学习。",
+        "recommendationZh": "【2026-10-30 补读批次】关注多模态阶段检测如何把学习技能接成可靠流程。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40539",
+        "title": "PhysVLMM: Interaction-Conditioned Physical Belief Maps for Articulated Objects in Robot Scene Maps",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "世界模型",
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40539",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40539",
+        "summaryZh": "PhysVLMM为机器人场景地图的关节物体部件维护交互条件物理信念，以后验保留拉动方向的不确定性，并向相似未操作部件传播证据。地图能回答给定风险下动作是否可成功，或选择拒答；18个家庭实物实验验证部件类型和受力响应预测。",
+        "relevanceZh": "让空间地图表达物体动作后果而不只语义和位置。",
+        "recommendationZh": "【2026-10-30 补读批次】明确区分观察与主动施力可辨识的信息，适合交互式物理建模。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40545",
+        "title": "Retrieval as Traversal: Value-Indexed Memory for Stateful Long-Context Agents",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.AI"
+        ],
+        "topics": [
+          "具身智能",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40545",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40545",
+        "summaryZh": "提出把记忆检索视为地址空间中的持续局部遍历，将记忆内容价值与访问几何成本分离，通过成本正则索引鼓励互补信息共同可检索。仅在固定几何的MiniGrid Memory概念验证中，五token上下文的局部遍历头用0.59M训练步达到0.95平均回报，快于两种绝对寻址基线。摘要明确尚未验证学习几何或重复检索的完整方案。",
+        "relevanceZh": "直接研究小上下文具身RL agent的可学习记忆访问机制。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐其内容价值与访问成本解耦思路，同时保留概念验证边界，不把初步实验当作完整方法已验证。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40565",
+        "title": "Gym-Anything for Robotics: Scaling physical simulations with digital agents",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO",
+          "cs.AI",
+          "cs.LG"
+        ],
+        "topics": [
+          "具身智能",
+          "VLA",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40565",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40565",
+        "summaryZh": "Gym-Anything让编码agent创建物理仿真，并以对抗式创建-审计循环检查任务和仿真质量，构建25个仿真、25个测试及175个训练RL环境的RoboWorld。基础前沿模型在测试任务表现很低；上下文学习、特权教师和代码策略示范等途径可改善表现并训练VLA。",
+        "relevanceZh": "面向具身学习环境生成及机器人训练数据扩展。",
+        "recommendationZh": "【2026-10-30 补读批次】仿真创建本身被转为可审计的agent任务，适合研究环境规模化。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40578",
+        "title": "VeriCUA: Verification as Agentic Exploration for Computer-Using Agents",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.AI",
+          "cs.CL",
+          "cs.CV"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40578",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40578",
+        "summaryZh": "VeriCUA把计算机使用任务完成验证转化为主动证据探索。验证器先从上下文构建任务量规，再针对未解决要求选择GUI或代码检查，并按明确证据规则合并结果；同一程序覆盖在线/离线、多平台及不同观测方式。实验显示相较基线与参考标签更一致，离线困难案例和在线虚假完成拒绝尤为受益。",
+        "relevanceZh": "为数字行动agent的数据筛选、评测及强化学习提供可靠终止/成功验证。",
+        "recommendationZh": "【2026-10-30 补读批次】适合研究奖励验证器：主动补证而非对固定截图直接打分，可降低部分可观测状态导致的伪成功奖励。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40589",
+        "title": "Collaborative AI agents for autonomous experimental research with solid-state quantum spins",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.AI",
+          "cs.MA"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40589",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40589",
+        "summaryZh": "构建多角色协作的自主实验研究系统，代理可提出和否决问题、要求独立理论检查，并设计反驳自身假说的实验。在金刚石量子自旋实验中，系统推导校准设置需求；初次数据虽符合预测，重复参考测量却揭示漂移，因此判为不确定并修订测量协议，最终在不放宽标准的前提下获得支持证据。",
+        "relevanceZh": "连接语言代理决策、物理实验执行与反馈修正，属于自主实验系统的具身闭环。",
+        "recommendationZh": "【2026-10-30 补读批次】值得关注其反证实验、漂移发现和明确的不确定结论；并非证明系统能无监督完成任意科学研究。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40607",
+        "title": "Fight World Model: Customizable Combat through Visual Interaction Proxies",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "世界模型"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40607",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40607",
+        "summaryZh": "Fight World Model将可执行战斗规则与视频渲染分离：引擎维护状态并结算交互，确定性编译器把动作窗口、受击反应和生命值编成时空对齐代理。训练覆盖52种技能、187种角色外观和15个场景，无需重训渲染器即可改变吸血、免伤等机制。",
+        "relevanceZh": "将显式状态机与生成观察结合，为可编程交互世界与游戏智能体环境提供方案。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐看规则执行与视觉生成的接口，评估动作忠实度和长期状态一致性，而非仅视频质量。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40614",
+        "title": "L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "世界模型"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40614",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40614",
+        "summaryZh": "L3G-World以潜在三维高斯记忆和视频DiT交替自回归生成交互世界。记忆在新区域增加高斯、在已见区域更新，并存储可直接渲染到DiT空间的VAE特征，避免RGB重编码；相对各项最有效三维记忆基线，摘要报告最多38.6倍更少基元、3.2倍更快更新、359倍更快渲染，实现9 FPS。",
+        "relevanceZh": "面向动作条件长程探索的空间持久性与实时世界模型。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐关注记忆随场景范围而非视频时长增长的设计；不同加速数字对应各自基线，不能混为同一整机收益。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40632",
+        "title": "SymAnt: Grounding Long-Horizon Action Anticipation with Adaptable Symbolic Priors",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO",
+          "cs.CV"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40632",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40632",
+        "summaryZh": "SymAnt结合场景图与知识图谱，从短视频搜索符号上下文并作为先验迭代预测长程未来动作。空间关系、物体属性和可供性共同约束预测，用户可直接修改知识而无需再训练，评估覆盖五个人类活动数据集。",
+        "relevanceZh": "提供可编辑的人类动作预期，可辅助人机互动但并非机器人闭环控制实验。",
+        "recommendationZh": "【2026-10-30 补读批次】关注结构化先验如何弥补短观察窗口的不足。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40636",
+        "title": "Probing Spatial State Representations in Visual Foundation Models",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40636",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40636",
+        "summaryZh": "论文在静态室内环境的流式第一视角观测下，对10种冻结视觉表示测试空间结构、物体持久性、预测更新与动作可用性。实验显示可解码当前场景并不保证保持物体状态或检索未来特征，目标条件动作虽响应目标变化，却未可靠改善前进效果。",
+        "relevanceZh": "直接检验视觉表征能否从识别走向跨视角记忆和目标导向动作。",
+        "recommendationZh": "【2026-10-30 补读批次】推荐其匹配对照：把可读出的空间信息与真正支持行动的状态表示分开评估。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40637",
+        "title": "world2vec: Mechanistic world models through latent dynamics learning",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.LG"
+        ],
+        "topics": [
+          "世界模型",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40637",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40637",
+        "summaryZh": "world2vec 从观察与动作中学习无需奖励信息的机制性世界模型，目标不仅是取得控制回报，还要在长预测时域内忠实重现系统动力学。摘要报告其参数量比 DreamerV3、TD-MPC2 和 LeWM 至少少一个数量级，同时在基于像素的连续控制上达到领先性能，并在包含71种吸引子的基准上进行准确系统辨识。",
+        "relevanceZh": "直接连接可解释潜在动力学、像素控制与世界模型，不是仅视觉生成。",
+        "recommendationZh": "【2026-10-30 补读批次】重点关注无奖励动力学学习能否兼顾紧凑表示和长时预测；适合作为高控制回报是否代表真实动力学理解的对照。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40646",
+        "title": "SwapBot: Tool-Centric Robot Manipulation via Interchangeable End-Effectors and Tactile Sensing",
+        "published": "2026-10-29",
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40646",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40646",
+        "summaryZh": "SwapBot以统一机器人侧耦合接口和低成本工具适配器支持自动换工具，并集成触觉及遥操作采集。用示范训练模仿策略执行烹饪等接触任务，触觉增强数据相较仅RGB策略提高15至25个百分点成功率。",
+        "relevanceZh": "工具使用与接触感知模仿学习。",
+        "recommendationZh": "【2026-10-30 补读批次】模块化工具和触觉数据的共同设计适合复杂家务操作。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40723",
+        "title": "INLA for Adaptive UAV Sampling of Radio Environment Maps in IoT Networks: Prior Width Governs Accuracy and Calibration",
+        "published": null,
+        "categories": [
+          "stat.ML",
+          "cs.IT",
+          "cs.LG"
+        ],
+        "topics": [
+          "VLN / UAV 导航"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40723",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40723",
+        "summaryZh": "研究无人机根据非高斯IoT观测自适应采样无线电环境地图，利用INLA更新Matérn GMRF后验，在可达集合内结合熵预筛选与前瞻选择航点。实验显示后验引导采样优于随机和割草式采样，但不同信息获取规则之间的差距有限或尚无定论；先验宽度对误差和置信区间校准的影响较大且依赖数据域。",
+        "relevanceZh": "将不确定性建模与可达航点选择连接起来，关联无人机主动感知与信息驱动导航。",
+        "recommendationZh": "【2026-11-02 当日批次】适合关注主动探索中的先验失配：论文明确区分采样策略收益与模型校准收益，避免把所有改进归因于规划器。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40726",
+        "title": "Li$^{2}$SAO: Lifting Light Singl-Rollout Asynchronous RL Optimization via Group-Relative Actor-Critic Bootstrapping",
+        "published": null,
+        "categories": [
+          "cs.CL",
+          "cs.LG"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40726",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40726",
+        "summaryZh": "论文比较异步语言模型强化学习中的 GRPO 与不依赖预训练价值模型的 LiSAO：前者在单轮推理更强，后者在多轮智能体任务更好，但价值网络冷启动会拖累早期学习。Li²SAO 在 critic 尚未学好时，以组相对优势训练 actor、组中心化回报训练 critic，随后切换到单轨迹 GAE。摘要报告该方法缩小早期差距，并改善后期性能上限。",
+        "relevanceZh": "直接针对多轮行动智能体的异步策略优化与价值网络冷启动；并非仅数学推理 RL。",
+        "recommendationZh": "【2026-11-02 当日批次】可借鉴其先用组相对信号、后用 critic 的阶段切换，降低异步 agent RL 对高质量预训练价值模型的依赖。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40747",
+        "title": "Mage-VL-Cowork: A Full Training Recipe to Learn Hybrid Computer Use From Evolved Harnesses",
+        "published": null,
+        "categories": [
+          "cs.CL",
+          "cs.LG"
+        ],
+        "topics": [
+          "具身智能",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40747",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40747",
+        "summaryZh": "Mage-VL-Cowork 是把视觉 GUI 操作、代码与终端执行统一在单一策略中的 4B 计算机使用智能体。训练经过中期训练、SFT 和 RL 的五阶段课程；配套生成系统以可复用技能流程和应用准备器构造 293,806 个桌面/Web任务，覆盖 6,915 种技能，并演化教师执行框架获得分阶段轨迹监督。摘要报告 OSWorld-Verified 达到 66.0%，同时降低推理成本。",
+        "relevanceZh": "研究视觉观察驱动的数字环境行动策略及其 RL 训练，与具身智能体的感知—行动闭环具有方法关联，但不是物理机器人验证。",
+        "recommendationZh": "【2026-11-02 当日批次】适合研究统一GUI与工具行动空间、课程设计及大规模任务生成；复现时应区分模型本体与执行框架带来的收益。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40798",
+        "title": "Beyond Plausible Prediction: Safety Sufficiency in Web World Models",
+        "published": null,
+        "categories": [
+          "cs.AI"
+        ],
+        "topics": [
+          "世界模型"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40798",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40798",
+        "summaryZh": "提出SafeWebWorld，评估Web世界模型的动作条件预测是否保留足够证据以支持执行、询问或阻止的授权判断。对十个冻结开放模型的3000个预测进行匹配人工评估，发现语义合理并不意味着安全决策正确；安全监督微调可能改善证据保留却损害授权判断。冻结分数再校准存在骨干相关的恢复，但细粒度授权鲁棒性仍不足。",
+        "relevanceZh": "面向有动作后果的数字agent世界模型，关注预测接口能否服务决策，而非仅生成可信未来。",
+        "recommendationZh": "【2026-11-02 当日批次】可借鉴到具身规划中的安全评估：应同时测试预测真实性、决策关键证据与动作许可，不能仅用预测质量替代闭环安全。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40801",
+        "title": "Drone-PUR: From Visual Clue Discovery to Understanding and Reasoning in UAV Scenes",
+        "published": null,
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "VLN / UAV 导航",
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40801",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40801",
+        "summaryZh": "Drone-PUR将无人机视觉任务拆分为线索发现、理解与多线索推理，覆盖11类任务、17.5万训练和2万测试样本，包含图像、序列、跨模态及多视角输入。22个通用VLM的评估暴露空间判断与跨视角推理短板；基于Qwen3-VL的分阶段适配使4B/8B模型选择题准确率分别提高18.33/17.52个百分点。",
+        "relevanceZh": "面向UAV场景的空间与多视角证据整合，可作为空中语言导航感知前端的诊断资源，但摘要未验证闭环导航。",
+        "recommendationZh": "【2026-11-02 当日批次】值得关注任务拆分与人审测试集，可区分导航失败来自视觉线索遗漏还是推理不足。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40828",
+        "title": "From Teleoperation to Long-Horizon Dexterity: Evaluating Visuomotor Skills and Offline Proxies for Dexterous Manipulation",
+        "published": null,
+        "categories": [
+          "cs.RO",
+          "cs.AI",
+          "cs.LG",
+          "eess.SY"
+        ],
+        "topics": [
+          "机器人策略 / RL",
+          "VLA"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40828",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40828",
+        "summaryZh": "以五指手RJ45连接器抓取插入为任务，评估281个模仿学习策略和约1700次实机试验。观测及动作表示的影响超过常规优化器选择；67种离线指标中，仅少数运动平滑性/直接性指标在单一策略族内与成功率可靠相关。论文强调离线指标可用于筛选，但不能替代实机评估。",
+        "relevanceZh": "为灵巧模仿学习、点云策略和VLA的表示选择与离线评估提供实证。",
+        "recommendationZh": "【2026-11-02 当日批次】对照规模较大，且明确指出指标跨策略族泛化的局限，有助于避免仅用验证损失选策略。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40832",
+        "title": "EgoHSI3R: Online 4D Hand-Scene Interaction Reconstruction from Egocentric Video",
+        "published": null,
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40832",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40832",
+        "summaryZh": "EgoHSI3R从第一视角单目视频在线联合重建相机运动、密集场景几何、世界坐标双手MANO模型及逐顶点接触。循环场景表示累积几何证据并统一尺度，手部先验和局部上下文构成手中心提示，MANO查询从场景特征推断接触；在ARCTIC上取得所评方法中最低世界坐标手关节误差，且推理更快。",
+        "relevanceZh": "将人类手—场景交互恢复到统一三维空间，为从人类视频学习操作与接触表征提供数据接口。",
+        "recommendationZh": "【2026-11-02 当日批次】推荐研究在线因果重建及接触监督，避免把独立手部与场景预测拼接时的尺度不一致带入策略学习。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40900",
+        "title": "AquaProbe: Efficient Adaptation of Frozen Vision Models for Underwater Images",
+        "published": null,
+        "categories": [
+          "cs.CV",
+          "cs.LG",
+          "cs.RO"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40900",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40900",
+        "summaryZh": "AquaProbe用成对干净与物理渲染退化图像，测量冻结视觉编码器各层新引入及累积的水下域偏移，并据此分配固定LoRA预算。按测量结果分配秩时，0.59M适配参数达到70.1 mIoU，比均匀分配高1.9点；依照估计水况簇路由后标准SUIM上为70.6 mIoU，留出退化下AUDRC为63.4。",
+        "relevanceZh": "针对自主水下探索的视觉域适配，关注水体与成像距离变化，而非动作策略本身。",
+        "recommendationZh": "【2026-11-02 当日批次】可借鉴其按物理退化剖面分配适配预算的方法，设计水下机器人感知的低成本迁移实验。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40902",
+        "title": "FlapSim: A Composable MuJoCo Simulation Platform and Reduced-Order Aerodynamic Model Hierarchy for Flapping-Wing Robotics",
+        "published": null,
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40902",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40902",
+        "summaryZh": "提出模块化MuJoCo扑翼机器人仿真平台FlapSim，比较不同降阶气动力模型。通过多速率时钟同步、来流/阵风耦合、几何缩放和相位锁定谐波，在48个留出场景上兼顾计算效率与气动力保真度；精简模型相对高精度参考约加速68倍，平均wrench保真度约0.966。",
+        "relevanceZh": "为扑翼飞行控制和强化学习提供高频气动力到较慢控制尺度的仿真基础，而非直接提出导航策略。",
+        "recommendationZh": "【2026-11-02 当日批次】适合作为空中机器人学习的仿真基础设施阅读，重点是频率变化时保留谐波的必要性。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.40927",
+        "title": "Agentic World Modeling for Agent Test-time Scaling without Environment Replica",
+        "published": null,
+        "categories": [
+          "cs.AI",
+          "cs.CL",
+          "cs.MA"
+        ],
+        "topics": [
+          "世界模型"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.40927",
+        "pdfUrl": "https://arxiv.org/pdf/2610.40927",
+        "summaryZh": "提出Agentic World Modeling，把假想动作后的观测预测改写为多轮证据获取任务。模拟器通过真实环境的只读接口查证，并利用推理和可执行计算构造预测观测，不修改共享状态；因此可在不可复制、存在不可逆动作的环境中进行并行轨迹搜索。作者在τ-bench、AppWorld和OfficeBench报告优于单次生成模拟及训练式世界模型基线。",
+        "relevanceZh": "研究用于行动规划的世界模型，尤其是部分可观测且不能随意重置的真实数字环境。",
+        "recommendationZh": "【2026-11-02 当日批次】值得关注其“只读查证再模拟”设计：为世界模型接入可验证外部状态提供了比单提示词压缩更明确的接口。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41009",
+        "title": "STAR: Steering Action Representations during Inference",
+        "published": null,
+        "categories": [
+          "cs.RO",
+          "cs.AI"
+        ],
+        "topics": [
+          "VLA"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41009",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41009",
+        "summaryZh": "发现VLA接近动作输出的表征未充分保持任务相关视觉落地，提出无需训练的STAR。它对后层残差更新做指数移动平均，使动作表征继承较早层的物体相关方向，并根据近期本体状态调节混合强度。操作基准上平均成功率提升4.0个百分点。",
+        "relevanceZh": "研究VLA推理期动作表征与视觉对象信息的耦合。",
+        "recommendationZh": "【2026-11-02 当日批次】无需修改权重或结构，适合检验低成本推理干预是否能改善现有VLA。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41022",
+        "title": "Density-Guided Bootstrap Boundaries for Latent World-Model Reinforcement Learning",
+        "published": null,
+        "categories": [
+          "cs.LG",
+          "stat.ML"
+        ],
+        "topics": [
+          "世界模型",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41022",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41022",
+        "summaryZh": "论文针对潜在世界模型中固定想象时域的误差累积，提出依轨迹可靠性调整回报展开深度。方法以特征位移网络和噪声条件 score 估计器构造相对密度代理，采用硬截断或软门控转向 critic bootstrap，并为 actor/critic 损失施加相应生存权重。在 Dreamer V3 上实例化，给出门控 Bellman 算子的收缩性及提前bootstrap降低条件目标方差的理论结果；连续控制和 Atari Pong 实验显示样本效率与后期性能改善。",
+        "relevanceZh": "直接改进基于世界模型的想象策略学习，核心是何时相信模型预测、何时依赖价值估计。",
+        "recommendationZh": "【2026-11-02 当日批次】推荐作为世界模型RL的可靠性控制方案：把统一展开长度改为逐轨迹边界，同时明确该密度代理不等于精确路径似然。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41028",
+        "title": "Contact Imitation Interface: Transferring Dexterous Skills by Showing How Contact Unfolds",
+        "published": null,
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41028",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41028",
+        "summaryZh": "提出CIMI接触模仿接口，从无机器人参与的人类示范提取可迁移灵巧操作信号。示范侧结合共享接触几何、指尖RGB、优先接触对齐的重定向和场景重投影；学习侧由接触面轨迹规划器与手腕/手指控制器分层协作。在LEAP和Wuji的六种手-任务组合中，最终阶段平均成功率比基线至少高50个百分点。",
+        "relevanceZh": "以接触表示连接人类示范与异构机器人手的策略学习。",
+        "recommendationZh": "【2026-11-02 当日批次】相较单纯关节轨迹映射，接触对齐提供了更有物理意义的跨形态学习接口。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41030",
+        "title": "Dreams Are Cheaper Than Flights: Curated World-Model Data Improves Aerial Detection",
+        "published": null,
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "topics": [
+          "世界模型",
+          "VLN / UAV 导航"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41030",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41030",
+        "summaryZh": "论文以真实野生动物无人机视频为种子，用7B视频世界模型扩展场景并人工筛选合成帧，使训练集规模翻倍以上。在同类无人机留出视频上，混合合成数据和仅用合成数据分别带来摘要报告的4.3%与10.3% mAP@50–95提升；专家估计淘汰87.5%的生成片段，GPU成本约1100美元，低于对比实地数据仅人工超过3200美元的成本。",
+        "relevanceZh": "将视频世界模型用于机器人航空感知数据生成，直接考察合成数据在真实部署传感器和环境上的效用。",
+        "recommendationZh": "【2026-11-02 当日批次】推荐同时看收益和87.5%高淘汰率：关键可能是任务相关筛选，而不只是扩大生成量；不能把检测提升等同于导航策略提升。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41041",
+        "title": "Before We Adapt: The Zero-Shot Generalization Bottleneck in Continual World Models",
+        "published": null,
+        "categories": [
+          "cs.LG"
+        ],
+        "topics": [
+          "世界模型",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41041",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41041",
+        "summaryZh": "论文将持续世界模型学习置于上下文 MDP 中，把上下文分为行为规则与物理条件，并区分知识复用、适应和新知识获取。首先研究行为规则不变时的零样本复用：在受控 FourRooms 中使用 Dyna-Q 与 TD-MPC，发现物理上下文改变可显著损害复用效果，且退化高度依赖世界模型的观察表示。消融和潜空间诊断表明，学到的表示不会自动具备复用所需的不变性。",
+        "relevanceZh": "直接研究世界模型在环境变化下的持续RL与零样本迁移瓶颈。",
+        "recommendationZh": "【2026-11-02 当日批次】适合在改进适应算法前先审计表示泛化；其受控负面结果提醒不要默认世界模型可直接跨场景复用。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41127",
+        "title": "MotorSense: A Video-EMG Dataset of Motoric Representations for Action Understanding",
+        "published": null,
+        "categories": [
+          "cs.CV",
+          "cs.RO"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41127",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41127",
+        "summaryZh": "MotorSense采集100小时非脚本化双手操作，将第一视角视频与双手表面肌电、IMU和音频同步。通过视频—肌电跨模态预训练学习感知运动对齐，将所得视觉表示迁移到动作识别、三维手部及接触重建，并展示肌电条件的细粒度手部操作视频生成；摘要报告在四类任务及八个视频数据集上优于所比较的视频自监督基线。",
+        "relevanceZh": "肌电补充视觉中被遮挡的手指运动、手形和用力信号，是具身操作表征与人类示范学习的重要数据来源。",
+        "recommendationZh": "【2026-11-02 当日批次】优先推荐：为纯视频模仿学习提供可扩展的运动信号监督，适合研究接触与力相关表示，而非仅优化语义动作识别。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41143",
+        "title": "TalentRL: Strategy-Guided Reinforcement Learning for Hierarchical Skill Routing",
+        "published": null,
+        "categories": [
+          "cs.LG"
+        ],
+        "topics": [
+          "具身智能",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41143",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41143",
+        "summaryZh": "TalentRL 用粗粒度 talent 表示技能使用策略，用细粒度 skill 表示可执行流程，以层级路由组织自然语言程序记忆。模型先选择 talent，再对关联技能进行软优先检索；针对终局奖励难以归因于路由的问题，以同任务、匹配上下文干预的 rollout 回报差训练路由，并以组相对优势优化执行。除问答任务外，摘要报告在 ALFWorld 达到 99.3% 成功率、WebShop 达到 90.7 分，均领先所比较方法。",
+        "relevanceZh": "明确在交互行动基准上评估RL技能路由，可联系具身任务的高层策略选择与低层程序复用。",
+        "recommendationZh": "【2026-11-02 当日批次】推荐关注路由与执行的信用分配：通过上下文干预隔离高层决策贡献，而不是只依赖共享终局奖励。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41190",
+        "title": "FlowMoDE: Coarse-to-fine Flow Matching for Detail-aware Sim-to-Real Monocular Depth Estimation",
+        "published": null,
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41190",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41190",
+        "summaryZh": "FlowMoDE以粗到细流匹配进行单目深度估计，先基于预训练语义特征进行粗解码，再用扩展解码层恢复细结构。模型仅在单一合成室内数据集训练，跨五个真实室内外数据集评估，摘要报告相对误差平均降低14.1%、点云重建Chamfer距离降低9.9%，并在真实机器人场景提供定性泛化比较。",
+        "relevanceZh": "面向机器人三维空间感知的sim-to-real深度估计，可为导航及操作提供几何输入。",
+        "recommendationZh": "【2026-11-02 当日批次】可关注单合成域训练与细节恢复的组合；机器人场景证据为定性比较，不能直接推断闭环成功率。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41214",
+        "title": "Capability-Conditioned Graph Control Barrier Functions for Zero-Shot Safe Navigation of Heterogeneous Mobile Robot Teams",
+        "published": null,
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41214",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41214",
+        "summaryZh": "提出能力条件化图控制障碍函数，在共享参考点操作空间内表示异构机器人的安全约束。径向能力场用固定维度编码状态相关可达速度集合，图障碍函数与分散策略共同训练，从而不依赖固定机器人类别。仿真及实机实验显示对训练外运动学模型和能力变化的零样本迁移。",
+        "relevanceZh": "属于异构机器人安全策略学习及跨形态泛化。",
+        "recommendationZh": "【2026-11-02 当日批次】能力描述替代类别标识的设计值得借鉴，可用于减少机器人动力学变化造成的策略失配。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41216",
+        "title": "TinyAstral: Transferring Self-Evolving Harnesses to Tiny Generalist Manipulation Agents",
+        "published": null,
+        "categories": [
+          "cs.RO",
+          "cs.CV"
+        ],
+        "topics": [
+          "具身智能",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41216",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41216",
+        "summaryZh": "TinyAstral先冻结大教师，通过轨迹诊断和配对统计检验迭代改进工具、反馈、记忆及恢复harness；再冻结harness并蒸馏小模型。RoboTwin中教师成功率由33.4%升至63.6%，最终4B学生达到62.8%；测量部署中学生约用教师五分之一加速器时间。",
+        "relevanceZh": "研究具身agent运行框架优化与小模型能力迁移，而非只扩大策略参数。",
+        "recommendationZh": "【2026-11-02 当日批次】能够区分harness改进和模型权重的贡献，并展示将改进迁移到低成本学生的路径。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41225",
+        "title": "RTL-Interact: Training EDA-Interactive Models for Multi-Task RTL Design",
+        "published": null,
+        "categories": [
+          "cs.AI"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41225",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41225",
+        "summaryZh": "RTL-Interact将RTL生成、EDA检查构造和基于工具反馈的修订纳入同一多任务后训练流程。PAPO在GRPO基础上使用正确性门控奖励，鼓励简洁且成功的检查和有效修订，并用任务分组保持目标覆盖。摘要报告32B模型在CVDP获得48.7%加权Pass@1，PAPO可在提升Pass@1的同时减少63.8%的平均工具调用。",
+        "relevanceZh": "属于面向执行工具动作的agent强化学习，而非单纯文本推理；奖励与可运行验证反馈相连。",
+        "recommendationZh": "【2026-11-02 当日批次】可借鉴其多任务奖励设计与工具调用成本控制，但实验对象是电子设计工具agent，并非机器人实机。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41264",
+        "title": "Rome Wasn't Built in One Turn: Replay-Grounded Reward Signals for Long-Horizon Freeciv Agents",
+        "published": null,
+        "categories": [
+          "cs.AI"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41264",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41264",
+        "summaryZh": "发现长时策略游戏中的即时积分可能与后续真实结果相反，提出可保存状态、分支决策并回放的CivHarness。利用回放训练比较两个局面未来优劣的CivTelescope，再将其作为Freeciv agent的稠密奖励。中盘实验中训练阶段收益为8.94分，相较最终结果奖励高77%；完整120回合实验采用随阶段切换的混合奖励取得所比较方案中的最高得分。",
+        "relevanceZh": "关联长时行动agent的稀疏奖励、信用分配及基于未来结果学习的价值评估。",
+        "recommendationZh": "【2026-11-02 当日批次】推荐关注如何用可复现分支回放纠正即时代理奖励误导，以及奖励模型跨局面和规则的泛化。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41273",
+        "title": "SPT-Flow: One Integration, Many Futures in Continuous-Time World Models",
+        "published": null,
+        "categories": [
+          "cs.LG"
+        ],
+        "topics": [
+          "世界模型",
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41273",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41273",
+        "summaryZh": "SPT-Flow 研究连续时间 ODE 世界模型为何即使引入随机条件，也可能忽略潜变量。作者认为教师强制提供真实中间状态形成监督捷径，因此改为每条轨迹采样一次潜变量，用自由运行 ODE 在多个时点匹配示范状态。在 LIBERO、相同 30k 更新步数下，相比重训 ODEWorld，best-of-10 PSNR 在中段和末帧提高 2.0/2.4 dB，平均 LPIPS 降低 23%。消融显示大部分精度收益来自自由运行控制，潜变量主要增加多样性与best-of-K收益，却降低单样本平均精度。",
+        "relevanceZh": "直接针对机器人场景世界模型的多未来建模与潜变量利用，研究基于LIBERO视频轨迹。",
+        "recommendationZh": "【2026-11-02 当日批次】推荐其严格区分rollout训练收益与随机潜变量收益；摘要明确机器人语义模式覆盖尚未验证，不能把图像多样性当成可用规划分支。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41275",
+        "title": "TRACE: Target-State Risk-Aligned Conditional Execution for Embodied Tracking",
+        "published": null,
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "具身智能",
+          "VLA",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41275",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41275",
+        "summaryZh": "针对语言指定人物跟随，发现冻结0.6B VLA主干、仅PPO更新规划头虽提高跟随成功，却可能增加碰撞。TRACE在执行时用目标身份、几何和命令等84项线索估计风险，超过校准阈值才缩放下一航点平移而保留偏航；超过98%的步骤不干预。配对测试中分心跟随碰撞率降低3.96个百分点。",
+        "relevanceZh": "直接关联具身跟踪、VLA后训练与执行安全。",
+        "recommendationZh": "【2026-11-02 当日批次】展示强化学习提高持续执行能力时可能暴露安全代价，以及有针对性的少量干预如何恢复安全。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41314",
+        "title": "GenDSR: Transferring Representations from Video Generation Models for Dynamic Spatial Reasoning",
+        "published": null,
+        "categories": [
+          "cs.CV",
+          "cs.AI"
+        ],
+        "topics": [
+          "世界模型",
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41314",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41314",
+        "summaryZh": "GenDSR将视频生成模型中间表征迁移到VLM以增强动态空间推理：原始分支保留整体生成上下文，差分分支强调时间变化，再用任务条件的逐token门控融合并注入原生视觉表示。其在DSR-Bench达到67.2%，超过摘要所述此前最佳结果。",
+        "relevanceZh": "利用生成模型学到的时空动态表征帮助理解持续变化的世界状态，为具身智能的动态场景推理提供方法参考。",
+        "recommendationZh": "【2026-11-02 当日批次】推荐研究原始/差分双分支如何区分状态与变化；目前证据来自空间推理基准，非策略闭环评估。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41320",
+        "title": "Learning from Physical Experience:Context-Space Adaptation for Robotic Manipulation",
+        "published": null,
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41320",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41320",
+        "summaryZh": "LEXP在模型权重和动作接口固定的条件下，通过任务规划与经验模块从实机执行证据中提炼带适用条件的经验，再检索用于后续动作反馈。在12个实机任务中成功23/36次，相比仅记忆的19/36次和基础模型的2/36次有所提升。",
+        "relevanceZh": "研究机器人通过上下文空间适应复用物理交互经验。",
+        "recommendationZh": "【2026-11-02 当日批次】对长期具身记忆有直接参考价值；需注意实验样本较小，不能将结果视为广泛泛化保证。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41330",
+        "title": "Cross-Embodiment Motion Planning by Coupling Body-Agnostic World Model with Differentiable Ego-Dynamics",
+        "published": null,
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "世界模型",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41330",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41330",
+        "summaryZh": "Hourglass将跨形态规划拆成身体无关世界模型与各机器人可微自运动动力学，两者只经相机自运动连接。世界模型汇集不同形态/相机安装数据，参数条件策略在想象中通过各自动力学训练。在七种仿真机器人上超过同世界模型上的模仿/扩散基线，并在短时遥操作辨识后迁移到训练外实机。",
+        "relevanceZh": "将共享视觉动态与身体特有控制映射解耦，直接面向跨形态机器人世界模型。",
+        "recommendationZh": "【2026-11-02 当日批次】值得关注其平地假设及相机自运动接口，能为通用世界模型如何感知机器人身体提供具体设计。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41334",
+        "title": "HIPC: Humanoid Iterative Planning and Control via Goal-Conditioned Motion Closure",
+        "published": null,
+        "categories": [
+          "cs.RO",
+          "eess.SY"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41334",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41334",
+        "summaryZh": "HIPC把人形生成式运动规划与跟踪控制组成实时闭环。使用避免极端朝向奇异性的规范运动表示，并以偏差衰减恢复和历史重锚定缓解真实执行状态回馈造成的分布偏移，结合异步规划和延迟补偿。实验展示目标到达精度、扰动鲁棒性与跌倒恢复。",
+        "relevanceZh": "针对人形动作生成到闭环物理执行之间的衔接。",
+        "recommendationZh": "【2026-11-02 当日批次】可借鉴其执行反馈处理方式，避免把生成器和控制器简单串联后产生漂移或抖动。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41336",
+        "title": "HandMimicX: Learning Human-Like Dexterous Manipulation via an Object-Centric Policy from Egocentric Videos",
+        "published": null,
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41336",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41336",
+        "summaryZh": "HandMimicX从第一视角人类RGB-D视频学习灵巧操作，以对象运动而非特定手部轨迹定义RL目标，并约束手-物交互状态以促进自然手型。仿真和实机实验显示单示范技能可迁移到新的空间配置。",
+        "relevanceZh": "属于人类视频到机器人灵巧策略的跨形态学习。",
+        "recommendationZh": "【2026-11-02 当日批次】物体中心目标有助于将技能与演示者手部轨迹解耦，适合研究空间泛化。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41348",
+        "title": "Joint-Health-Aware Reinforcement Learning for Robust Robot Control Under Actuator Degradation",
+        "published": null,
+        "categories": [
+          "cs.RO",
+          "cs.CV"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41348",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41348",
+        "summaryZh": "提出关节健康条件化RL，用连续向量表示各执行器剩余控制能力，并将退化建模为动作乘性衰减。HealthNet从近期观测与动作估计各关节健康，指导策略重新分配控制。在Walker、Go2、Cassie及Panda仿真操作任务中，相比无健康建模基线提高退化条件下的表现。",
+        "relevanceZh": "直接研究机器人策略对执行器退化的适应与鲁棒性。",
+        "recommendationZh": "【2026-11-02 当日批次】相比全局隐变量或离散故障标签，显式逐关节健康估计更便于分析故障条件下的策略行为。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41349",
+        "title": "Geometry-Aware Humanoid Retargeting via Manifold ODEs",
+        "published": null,
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41349",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41349",
+        "summaryZh": "将保持人与物体/地形交互关系的运动重定向表述为机器人配置流形上的KKT常微分方程。提出TaSP-KKT，以一次切锥投影和闭式流形更新替代每帧反复SQP迭代，数值实验中质量接近但略低于OmniRetarget，速度约提高一倍。",
+        "relevanceZh": "为人类示范向人形机器人学习数据的物理重定向提供算法支持。",
+        "recommendationZh": "【2026-11-02 当日批次】适合关注数据生成吞吐与交互保持的研究者；其质量与速度折中比单报加速更值得比较。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41354",
+        "title": "DiffWBC: Unlocking Steerable General Humanoid Motion Tracking via One-Step Diffusion Whole-Body Control",
+        "published": null,
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41354",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41354",
+        "summaryZh": "DiffWBC以单步扩散模型实现生成式人形全身控制，可由RL教师蒸馏或通过基于模型RL从头训练。50Hz单次前向推理支持跟踪，并通过可微代价梯度和身体分组掩码在测试时调整动作。论文还以生成计划的分散程度识别潜在跟踪失败，在实机G1上展示部署。",
+        "relevanceZh": "统一人形策略学习、测试期动作引导和失败发现。",
+        "recommendationZh": "【2026-11-02 当日批次】适合比较生成式控制器相对确定性策略的在线可调节性及不确定性信号。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41373",
+        "title": "Queryable Gaussian View Index: Text Retrieval and Selective Camera Localization",
+        "published": null,
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "VLN / UAV 导航"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41373",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41373",
+        "summaryZh": "QGVI把已有高斯场景的渲染视图、文字描述与已知相机位姿绑定，构建可语言检索的位置索引；图像定位分支用不同内点查询关键点筛选LoGS几何估计，不进行光度细化。在九个开发场景中，文字检索Top-1/Top-5联合相关性与有效性成功率为58.3%/78.3%，图像位姿在1米/2度阈值下场景均值成功率为97.3%。",
+        "relevanceZh": "将语言地点检索与三维场景坐标系中的相机定位连接，可为语言导航提供可查询地图接口。",
+        "recommendationZh": "【2026-11-02 当日批次】值得关注已知位姿索引及选择性接受机制；结果限定于开发场景，语义相关与源相机恢复的指标应分开看。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41377",
+        "title": "MolmoSpaces-CommonSense: Evaluating Commonsense in Robotic Manipulation Policies",
+        "published": null,
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "具身智能",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41377",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41377",
+        "summaryZh": "MolmoSpaces-CommonSense以发展认知科学的推理分类组织机器人操作评测，涵盖遮挡、容纳、支撑、可供性和隐藏物体，并要求实际执行正确动作。多种零样本通用策略在杂乱场景和语义抓取点上持续失误，VLM成功判断也不可靠。",
+        "relevanceZh": "检验具身策略从感知、常识推理到动作的整条链路。",
+        "recommendationZh": "【2026-11-02 当日批次】有助于识别干净场景基准高分与真实部署准备度之间的差距。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41383",
+        "title": "BioAgent: Self-Directed Skill Acquisition and Capability Growth for Long-Horizon Laboratory Protocols",
+        "published": null,
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "具身智能",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41383",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41383",
+        "summaryZh": "BioAgent把人工审核需求匹配到已验证技能，在能力缺口处选择工具实现或请求人类教学，并通过任务包顺序验证检查操作间兼容性。执行时检查前置条件、结果与实验状态，决定推进、恢复或终止；两个包含20和31次技能调用的双臂实验室任务成功率为66%和58%。",
+        "relevanceZh": "面向长程实体agent的技能获取、能力复用和执行状态管理。",
+        "recommendationZh": "【2026-11-02 当日批次】相较单纯扩充技能库，更强调验证标准与实验有效性，适合研究可靠长程任务编排。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41389",
+        "title": "Parse Before You Execute: Efficient Spatial Reasoning with Executable Primitives",
+        "published": null,
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41389",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41389",
+        "summaryZh": "PEPS是无需训练的工具化空间推理框架，先将问题解析为Frame、Entity、State、Metric四类带类型的可执行需求，再由执行器选择固定几何API和确定性计算，验证器检查证据充分性并提前停止或定向修复。摘要报告其在多项空间推理基准上提高准确率，同时降低修正轮次、API成本和延迟。",
+        "relevanceZh": "让智能体在几何计算前明确参照系、实体与状态，直接关联具身任务中的可靠空间推理，但并非机器人动作执行实验。",
+        "recommendationZh": "【2026-11-02 当日批次】推荐借鉴显式需求约束与充分性检查，减少看似合理却空间条件未落实的工具调用链。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41402",
+        "title": "DUGO: Dual-Scale Gaussian Memory for Online Temporal Action Localization in Egocentric Procedural Videos",
+        "published": null,
+        "categories": [
+          "cs.CV",
+          "cs.LG"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41402",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41402",
+        "summaryZh": "DUGO研究第一视角操作视频的在线时间动作定位，在不能访问未来帧或回改历史预测的约束下，用深度卷积局部表示与全局自注意力形成双尺度时间编码。输入条件的高斯原型记忆通过门控交叉注意力作用于编码器和锚点查询，在EGTEA、EPIC-Kitchens-100等数据集取得摘要所述领先表现。",
+        "relevanceZh": "因果地识别操作过程与动作阶段，可服务具身示范解析和长时任务状态跟踪；论文输出为动作定位而非控制策略。",
+        "recommendationZh": "【2026-11-02 当日批次】可关注多尺度记忆对长程操作过程的作用，尤其适合实时监测而非离线完整视频分析。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41408",
+        "title": "SACQ: Structure-Aware Codebook Quantization for Ultra-Low-Bit Vision-Language-Action Models",
+        "published": null,
+        "categories": [
+          "cs.CV",
+          "cs.LG",
+          "cs.RO"
+        ],
+        "topics": [
+          "VLA",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41408",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41408",
+        "summaryZh": "SACQ提出面向VLA的超低比特权重向量码本量化，以结构相关二次度量拟合码本，按各层压缩引起的最终动作误差分配位宽，再做二阶误差补偿与面向解码动作的校准。GR00T N1.7在语言/动作权重1.5比特时，四套LIBERO平均成功率93.85%、内存缩小4.83倍；结合INT8激活及低精度注意力后成功率93.55%、速度为BF16的1.51倍。",
+        "relevanceZh": "直接解决VLA在资源受限机器人上的部署成本，以动作误差而非语言模型指标决定压缩策略。",
+        "recommendationZh": "【2026-11-02 当日批次】优先推荐：action-aware位宽分配对端侧VLA很实用；SimplER两个设置收益并不一致，不能将量化概括为全面优于BF16。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41456",
+        "title": "SAFARI: Semantic- And Frontier-driven Autonomous Risk Inspection",
+        "published": null,
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41456",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41456",
+        "summaryZh": "SAFARI把目标检测纳入统一概率地图，使几何覆盖、语义证据与危险物附近操作风险共同影响探索规划。四足平台在三个野外地点执行11次任务，平均覆盖可达区域98.7%，97.6%的任务时间无需操作员干预，并分析物体尺寸感知与安全规划的作用。",
+        "relevanceZh": "属于面向目标搜索的具身语义探索与自主环境交互。",
+        "recommendationZh": "【2026-11-02 当日批次】野外实测和风险感知探索结合较有价值，可作为语义导航系统的工程参照。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41477",
+        "title": "AC-SMPC: Differentiable Actor--Critic MPC with State Constraints for Safe and Fast Robot Navigation",
+        "published": null,
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41477",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41477",
+        "summaryZh": "AC-SMPC将显式状态约束纳入可微actor-critic MPC。机器人/障碍顶点和工作空间半空间用于构造凸化碰撞约束，actor根据闭环反馈调节MPC目标参数，critic评估长期表现；有界惩罚松弛处理局部约束冲突，并在狭窄动态环境中验证。",
+        "relevanceZh": "研究学习策略与约束优化结合的机器人安全导航。",
+        "recommendationZh": "【2026-11-02 当日批次】可用于比较纯学习动作输出与可微优化层在动态避障中的效率和约束处理。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41482",
+        "title": "KEEPER: Learning Control-Sufficient Textual Memory for Long-Horizon LLM Agents",
+        "published": null,
+        "categories": [
+          "cs.CL",
+          "cs.AI"
+        ],
+        "topics": [
+          "具身智能",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41482",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41482",
+        "summaryZh": "KEEPER 研究长时程语言智能体的递归文本记忆：已有错误可能在后续更新中持续存在，即自一致性偏差。论文在共享记忆接口下，沿信息内容和更新敏感性两条轴比较四种辅助目标；在已评估条件中，奖励相关预测目标在离线强化学习前后均获得最高任务表现，优于联合监督。单条基线轨迹的逐条主张分析还展示了纠正性观察出现后错误仍可保留。",
+        "relevanceZh": "关注长时程agent控制所需的记忆监督及离线RL，不把任务成功率直接等同于记忆可靠性。",
+        "recommendationZh": "【2026-11-02 当日批次】适合设计具身agent记忆诊断：同时检查错误持续、有效信息保留与最终任务回报；注意其错误持久性证据包含个案分析。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41501",
+        "title": "VoxLution: Evolving Voxels for High-Fidelity 3D Scene Generation",
+        "published": null,
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "世界模型",
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41501",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41501",
+        "summaryZh": "VoxLution使用粗到细Transformer生成高分辨率室内三维场景，先生成低分辨率布局，再将多分辨率稀疏体素序列化并分块细化。无需训练的分辨率不变token化将八个八分体编码为一个数值，序列中加入相邻块边界以保持几何一致性；在3D-FRONT和ScanNet++上降低摘要报告的FPD与FID。",
+        "relevanceZh": "为机器人仿真提供细节丰富的室内场景生成基础，但方法是静态几何生成，不是动作条件动态世界模型。",
+        "recommendationZh": "【2026-11-02 当日批次】可关注块间边界约束与体素超分辨率，在仿真资产构建时评估几何质量和生成成本。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41540",
+        "title": "FOCUS: First-Order Control Using Optimal Transport Supervision for Imitation from Observations",
+        "published": null,
+        "categories": [
+          "cs.LG",
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL",
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41540",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41540",
+        "summaryZh": "FOCUS 从只有状态、没有动作和时间对齐的专家演示中学习控制。方法以局部最优传输把agent短窗口与多个专家片段进行soft best-of-K匹配，形成可微模仿奖励，再结合短时域可微actor-critic，由critic补足更长时域价值。它不要求专家对齐初始化或教师强制。在DFlex接触丰富的运动任务上，包括152肌肉激活控制的人形系统，摘要报告相较对抗式观测模仿和已有可微模仿方法，样本效率与训练稳定性提高。",
+        "relevanceZh": "直接研究无动作标注的机器人/仿生运动策略学习，以及接触动力学中的可微优化稳定性。",
+        "recommendationZh": "【2026-11-02 当日批次】推荐作为利用状态轨迹演示的训练配方：用局部对应和价值bootstrap避开长接触轨迹反向传播的不稳定。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41564",
+        "title": "Verify--Backtrack Loop: Structured Precondition Recovery for Long-Horizon Language Agents",
+        "published": null,
+        "categories": [
+          "cs.AI"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41564",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41564",
+        "summaryZh": "Verify–Backtrack Loop是无需训练的ReAct扩展，用有界目标栈表达任务分解，同时检查当前子目标对终目标的贡献及在当前状态下的可行性。结合类型化失败归因，显式执行入栈、出栈、重试或回退。在AppWorld、ALFWorld和ScienceWorld的多个骨干模型上均改善表现，AppWorld相对ReAct最高提升22.07个百分点。",
+        "relevanceZh": "ALFWorld等交互环境中的长时任务依赖隐含前置条件，方法直接处理具身agent规划状态与失败恢复。",
+        "recommendationZh": "【2026-11-02 当日批次】适合作为分层导航/操作系统的控制层参考；关键不是增加反思文字，而是将失败定位落实为可执行的目标状态更新。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41602",
+        "title": "DrawSplat: Atlanta World-Guided Implicit Gaussian SLAM for Indoor Reconstruction",
+        "published": null,
+        "categories": [
+          "cs.CV",
+          "cs.RO"
+        ],
+        "topics": [
+          "VLN / UAV 导航"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41602",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41602",
+        "summaryZh": "DrawSplat将点线联合位姿跟踪与Atlanta World共享重力结构先验引入隐式高斯RGB-D SLAM：从线条推断平面，并将其转为高斯中心与法线的可微正则。锚点式隐式表示和自适应结构采样将容量集中到重要区域，面向弱纹理、平面较多及长轨迹室内场景改善跟踪、渲染和重建。",
+        "relevanceZh": "SLAM与结构一致地图是室内具身导航的基础，可减少几何漂移对规划和定位的影响。",
+        "recommendationZh": "【2026-11-02 当日批次】推荐检查结构先验在非理想室内布局上的适用边界，以及地图紧凑性与轨迹准确率的权衡。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41609",
+        "title": "VLA Policies Do Not Know When Not to Act: Unintended Task Execution and Start Suppression",
+        "published": null,
+        "categories": [
+          "cs.RO",
+          "cs.AI"
+        ],
+        "topics": [
+          "VLA",
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41609",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41609",
+        "summaryZh": "在LIBERO-Goal中对六个VLA检查点固定初始状态，仅改变空白、中性、无意义、不可行或错误任务指令。空指令下所有模型都会启动，五个检查点常完成未指定任务。指令前缀无法阻止启动，动作块相似性门控对多数模型有效，而静止微调仍不能可靠阻止所有非任务输入下的运动。",
+        "relevanceZh": "直接揭示VLA指令落地中“执行什么”与“是否应执行”的分离。",
+        "recommendationZh": "【2026-11-02 当日批次】对部署安全尤其重要，提醒评测需加入无授权或无有效任务时的保持静止能力。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41625",
+        "title": "RTPolicy: Real-Time (32.9 Hz) Multi-View Visuomotor Policy for Robotic Manipulation on Edge Devices",
+        "published": null,
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41625",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41625",
+        "summaryZh": "RTPolicy以视角感知融合及视觉压缩生成紧凑token，再用机器人状态和流时间条件化流匹配动作生成器。RoboTwin 2.0单任务clean的50任务均值为52.26%；实机双臂异步流式执行成功率为72.0%，INT16下RDK S600推理约30.35ms。",
+        "relevanceZh": "面向边缘设备的实时多视角视觉运动策略。",
+        "recommendationZh": "【2026-11-02 当日批次】适合关注动作chunk延迟、视觉token成本和闭环执行效率的系统研究。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41639",
+        "title": "Chance-Constrained Inspection Viewpoint Sequencing for On-Orbit Servicing via Safe Reinforcement Learning",
+        "published": null,
+        "categories": [
+          "cs.AI",
+          "math.OC"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41639",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41639",
+        "summaryZh": "将航天器近距离检查视点选择建模为约束MDP，使用PPO与拉格朗日松弛训练高层视点序列策略。低层相对运动模型评估转移，动作集合直接约束单脉冲可达性和速度增量；PID调节乘子以约束导航与机动误差下的碰撞概率。数值实验在接近最大覆盖且满足燃料预算时控制风险，相近覆盖下违规率不到固定安全裕度基线的一半。",
+        "relevanceZh": "关联自主移动平台的安全主动观测与风险约束策略学习，应用为在轨服务而非自动驾驶。",
+        "recommendationZh": "【2026-11-02 当日批次】可参考其将风险预算显式引入策略、并把确定性可达约束与随机安全约束分开的层级设计；证据为数值实验。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41643",
+        "title": "Direct Action-Manifold Modeling for Efficient and Robust Bimanual Manipulation",
+        "published": null,
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41643",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41643",
+        "summaryZh": "DMAT直接建模观测条件下的干净双臂关节动作块，通过随机插值训练实现单步推理，避免迭代扩散/流积分。局部3D几何锚定预测，状态一致的频谱时间修正结合本体状态并抑制高频残差；标准与分布外测试显示成功率和生成速度优于所比较策略。",
+        "relevanceZh": "研究双臂模仿策略的动作表示、低延迟生成和扰动鲁棒性。",
+        "recommendationZh": "【2026-11-02 当日批次】直接建模动作流形而非迭代生成过程的路线值得与流匹配基线对照。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41647",
+        "title": "Risk-Sensitive Mission Planning for Multi-Target On-Orbit Inspection via Distributional Reinforcement Learning",
+        "published": null,
+        "categories": [
+          "cs.AI",
+          "math.OC"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41647",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41647",
+        "summaryZh": "使用QR-DQN学习低推力服务航天器多目标检查任务的收益分布，通过均值—方差准则选择下一检查目标。状态包含轨道参数、访问历史、目标风险与剩余时间。五目标数值场景中，改变风险厌恶权重可在均值与方差间权衡；风险厌恶策略将回报方差约减半并降低任务损失概率，但牺牲部分平均收益，且与枚举访问序列得到的效率前沿作了比较。",
+        "relevanceZh": "研究具身移动系统在动态风险和有限任务预算下的序列决策，展示分布式收益估计如何服务风险敏感规划。",
+        "recommendationZh": "【2026-11-02 当日批次】适合借鉴到无人机多目标巡检任务；应注意这里只验证五卫星模拟场景，不能直接视作实机效果。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41651",
+        "title": "When Depth Lies: Benchmarking Vision-Language Models on Mirror-Induced RGB-D Ambiguity",
+        "published": null,
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41651",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41651",
+        "summaryZh": "MIRA-Bench收集525个真实场景的1011幅RGB-D图像，标注六类反射表面以及实物与镜像，构建覆盖感知、空间推理和场景决策三层级的14140个问答。评估发现VLM难以区分镜像与真实对象、建立对应关系及正确推断空间位置；提供深度反而降低推理表现，说明模型未能识别镜面中的不可靠深度。",
+        "relevanceZh": "具身智能体依赖RGB-D进行场景决策时，镜面可引入系统性几何误判，是重要的传感器可信度测试。",
+        "recommendationZh": "【2026-11-02 当日批次】值得用于空间推理压力测试，避免把增加深度输入默认等同于增加可靠几何证据。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41654",
+        "title": "$\\nabla$Mimic: Ultra-Efficient Humanoid Control with Differentiable Simulation",
+        "published": null,
+        "categories": [
+          "cs.RO",
+          "cs.LG"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41654",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41654",
+        "summaryZh": "∇Mimic使用可微仿真器精确梯度学习人形控制，通过逐样本相对中位数梯度裁剪抑制接触事件附近的梯度爆炸，并复用模拟窗口回归梯度导出的动作目标。配套NablaEngine优化GPU接触动力学与伴随计算，在单GPU的40段LAFAN1跟踪任务中显著缩短训练时间。",
+        "relevanceZh": "属于可微物理驱动的一阶机器人策略学习。",
+        "recommendationZh": "【2026-11-02 当日批次】关注其如何同时处理不光滑接触梯度和计算开销，可与基于学习世界模型的代理梯度比较。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41663",
+        "title": "ResMerge: Residual Policy Learning and Merging for Continual Adaptation of Pre-trained Robot Policies",
+        "published": null,
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41663",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41663",
+        "summaryZh": "ResMerge冻结预训练机器人策略，用残差RL在无需额外专家示范的条件下学习任务修正，再按残差动作场方向和幅度的一致性评估兼容性，并合并相容残差参数。LIBERO两种主干和Franka实机实验展示持续适应效果及存储缩减。",
+        "relevanceZh": "直接对应机器人策略持续学习、无示范适应和参数合并。",
+        "recommendationZh": "【2026-11-02 当日批次】动作场兼容性指标提供了可解释的合并依据，值得用于减少逐任务adapter增长。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41688",
+        "title": "When the Past Shapes Action: Understanding Embodied Memory",
+        "published": null,
+        "categories": [
+          "cs.RO",
+          "cs.AI",
+          "cs.LG"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41688",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41688",
+        "summaryZh": "综述具身记忆，将其视为保留当前观测之外决策相关信息的机制。以世界状态持续性、任务进度、信念维护和经验学习等六类需求，以及递归状态、快权重、视觉/符号、空间和经验系统等八类架构组织研究，并区分基准中的真实历史信息使用与一般任务性能。",
+        "relevanceZh": "覆盖导航、操作与长程agent中的记忆机制和评测。",
+        "recommendationZh": "【2026-11-02 当日批次】适合作为记忆课题的设计清单，尤其提醒以反事实或历史依赖任务验证记忆是否真正被使用。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41697",
+        "title": "TSBPO: Tree-Structured Branching for Policy Optimization in Interactive Language Agents",
+        "published": null,
+        "categories": [
+          "cs.AI",
+          "cs.CL",
+          "cs.LG"
+        ],
+        "topics": [
+          "具身智能",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41697",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41697",
+        "summaryZh": "TSBPO将树形分支采样、延迟反馈信用分配和多token动作损失聚合放入同一训练循环。根/分支分配器优先采样有望产生对照结果的续轨，轨迹优势比较相邻分支，观测分组优势比较匹配状态的结果，并对完整响应累加裁剪token目标后按活跃回合归一化。Qwen2.5-1.5B在所测ALFWorld已见/未见随机成功率达97.79%/96.64%，WebShop为81.07%。",
+        "relevanceZh": "直接针对交互具身与网页行动agent强化学习中的采样效率、长时信用分配和动作粒度。",
+        "recommendationZh": "【2026-11-02 当日批次】值得与GRPO式整轨训练对照：论文把“在哪分支、如何比较、怎样聚合动作token”三个通常分离的环节联结起来。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41809",
+        "title": "Continual Reinforcement Learning Is an Integration Problem",
+        "published": null,
+        "categories": [
+          "cs.LG"
+        ],
+        "topics": [
+          "机器人策略 / RL",
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41809",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41809",
+        "summaryZh": "论文提出持续学习RL智能体应共同满足的十项设计与评估要求，并据此审视代表性方法。作者强调分别在不同实验中达到单项要求，不足以证明同一智能体在持续生命周期中能同时满足所有要求；据其调查，尚无公开评估提供这种整合证据。作为辅助贡献，论文给出可玩的持久世界场景，并勾勒在单一生命周期内联合测试相关行为能力的基准。",
+        "relevanceZh": "聚焦长期持续行动智能体的整合评估，而不是一次性训练后静态测试。",
+        "recommendationZh": "【2026-11-02 当日批次】适合作为持续具身RL评测设计清单；这是观点和基准提案，不应当作已验证的全能持续学习系统。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41833",
+        "title": "PGGT-Loc: Primitive-Grounded Geometry Transformer for Feed-Forward Camera Localization",
+        "published": null,
+        "categories": [
+          "cs.CV",
+          "cs.RO"
+        ],
+        "topics": [
+          "VLN / UAV 导航"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41833",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41833",
+        "summaryZh": "PGGT-Loc提出将单张查询图像直接定位到由几何基元组成的地图中，以平面基元为实例训练几何Transformer，预测多种定位目标并输出前馈6-DoF相机位姿。摘要报告模型可泛化到未见环境，并在稠密表面地图与极简布局模型上达到领先定位性能。",
+        "relevanceZh": "以紧凑结构地图进行视觉定位，为具身导航降低地图构建、存储和维护成本提供路径。",
+        "recommendationZh": "【2026-11-02 当日批次】推荐关注图像与平面基元间跨模态对齐，以及在低纹理/布局地图中的定位泛化。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41844",
+        "title": "SketchMate: Agentic Geometric Reasoning for Zero-Shot Precision Insertion",
+        "published": null,
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41844",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41844",
+        "summaryZh": "SketchMate让VLM用几何基元和配合坐标系构建插装任务草图，再通过多视角深度几何工具测量，由传统规划与柔顺控制执行。草图记忆用点云配准迁移到新物体摆放；69次仿真插装中严格运动学成功率为88%，复用草图将生成时间从约90秒降至3.4秒。",
+        "relevanceZh": "将具身agent的语义推理和高精度几何工具/动作执行结合。",
+        "recommendationZh": "【2026-11-02 当日批次】可借鉴可复用几何表示绕开VLM直接输出坐标精度不足的问题；证据主要是仿真。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41857",
+        "title": "When the Simulator Fails, Not the Policy: Auditing Contact Artifacts in Simulated Robot Benchmarks",
+        "published": null,
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "VLA",
+          "世界模型",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41857",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41857",
+        "summaryZh": "SimuGuard审计机器人仿真接触伪影，记录状态、逐位回放并对单一仿真参数做干预。论文在RoboTwin发现厘米尺度有效三角形被固定面积阈值丢弃，引发虚假穿透和物体弹飞；修改该常数后100次样本中的伪影从12次降至0次，五类容器任务成功率从89%升至98%。",
+        "relevanceZh": "影响VLA和世界动作模型的策略评测与失败归因。",
+        "recommendationZh": "【2026-11-02 当日批次】有助于避免把物理引擎故障误判为策略问题，建议同时报告伪影敏感区间而非仅一个成功率。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41868",
+        "title": "META-Robot: Self-Cognition and Capability Scaling in Agentic Robots",
+        "published": null,
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41868",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41868",
+        "summaryZh": "META-Robot通过动作级谓词显式表示执行结果，并结合本体反馈支持LLM判断自身能力边界。agent据此扩充技能及其评估标准，在仿真和实机中验证新任务泛化与能力持续扩展。",
+        "relevanceZh": "属于具身agent自我评估、技能获取和反馈驱动学习。",
+        "recommendationZh": "【2026-11-02 当日批次】值得关注评估标准如何随能力一起增长，而不只增加可调用工具。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41877",
+        "title": "Movens-Zero: Scaling Humanoid Motion Foundation Models with Large-Scale Human Videos",
+        "published": null,
+        "categories": [
+          "cs.RO",
+          "cs.CV"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41877",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41877",
+        "summaryZh": "Movens-5M从互联网视频经筛选、运动恢复、人形重定向和执行验证构建1500万人体动作序列与500万可执行人形序列。Movens-Zero以任务混合流匹配训练统一动作专家，支持文本、语音、音乐、视频条件生成，并用实时动作块连接实现闭环执行；实验分析数据与模型规模扩展。",
+        "relevanceZh": "关注海量人类视频到可执行人形动作基础模型。",
+        "recommendationZh": "【2026-11-02 当日批次】数据中的物理执行验证和多模态监督值得参考，避免仅以运动生成视觉质量衡量机器人适用性。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41892",
+        "title": "Online Learning of Heterogeneous Locomotion Dynamics under Reinforcement Learning Policies for Precise Loco-Manipulation",
+        "published": null,
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL",
+          "世界模型"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41892",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41892",
+        "summaryZh": "在冻结移动策略上在线学习闭环浮动基座动力学，以支持精确移动操作。用双分量污染高斯模型区分同一观测下可预测/不可预测响应，再结合随机傅里叶特征高斯过程加权更新，降低隐含策略状态引起的偏差。MPC用所学模型预测基座运动，仿真及硬件展示约0.01m末端跟踪误差。",
+        "relevanceZh": "研究如何复用预训练移动策略并学习其闭环动态以服务操作。",
+        "recommendationZh": "【2026-11-02 当日批次】隐状态造成的异质响应建模，对冻结低层策略的上层模型预测控制有参考价值。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41946",
+        "title": "Sensorium: An Open-Source Multimodal Data Collection and Curation Library for Embodied Surgical AI",
+        "published": null,
+        "categories": [
+          "cs.AI",
+          "cs.RO"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41946",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41946",
+        "summaryZh": "Sensorium是用于具身手术AI的开源Python数据采集与整理库，基于ROS/ROS2接入可配置机器人和传感器流，覆盖操作者采集、处理、语义标注和episode数据生成。作者在包含多种手术任务与感知配置的1516段仿体、离体及活体猪实验记录上评估，并报告初步易用性反馈。",
+        "relevanceZh": "提供机器人策略学习所需的多模态时序数据基础设施，面向手术具身系统。",
+        "recommendationZh": "【2026-11-02 当日批次】推荐关注可配置传感器流到episode数据的工程链路；摘要没有给出策略性能提升，不能把数据工具验证等同于控制效果验证。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41970",
+        "title": "When Does Test-Time Search Help World Action Models? An Empirical Audit of Candidate Selection and Simulator Integrity",
+        "published": null,
+        "categories": [
+          "cs.AI"
+        ],
+        "topics": [
+          "世界模型",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41970",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41970",
+        "summaryZh": "对Cosmos Policy与RoboCasa上的世界动作模型测试时扩展进行预注册审计。干净数据中学习式价值选择器比随机差1.66个百分点，事后oracle仅提升1.40个百分点且区间跨零，82%状态的候选结果相同。token裁剪最高减少47%单次前向FLOPs，但部署路径端到端加速仅到1.15倍；作者还发现并修复了偏向重计算规划路径的静默渲染损坏。",
+        "relevanceZh": "直接检验世界动作模型候选搜索、价值选择与算力扩展是否真正改善机器人闭环控制。",
+        "recommendationZh": "【2026-11-02 当日批次】重要负结果：在扩大规划算力前，应先审计候选间可利用信号、真实端到端效率和模拟器完整性；结论仅限所测配置。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41978",
+        "title": "Language-Conditioned Behavioral Cloning for Autonomous Endoscope Guidance",
+        "published": null,
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41978",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41978",
+        "summaryZh": "以语言条件行为克隆学习六类内窥镜镜头引导行为，采集235段子任务示范。在初步体模实验中，聚焦、概览和停止成功率为100%，搜索/跟随器械尖端为80%，地平线校正为50%；失败分析指出时间上下文不足。",
+        "relevanceZh": "属于语言条件机器人视觉运动策略在手术辅助场景的应用。",
+        "recommendationZh": "【2026-11-02 当日批次】任务定义清晰且报告不同子任务差异，但仅为体模初步可行性结果，不代表临床有效性。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41981",
+        "title": "Design and Validation of a Robotic Knee Exoskeleton with Musculoskeletal Simulation-Derived Biological Torque Control",
+        "published": null,
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41981",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41981",
+        "summaryZh": "提出开放式膝外骨骼与完全由仿真训练的生物力矩控制器。肌肉驱动模仿策略重现公开人体下蹲数据，并将膝力矩蒸馏为仅用机载传感器的估计器，无需目标设备训练数据；七名健常参与者实验显示下蹲时部分肌肉/关节负担下降。",
+        "relevanceZh": "涉及模仿学习、仿真蒸馏与机器人助力控制的实机迁移。",
+        "recommendationZh": "【2026-11-02 当日批次】适合研究无需设备专属采集的sim-to-real控制流程；人体效果证据仍限小规模健常样本。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.41987",
+        "title": "FoAViS: Analyzing Learned Fixation Strategies in a Foveated Active Vision System",
+        "published": null,
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.41987",
+        "pdfUrl": "https://arxiv.org/pdf/2610.41987",
+        "summaryZh": "FoAViS模拟主动中心凹视觉，以对数极坐标采样并在二维空间记忆中累积信息，同一记忆可用于分类或密集分割；二维凝视位置策略与任务模型联合训练。学习到的凝视策略选择更有信息、任务相关的位置，联合训练优于随机凝视训练，即使后者在测试时获得学习后的扫描路径。",
+        "relevanceZh": "研究主动感知中观察动作与视觉表征的共同学习，而不只是被动图像编码。",
+        "recommendationZh": "【2026-11-02 当日批次】值得关注策略和表征的协同适应，尤其适用于观察预算受限的具身感知设计。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.42002",
+        "title": "GeoFlip: Benchmarking Geometry-Sensitive Physics in Video Generation",
+        "published": null,
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "世界模型"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.42002",
+        "pdfUrl": "https://arxiv.org/pdf/2610.42002",
+        "summaryZh": "GeoFlip通过保持物理条件和文本提示不变、仅干预支撑范围、物体放置或机构配置，构建482对场景及964段参考视频，测试生成模型能否因初始几何改变而产生正确物理结果。对16个图生视频模型的评估中，在共同442个条件上最佳平均事件正确率仅27.98%，并区分事件正确性、结构完整性与参考相似度。",
+        "relevanceZh": "针对世界模型最核心的几何条件物理演化能力，而非只评价视觉逼真度；可作为具身想象模型的诊断。",
+        "recommendationZh": "【2026-11-02 当日批次】推荐其成对受控干预设计：能识别模型是否真正响应因果几何差异，而不是生成常见运动模板。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.42021",
+        "title": "Nexus-VLA: Bridging Human and Robot Experiences via a Shared Hierarchical Semantic Latent Space",
+        "published": null,
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "VLA",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.42021",
+        "pdfUrl": "https://arxiv.org/pdf/2610.42021",
+        "summaryZh": "Nexus-VLA通过端到端人机联合训练，将人类第一视角视频的操作知识直接用于机器人动作学习。从任务意图到细粒度交互逐层对齐跨形态语义，并把多层知识编码为共享操作潜表示用于连续动作生成；RoboCasa-GR1成功率为80.5%，另做OOD和实机验证。",
+        "relevanceZh": "直接研究人类视频与机器人动作空间之间的VLA知识迁移。",
+        "recommendationZh": "【2026-11-02 当日批次】层次语义对齐和动作学习不再分离，适合比较人类数据利用率及跨场景泛化。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.42028",
+        "title": "CausalXRL: Explainable Reinforcement Learning through Causal Graph Reasoning",
+        "published": null,
+        "categories": [
+          "cs.LG"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.42028",
+        "pdfUrl": "https://arxiv.org/pdf/2610.42028",
+        "summaryZh": "CausalXRL 将因果图推理用于强化学习策略解释，输出结构化、多层次的行动决策说明。论文通过RL基准上的解释忠实度与因果结构学习效率进行定量评估，并在MicroRTS实时策略环境中开展专家定性研究。摘要报告解释可保持忠实且因果结构学习有效率，专家认为系统有助于检查高层RTS策略。",
+        "relevanceZh": "针对行动策略而非纯文本生成的可解释RL，可为复杂agent决策调试提供结构化视角。",
+        "recommendationZh": "【2026-11-02 当日批次】适合研究策略解释与调试工具；应区分基准上的定量忠实度与专家主观可用性结论。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.42043",
+        "title": "Proof-Carrying Evolution: Black-Box Search, White-Box Flight",
+        "published": null,
+        "categories": [
+          "cs.RO",
+          "cs.NE",
+          "eess.SY"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.42043",
+        "pdfUrl": "https://arxiv.org/pdf/2610.42043",
+        "summaryZh": "Proof-Carrying Evolution让语言模型或传统搜索同时提出固定形式控制律及证书的数值参数，仅返回通过验证的候选。在线性任务用精确有理数检验，SO(3)候选再做精确复核，并为部分最优设计生成Lean证明。结果显示LLM优势依任务和比较方式变化，不能普遍优于经典优化。",
+        "relevanceZh": "属于语言模型辅助的可验证机器人控制策略设计，而非运行期语言控制。",
+        "recommendationZh": "【2026-11-02 当日批次】重要价值在于将搜索结果约束到可认证控制器，并诚实揭示模型相对传统优化的边界。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.42053",
+        "title": "REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control",
+        "published": null,
+        "categories": [
+          "cs.RO",
+          "cs.CV"
+        ],
+        "topics": [
+          "具身智能",
+          "VLA"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.42053",
+        "pdfUrl": "https://arxiv.org/pdf/2610.42053",
+        "summaryZh": "REA以慢速推理系统、具身路由器和快速策略异步协作，规定运行中的策略不等待大模型。通过预存策略成功记录、边界触发评判及共享预算恢复阶梯协调执行。3000个LIBERO-Pro测试中成功率95.9%，并降低控制步骤和时间，另展示RoboTwin及人形迁移。",
+        "relevanceZh": "研究VLA、代码策略和高层agent的实时系统整合。",
+        "recommendationZh": "【2026-11-02 当日批次】适合解决大模型推理阻塞控制、重复回退和静默失败等实际运行问题。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.42082",
+        "title": "Think in 360°: Benchmarking and Bootstrapping Panoramic Video Reasoning",
+        "published": null,
+        "categories": [
+          "cs.CV"
+        ],
+        "topics": [
+          "具身智能"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.42082",
+        "pdfUrl": "https://arxiv.org/pdf/2610.42082",
+        "summaryZh": "PanoVideoBench以1000个人工标注问题评估全景视频的五类能力，11个模型暴露跨视角跟踪与球面—时间证据整合短板。作者从真实全景视频与已验证探索轨迹构建13465条推理样本，通过CoT监督微调和证据特权的在线自蒸馏训练PanoVideoReasoner，使准确率达到55.7%，较基座提高12.5点。",
+        "relevanceZh": "全景空间与时间证据整合关联具身智能体的周边环境理解，但摘要评估是视频问答而非导航闭环。",
+        "recommendationZh": "【2026-11-02 当日批次】推荐借鉴验证后的透视视图指导学生推理轨迹的方法，并关注跨视角证据是否真实支撑答案。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.42096",
+        "title": "CausalWAM: Learning the Causes of Actions in World Action Models",
+        "published": null,
+        "categories": [
+          "cs.AI",
+          "cs.RO",
+          "stat.ML"
+        ],
+        "topics": [
+          "世界模型",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.42096",
+        "pdfUrl": "https://arxiv.org/pdf/2610.42096",
+        "summaryZh": "CausalWAM区分用于全场景预测的潜变量与真正导致动作的潜变量，指出示范拟合可能将动作相关因素和干扰因素纠缠。作者在稀疏约束下证明动作生成潜变量仅为真实动作原因的可逆函数，并能在置换意义上识别结构；CWAM通过给预训练世界动作模型的动作头加入稀疏路由实现该约束，同时保留原世界建模目标。合成数据与真实机器人实验支持理论并展示闭环成功效率改善。",
+        "relevanceZh": "直指世界动作模型中“预测整个场景”与“仅依赖动作原因”的目标错位，连接因果表示与机器人策略泛化。",
+        "recommendationZh": "【2026-11-02 当日批次】优先推荐：稀疏动作路由提供结构清晰、可检验的改造点；理论有明确假设，摘要未给定量提升，不宜夸大为无条件因果识别。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.42097",
+        "title": "ROOF: Learning Humanoid Fall Recovery under Overhead Constraints",
+        "published": null,
+        "categories": [
+          "cs.RO"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.42097",
+        "pdfUrl": "https://arxiv.org/pdf/2610.42097",
+        "summaryZh": "ROOF用接触支撑的几何脱困奖励训练人形在顶上障碍物下起身，不指定逃脱路径。结合学习运动先验、姿态相关支撑和关节卡滞成本，仅凭本体感知联合学习清障、建立支撑与起身。仿真与G1实机验证，后者在七类未见障碍场景150次尝试中成功95次。",
+        "relevanceZh": "属于受约束接触环境下的人形强化学习和失败恢复。",
+        "recommendationZh": "【2026-11-02 当日批次】明确关注先获得空间再起身的动作顺序，可为具身系统自主恢复提供案例。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.42100",
+        "title": "Towards Understanding the Impact of Plasticity Loss on Reinforcement Learning in Stochastic Environments",
+        "published": null,
+        "categories": [
+          "cs.LG"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.42100",
+        "pdfUrl": "https://arxiv.org/pdf/2610.42100",
+        "summaryZh": "论文系统研究随机环境中的RL可塑性损失，在三个DeepMind Control任务中对SAC施加可控观察噪声与动作噪声。结果显示，保持可塑性的方法在两个较难任务上提高鲁棒性，且优势随观察噪声增加；但重置与LayerNorm组合在所有测试观察噪声水平下都不如单独重置。噪声在难任务中可加快可塑性损失，在易任务中又可能成为正则化；最困难随机条件下，主要失败原因转为TD不稳定而非逐渐失去可塑性。",
+        "relevanceZh": "直接涉及连续控制策略在传感与动作随机扰动下的训练稳定性。",
+        "recommendationZh": "【2026-11-02 当日批次】推荐用来指导鲁棒RL消融：不要假设多个稳定化技巧可叠加获益，并应区分可塑性退化与TD失稳。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.42104",
+        "title": "Hyperbolic Inverse Reinforcement Learning",
+        "published": null,
+        "categories": [
+          "cs.LG"
+        ],
+        "topics": [
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.42104",
+        "pdfUrl": "https://arxiv.org/pdf/2610.42104",
+        "summaryZh": "Hyperbolic IRL 以特征向量与可学习参数向量之间的双曲距离参数化奖励，同时研究欧氏距离变体。作者在确定性和随机策略条件下与线性及非线性IRL基线比较，摘要报告其在标准基准上性能相当，在少数据及密集环境中更有优势。用于博物馆多展品间的人类导航时，该方法揭示奖励不仅依赖单个展品距离，还包含不可分离的特征组合。",
+        "relevanceZh": "通过行为反推导航奖励，关联偏好建模和策略学习；实验涉及人类导航，不是UAV或视觉语言导航系统。",
+        "recommendationZh": "【2026-11-02 当日批次】值得关注奖励几何如何表达组合偏好，尤其是示范较少时；不应把博物馆行为拟合扩展为机器人导航实证。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.42141",
+        "title": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory",
+        "published": null,
+        "categories": [
+          "cs.RO",
+          "cs.AI",
+          "cs.CV"
+        ],
+        "topics": [
+          "具身智能",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.42141",
+        "pdfUrl": "https://arxiv.org/pdf/2610.42141",
+        "summaryZh": "RoboArchitect让编码模型观察机器人rollout、诊断失败并迭代改写冻结策略外围harness，同时演化跨回合持续记忆。优化与留出评估分离，不改模型权重；多基准平均成功率在未见场景由9.7%升至43.3%，未见任务由12.7%升至40.2%。",
+        "relevanceZh": "将具身agent工具调用、恢复控制与经验记忆的设计自动化。",
+        "recommendationZh": "【2026-11-02 当日批次】有助于判断性能瓶颈位于策略本体还是运行框架，并提供不微调模型的适应路线。",
+        "topRank": null,
+        "evidence": "abstract"
+      },
+      {
+        "id": "2610.42146",
+        "title": "Hierarchical World Models with Implicit Dynamics",
+        "published": null,
+        "categories": [
+          "cs.RO",
+          "cs.AI"
+        ],
+        "topics": [
+          "世界模型",
+          "机器人策略 / RL"
+        ],
+        "abstractUrl": "https://arxiv.org/abs/2610.42146",
+        "pdfUrl": "https://arxiv.org/pdf/2610.42146",
+        "summaryZh": "ID-WM用高层模型采样状态流形上的可达转换，再以低层世界模型作为逆动力学求解器将子目标落地为精确动作，解耦可达性与局部控制。通过短片段组合长程计划，在三个导航/操作套件中优于所比较策略及扩散规划器，特别改善未见复杂配置下的单层世界模型MPC。",
+        "relevanceZh": "直接研究层次世界模型的长程规划与动作落地。",
+        "recommendationZh": "【2026-11-02 当日批次】可达状态而非固定宏动作作为高层接口，有助于降低搜索复杂度和累积模型误差。",
+        "topRank": null,
+        "evidence": "abstract"
+      }
+    ],
+    "trends": [
+      "世界模型的关注点从“生成像真的未来”转向“未来是否有助于动作”：WorldBridge拆分视频覆盖与动作监督，CausalWAM约束动作相关潜变量，Utility-WAM用反事实测试未来预测的控制收益；这类证据不等同于仅靠视频指标证明策略进步。",
+      "导航正在结合稳定空间先验、主动取证与执行约束：GeoReasoner用地理先验和反证式终点确认处理空中VLN歧义，MATCH关注执行可行性，OpenFlyV2把共享视觉语言能力与机载连续飞行结合；各自基准和硬件条件不同，不能直接横比成功率。",
+      "行动智能体后训练更重视信用分配和交互过程：CaPtain以训练期物理critic为机器人API请求分配信用，TSBPO沿树分支和动作token聚合构造优势，SCOPE聚焦关键交互步骤；共同目标是让稀疏终局奖励指导具体行动，而非仅优化文本答案。",
+      "数据与表示开始覆盖动作、接触和物体可动性：MotorSense提供视频—肌电同步监督，RFW-A扩展可动资产与跨域策略训练，HiFOR以分层未来预测和动作引导检索支持VLA泛化；数据规模与表示能力仍需通过闭环任务验证。",
+      "部署与评测约束正在成为核心研究对象：SACQ针对最终动作误差分配低比特表示，WAM测试时扩展审计检查候选信号、实际速度及模拟器完整性；真实机载频率、闭环成功与失效条件比单一离线生成分数更有决策价值。"
+    ]
+  }
+}
