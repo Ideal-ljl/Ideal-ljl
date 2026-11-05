@@ -1,6 +1,13 @@
 {
   "archive": [
     {
+      "date": "2026-11-05",
+      "status": "complete",
+      "sourceBatch": "cs.AI:2026-11-05|cs.CL:2026-11-05|cs.CV:2026-11-05|cs.LG:2026-11-05|cs.RO:2026-11-05|eess.IV:2026-11-05|stat.ML:2026-11-05",
+      "updatedAt": "2026-11-05T06:09:47.365Z",
+      "count": 75
+    },
+    {
       "date": "2026-11-04",
       "status": "partial",
       "sourceBatch": "cs.AI:2026-11-03|cs.AI:2026-11-04|cs.CL:2026-11-03|cs.CL:2026-11-04|cs.CV:2026-11-03|cs.CV:2026-11-04|cs.LG:2026-11-03|cs.LG:2026-11-04|cs.RO:2026-11-03|cs.RO:2026-11-04|eess.IV:2026-11-03|eess.IV:2026-11-04|stat.ML:2026-11-03|stat.ML:2026-11-04",
