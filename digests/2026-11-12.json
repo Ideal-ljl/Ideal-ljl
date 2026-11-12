@@ -1,0 +1,70 @@
+{
+  "digest": {
+    "date": "2026-11-12",
+    "timezone": "Asia/Shanghai",
+    "status": "no_new_listing",
+    "statusNote": "本次已核对七个分类的官方 new 与 recent 共14个页面。最新公开批次均仍为2026-11-11，New submissions 合计495篇（ID去重后495篇），已在11月11日日报完成筛选；recent 中11月10日的999篇也已于昨日补齐，11月9日、6日、5日均有历史归档。没有尚未处理的新批次，今天不重复收录论文，不生成Top3或新的研究趋势。此状态仅反映本次核查时官方可见列表，不表示今日不会继续更新。",
+    "sourceBatch": "cs.AI:2026-11-11|cs.CL:2026-11-11|cs.CV:2026-11-11|cs.LG:2026-11-11|cs.RO:2026-11-11|eess.IV:2026-11-11|stat.ML:2026-11-11",
+    "checkedAt": "2026-11-12T06:01:07Z",
+    "selectionPolicy": "new_submissions_only",
+    "categories": [
+      {
+        "category": "cs.CV",
+        "officialDate": "2026-11-11",
+        "newCount": 117,
+        "sourceUrl": "https://arxiv.org/list/cs.CV/new",
+        "state": "verified"
+      },
+      {
+        "category": "cs.AI",
+        "officialDate": "2026-11-11",
+        "newCount": 105,
+        "sourceUrl": "https://arxiv.org/list/cs.AI/new",
+        "state": "verified"
+      },
+      {
+        "category": "cs.LG",
+        "officialDate": "2026-11-11",
+        "newCount": 134,
+        "sourceUrl": "https://arxiv.org/list/cs.LG/new",
+        "state": "verified"
+      },
+      {
+        "category": "cs.RO",
+        "officialDate": "2026-11-11",
+        "newCount": 57,
+        "sourceUrl": "https://arxiv.org/list/cs.RO/new",
+        "state": "verified"
+      },
+      {
+        "category": "cs.CL",
+        "officialDate": "2026-11-11",
+        "newCount": 63,
+        "sourceUrl": "https://arxiv.org/list/cs.CL/new",
+        "state": "verified"
+      },
+      {
+        "category": "stat.ML",
+        "officialDate": "2026-11-11",
+        "newCount": 11,
+        "sourceUrl": "https://arxiv.org/list/stat.ML/new",
+        "state": "verified"
+      },
+      {
+        "category": "eess.IV",
+        "officialDate": "2026-11-11",
+        "newCount": 8,
+        "sourceUrl": "https://arxiv.org/list/eess.IV/new",
+        "state": "verified"
+      }
+    ],
+    "counts": {
+      "beforeDedup": 495,
+      "afterDedup": 495,
+      "relevant": 0,
+      "selected": 0
+    },
+    "papers": [],
+    "trends": []
+  }
+}
