@@ -1,0 +1,70 @@
+{
+  "digest": {
+    "date": "2026-11-13",
+    "timezone": "Asia/Shanghai",
+    "status": "no_new_listing",
+    "statusNote": "本次重新核对七个分类的官方 new 与 recent 共14个页面，最新公开批次均仍为2026-11-11。该批次New submissions合计495篇（ID去重后495篇），已在11月11日日报完成筛选；recent中11月10日999篇也已于11月11日补齐，11月9日、6日、5日均有归档。另用带本次核查时间参数的新请求复核cs.CV，官方响应Age为0，仍显示11月11日。没有尚未处理的新批次，今日不重复收录，不生成Top3或研究趋势。此状态仅反映核查时官方可见列表，不推断延迟原因，也不表示之后不会更新。",
+    "sourceBatch": "cs.AI:2026-11-11|cs.CL:2026-11-11|cs.CV:2026-11-11|cs.LG:2026-11-11|cs.RO:2026-11-11|eess.IV:2026-11-11|stat.ML:2026-11-11",
+    "checkedAt": "2026-11-13T06:00:19Z",
+    "selectionPolicy": "new_submissions_only",
+    "categories": [
+      {
+        "category": "cs.CV",
+        "officialDate": "2026-11-11",
+        "newCount": 117,
+        "sourceUrl": "https://arxiv.org/list/cs.CV/new",
+        "state": "verified"
+      },
+      {
+        "category": "cs.AI",
+        "officialDate": "2026-11-11",
+        "newCount": 105,
+        "sourceUrl": "https://arxiv.org/list/cs.AI/new",
+        "state": "verified"
+      },
+      {
+        "category": "cs.LG",
+        "officialDate": "2026-11-11",
+        "newCount": 134,
+        "sourceUrl": "https://arxiv.org/list/cs.LG/new",
+        "state": "verified"
+      },
+      {
+        "category": "cs.RO",
+        "officialDate": "2026-11-11",
+        "newCount": 57,
+        "sourceUrl": "https://arxiv.org/list/cs.RO/new",
+        "state": "verified"
+      },
+      {
+        "category": "cs.CL",
+        "officialDate": "2026-11-11",
+        "newCount": 63,
+        "sourceUrl": "https://arxiv.org/list/cs.CL/new",
+        "state": "verified"
+      },
+      {
+        "category": "stat.ML",
+        "officialDate": "2026-11-11",
+        "newCount": 11,
+        "sourceUrl": "https://arxiv.org/list/stat.ML/new",
+        "state": "verified"
+      },
+      {
+        "category": "eess.IV",
+        "officialDate": "2026-11-11",
+        "newCount": 8,
+        "sourceUrl": "https://arxiv.org/list/eess.IV/new",
+        "state": "verified"
+      }
+    ],
+    "counts": {
+      "beforeDedup": 495,
+      "afterDedup": 495,
+      "relevant": 0,
+      "selected": 0
+    },
+    "papers": [],
+    "trends": []
+  }
+}
