@@ -1,6 +1,13 @@
 {
   "archive": [
     {
+      "date": "2026-11-16",
+      "status": "complete",
+      "sourceBatch": "cs.AI:2026-11-13|cs.AI:2026-11-16|cs.CL:2026-11-13|cs.CL:2026-11-16|cs.CV:2026-11-13|cs.CV:2026-11-16|cs.LG:2026-11-13|cs.LG:2026-11-16|cs.RO:2026-11-13|cs.RO:2026-11-16|eess.IV:2026-11-13|eess.IV:2026-11-16|stat.ML:2026-11-13|stat.ML:2026-11-16",
+      "updatedAt": "2026-11-16T06:07:33.200Z",
+      "count": 146
+    },
+    {
       "date": "2026-11-13",
       "status": "no_new_listing",
       "sourceBatch": "cs.AI:2026-11-11|cs.CL:2026-11-11|cs.CV:2026-11-11|cs.LG:2026-11-11|cs.RO:2026-11-11|eess.IV:2026-11-11|stat.ML:2026-11-11",
