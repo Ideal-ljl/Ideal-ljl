@@ -6,6 +6,8 @@ My research focuses on **Embodied AI**, **Vision-Language Navigation**, and **Wo
 
 ## Selected Work
 
+- **[OpenFlyV2](https://github.com/Ideal-ljl/AeroBrain)** · arXiv 2026  
+  A unified onboard vision-language-action model for aerial perception and navigation, generating flight waypoints at 10 Hz on NVIDIA Jetson Orin NX. Introduces OpenFlyV2-130K with 70K navigation trajectories and 60K vision-language pairs. [Paper](https://arxiv.org/abs/2610.39287) · [Project](https://ideal-ljl.github.io/AeroBrain/)
 - **[AerialVG](https://github.com/Ideal-ljl/AerialVG)** · ICCV 2025  
   A benchmark for aerial visual grounding with an emphasis on positional relations and spatial reasoning. [Paper](https://arxiv.org/abs/2504.07836)
 - **[OpenFly](https://github.com/SHAILAB-IPEC/OpenFly-Platform)** · ICLR 2026  
