@@ -1,0 +1,70 @@
+{
+  "digest": {
+    "date": "2026-11-17",
+    "timezone": "Asia/Shanghai",
+    "status": "no_new_listing",
+    "statusNote": "七个分类的官方new页面仍显示2026年11月16日批次，recent页最新日期也均为11月16日。该批次已在11月16日日报处理（同日还补录了11月13日），本次不重复收录。当前new原始条目共326篇，跨分类按ID去重后326篇，均属已处理批次；本次未处理的新批次为0，因此相关新增和收录均为0，不编排Top3或跨论文趋势。未发生来源抓取失败，不推断页面尚未更新的原因；保留既往日报。",
+    "sourceBatch": "cs.AI:2026-11-16|cs.CL:2026-11-16|cs.CV:2026-11-16|cs.LG:2026-11-16|cs.RO:2026-11-16|eess.IV:2026-11-16|stat.ML:2026-11-16",
+    "checkedAt": "2026-11-17T05:59:39.389Z",
+    "selectionPolicy": "new_submissions_only",
+    "categories": [
+      {
+        "category": "cs.CV",
+        "officialDate": "2026-11-16",
+        "newCount": 72,
+        "sourceUrl": "https://arxiv.org/list/cs.CV/new",
+        "state": "verified"
+      },
+      {
+        "category": "cs.AI",
+        "officialDate": "2026-11-16",
+        "newCount": 82,
+        "sourceUrl": "https://arxiv.org/list/cs.AI/new",
+        "state": "verified"
+      },
+      {
+        "category": "cs.LG",
+        "officialDate": "2026-11-16",
+        "newCount": 78,
+        "sourceUrl": "https://arxiv.org/list/cs.LG/new",
+        "state": "verified"
+      },
+      {
+        "category": "cs.RO",
+        "officialDate": "2026-11-16",
+        "newCount": 37,
+        "sourceUrl": "https://arxiv.org/list/cs.RO/new",
+        "state": "verified"
+      },
+      {
+        "category": "cs.CL",
+        "officialDate": "2026-11-16",
+        "newCount": 37,
+        "sourceUrl": "https://arxiv.org/list/cs.CL/new",
+        "state": "verified"
+      },
+      {
+        "category": "stat.ML",
+        "officialDate": "2026-11-16",
+        "newCount": 13,
+        "sourceUrl": "https://arxiv.org/list/stat.ML/new",
+        "state": "verified"
+      },
+      {
+        "category": "eess.IV",
+        "officialDate": "2026-11-16",
+        "newCount": 7,
+        "sourceUrl": "https://arxiv.org/list/eess.IV/new",
+        "state": "verified"
+      }
+    ],
+    "counts": {
+      "beforeDedup": 326,
+      "afterDedup": 326,
+      "relevant": 0,
+      "selected": 0
+    },
+    "papers": [],
+    "trends": []
+  }
+}
