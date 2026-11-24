@@ -1,0 +1,70 @@
+{
+  "digest": {
+    "date": "2026-11-24",
+    "timezone": "Asia/Shanghai",
+    "status": "no_new_listing",
+    "statusNote": "北京时间 14:00 核查：七类官方 new/recent 最新仍显示已收录的 11 月 23 日批次，七类 11 月 24 日官方 RSS 均无条目；截至核查时未见可确认的新公告批次。去重前后均为 0 仅指本轮未有新增批次可筛，不表示旧批次无论文或今日稍后不会更新。未重复筛查旧批次，不列 Top3。",
+    "sourceBatch": "no_new_listing:2026-11-24|cs.AI:2026-11-23|cs.CL:2026-11-23|cs.CV:2026-11-23|cs.LG:2026-11-23|cs.RO:2026-11-23|eess.IV:2026-11-23|stat.ML:2026-11-23",
+    "checkedAt": "2026-11-24T06:00:19.486744+00:00",
+    "selectionPolicy": "new_submissions_only",
+    "categories": [
+      {
+        "category": "cs.CV",
+        "officialDate": "2026-11-23",
+        "newCount": 0,
+        "sourceUrl": "https://arxiv.org/list/cs.CV/new",
+        "state": "verified"
+      },
+      {
+        "category": "cs.AI",
+        "officialDate": "2026-11-23",
+        "newCount": 0,
+        "sourceUrl": "https://arxiv.org/list/cs.AI/new",
+        "state": "verified"
+      },
+      {
+        "category": "cs.LG",
+        "officialDate": "2026-11-23",
+        "newCount": 0,
+        "sourceUrl": "https://arxiv.org/list/cs.LG/new",
+        "state": "verified"
+      },
+      {
+        "category": "cs.RO",
+        "officialDate": "2026-11-23",
+        "newCount": 0,
+        "sourceUrl": "https://arxiv.org/list/cs.RO/new",
+        "state": "verified"
+      },
+      {
+        "category": "cs.CL",
+        "officialDate": "2026-11-23",
+        "newCount": 0,
+        "sourceUrl": "https://arxiv.org/list/cs.CL/new",
+        "state": "verified"
+      },
+      {
+        "category": "stat.ML",
+        "officialDate": "2026-11-23",
+        "newCount": 0,
+        "sourceUrl": "https://arxiv.org/list/stat.ML/new",
+        "state": "verified"
+      },
+      {
+        "category": "eess.IV",
+        "officialDate": "2026-11-23",
+        "newCount": 0,
+        "sourceUrl": "https://arxiv.org/list/eess.IV/new",
+        "state": "verified"
+      }
+    ],
+    "counts": {
+      "beforeDedup": 0,
+      "afterDedup": 0,
+      "relevant": 0,
+      "selected": 0
+    },
+    "papers": [],
+    "trends": []
+  }
+}
