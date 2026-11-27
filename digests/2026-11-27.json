@@ -1,0 +1,70 @@
+{
+  "digest": {
+    "date": "2026-11-27",
+    "timezone": "Asia/Shanghai",
+    "status": "no_new_listing",
+    "statusNote": "七个分类的 arXiv 官方 new 和 recent 列表均仍停留在已收录的 11 月 26 日批次，本轮没有可确认的新公告，不重复计数或推荐。按 arXiv 官方时间表，下批最早在北京时间 11 月 30 日（周一）09:00 公布。",
+    "sourceBatch": "no_new_listing:2026-11-27|cs.AI:2026-11-26|cs.CL:2026-11-26|cs.CV:2026-11-26|cs.LG:2026-11-26|cs.RO:2026-11-26|eess.IV:2026-11-26|stat.ML:2026-11-26",
+    "checkedAt": "2026-11-27T05:58:54.002Z",
+    "selectionPolicy": "new_submissions_only",
+    "categories": [
+      {
+        "category": "cs.CV",
+        "officialDate": "2026-11-26",
+        "newCount": 0,
+        "sourceUrl": "https://arxiv.org/list/cs.CV/new",
+        "state": "verified"
+      },
+      {
+        "category": "cs.AI",
+        "officialDate": "2026-11-26",
+        "newCount": 0,
+        "sourceUrl": "https://arxiv.org/list/cs.AI/new",
+        "state": "verified"
+      },
+      {
+        "category": "cs.LG",
+        "officialDate": "2026-11-26",
+        "newCount": 0,
+        "sourceUrl": "https://arxiv.org/list/cs.LG/new",
+        "state": "verified"
+      },
+      {
+        "category": "cs.RO",
+        "officialDate": "2026-11-26",
+        "newCount": 0,
+        "sourceUrl": "https://arxiv.org/list/cs.RO/new",
+        "state": "verified"
+      },
+      {
+        "category": "cs.CL",
+        "officialDate": "2026-11-26",
+        "newCount": 0,
+        "sourceUrl": "https://arxiv.org/list/cs.CL/new",
+        "state": "verified"
+      },
+      {
+        "category": "stat.ML",
+        "officialDate": "2026-11-26",
+        "newCount": 0,
+        "sourceUrl": "https://arxiv.org/list/stat.ML/new",
+        "state": "verified"
+      },
+      {
+        "category": "eess.IV",
+        "officialDate": "2026-11-26",
+        "newCount": 0,
+        "sourceUrl": "https://arxiv.org/list/eess.IV/new",
+        "state": "verified"
+      }
+    ],
+    "counts": {
+      "beforeDedup": 0,
+      "afterDedup": 0,
+      "relevant": 0,
+      "selected": 0
+    },
+    "papers": [],
+    "trends": []
+  }
+}
